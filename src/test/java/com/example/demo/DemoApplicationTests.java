@@ -24,7 +24,7 @@ import static org.adridadou.ethereum.values.EthValue.ether;
 @SpringBootTest
 public class DemoApplicationTests {
 
-    private SoliditySource contractSource = SoliditySource.from(new File(this.getClass().getResource("/contract.sol").toURI()));
+    private SoliditySource contractSource = SoliditySource.from(new File(this.getClass().getResource("/contracts/contract.sol").toURI()));
 
     public DemoApplicationTests() throws URISyntaxException {
     }

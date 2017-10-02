@@ -5299,3 +5299,5059 @@ vm {
 13:52:59.042 DEBUG [pending]  PendingStateImpl.processBest: #2 (d5afc5 <~ 6a44ea) Txs:1, Unc: 0
 13:52:59.219 DEBUG [pending]  PendingStateImpl.processBest: #3 (c97c78 <~ d5afc5) Txs:1, Unc: 0
 13:52:59.353 DEBUG [pending]  PendingStateImpl.processBest: #4 (1aa6ee <~ c97c78) Txs:1, Unc: 0
+13:56:19.677 INFO [c.e.d.ExtraTest]  Starting ExtraTest on WLA-ICT-45 with PID 8424 (started by vandebroeck.k in C:\Projects\demo)
+13:56:19.683 DEBUG [c.e.d.ExtraTest]  Running with Spring Boot v1.5.7.RELEASE, Spring v4.3.11.RELEASE
+13:56:19.683 INFO [c.e.d.ExtraTest]  No active profile set, falling back to default profiles: default
+13:56:20.178 DEBUG [o.j.logging]  Logging Provider: org.jboss.logging.Slf4jLoggerProvider found via system property
+13:56:22.144 INFO [c.e.d.ExtraTest]  Started ExtraTest in 2.859 seconds (JVM running for 5.114)
+13:56:22.213 INFO [general]  Starting EthereumJ...
+13:56:22.922 INFO [general]  Config ( yes ): default properties from resource 'ethereumj.conf'
+13:56:22.922 INFO [general]  Config ( no  ): user properties from -Dethereumj.conf.res resource 'null'
+13:56:22.922 INFO [general]  Config ( no  ): user properties from resource 'user.conf'
+13:56:22.923 INFO [general]  Config ( no  ): user properties from file 'C:\Projects\demo\config\ethereumj.conf'
+13:56:22.923 INFO [general]  Config ( no  ): test properties from resource 'test-ethereumj.conf'
+13:56:22.924 INFO [general]  Config ( no  ): test properties from resource 'test-user.conf'
+13:56:22.924 INFO [general]  Config ( no  ): user properties from -Dethereumj.conf.file file 'null'
+13:56:22.924 INFO [general]  Config ( no  ): config passed via constructor
+13:56:22.926 DEBUG [general]  Config trace: # ethereumj.conf: 166-401
+blockchain {
+    # ethereumj.conf: 166
+    config {
+        # ethereumj.conf: 166
+        name=main
+    }
+    # ethereumj.conf: 401
+    only=false
+}
+# ethereumj.conf: 407
+blocks {
+    # ethereumj.conf: 407
+    loader=""
+}
+# ethereumj.conf: 207
+cache {
+    # ethereumj.conf: 228
+    blockQueueSize=32
+    # ethereumj.conf: 209
+    flush {
+        # ethereumj.conf: 218
+        blocks=0
+        # ethereumj.conf: 221
+        shortSyncFlush=true
+        # ethereumj.conf: 213
+        writeCacheSize=64
+    }
+    # ethereumj.conf: 231
+    headerQueueSize=8
+    # ethereumj.conf: 225
+    stateCacheSize=256
+}
+# ethereumj.conf: 174
+database {
+    # ethereumj.conf: 177
+    dir=database
+    # ethereumj.conf: 190
+    incompatibleDatabaseBehavior=EXIT
+    # ethereumj.conf: 196
+    prune {
+        # ethereumj.conf: 197
+        enabled=true
+        # ethereumj.conf: 202
+        maxDepth=192
+    }
+    # ethereumj.conf: 183
+    reset=false
+}
+# ethereumj.conf: 335
+dump {
+    # ethereumj.conf: 348
+    block=-1
+    # ethereumj.conf: 352
+    clean {
+        # ethereumj.conf: 352
+        on {
+            # ethereumj.conf: 352
+            restart=true
+        }
+    }
+    # ethereumj.conf: 342
+    dir=dmp
+    # ethereumj.conf: 341
+    full=false
+    # ethereumj.conf: 349
+    style=pretty
+}
+# ethereumj.conf: 152
+genesis="frontier.json"
+# ethereumj.conf: 383
+hello {
+    # ethereumj.conf: 383
+    phrase=Dev
+}
+# ethereumj.conf: 398
+keyvalue {
+    # ethereumj.conf: 398
+    datasource=leveldb
+}
+# ethereumj.conf: 273
+mine {
+    # ethereumj.conf: 292
+    coinbase="0000000000000000000000000000000000000000"
+    # ethereumj.conf: 283
+    cpuMineThreads=4
+    # ethereumj.conf: 296
+    extraData="EthereumJ powered"
+    # ethereumj.conf: 289
+    fullDataSet=true
+    # ethereumj.conf: 305
+    minBlockTimeoutMsec=0
+    # ethereumj.conf: 302
+    minGasPrice=15000000000
+    # ethereumj.conf: 279
+    start=false
+    # ethereumj.conf: 309
+    startNonce=null
+}
+# ethereumj.conf: 1-79
+peer {
+    # ethereumj.conf: 94
+    active=[]
+    # ethereumj.conf: 123
+    capabilities=[
+        # ethereumj.conf: 123
+        eth
+    ]
+    # ethereumj.conf: 132
+    channel {
+        # ethereumj.conf: 132
+        read {
+            # ethereumj.conf: 132
+            timeout=90
+        }
+    }
+    # ethereumj.conf: 127
+    connection {
+        # ethereumj.conf: 127
+        timeout=2
+    }
+    # ethereumj.conf: 1
+    discovery {
+        # ethereumj.conf: 54
+        bind {
+            # ethereumj.conf: 54
+            ip=""
+        }
+        # ethereumj.conf: 8
+        enabled=true
+        # ethereumj.conf: 46
+        external {
+            # ethereumj.conf: 46
+            ip=null
+        }
+        # ethereumj.conf: 13
+        ip {
+            # ethereumj.conf: 13
+            list=[
+                # ethereumj.conf: 15
+                "frontier-2.ether.camp:30303",
+                # ethereumj.conf: 16
+                "frontier-3.ether.camp:30303",
+                # ethereumj.conf: 17
+                "frontier-4.ether.camp:30303",
+                # ethereumj.conf: 20
+                "5.1.83.226:30303",
+                # ethereumj.conf: 23
+                "54.94.239.50:30303",
+                # ethereumj.conf: 24
+                "52.16.188.185:30303",
+                # ethereumj.conf: 25
+                "52.74.57.123:30303",
+                # ethereumj.conf: 28
+                "163.172.157.114:30303",
+                # ethereumj.conf: 29
+                "136.243.154.244:30303",
+                # ethereumj.conf: 30
+                "88.212.206.70:30303",
+                # ethereumj.conf: 31
+                "37.128.191.230:30303",
+                # ethereumj.conf: 32
+                "46.20.235.22:30303",
+                # ethereumj.conf: 33
+                "216.158.85.185:30303",
+                # ethereumj.conf: 34
+                "212.47.247.103:30303",
+                # ethereumj.conf: 35
+                "138.201.144.135:30303",
+                # ethereumj.conf: 36
+                "45.55.33.62:30303",
+                # ethereumj.conf: 37
+                "188.166.255.12:30303",
+                # ethereumj.conf: 38
+                "159.203.210.80:30303",
+                # ethereumj.conf: 39
+                "51.15.42.252:30303",
+                # ethereumj.conf: 40
+                "163.172.171.38:30303"
+            ]
+        }
+        # ethereumj.conf: 62
+        persist=true
+        # ethereumj.conf: 58
+        public {
+            # ethereumj.conf: 58
+            home {
+                # ethereumj.conf: 58
+                node=true
+            }
+        }
+        # ethereumj.conf: 71
+        touchMaxNodes=100
+        # ethereumj.conf: 67
+        touchPeriod=600
+        # ethereumj.conf: 76
+        workers=8
+    }
+    # ethereumj.conf: 82
+    listen {
+        # ethereumj.conf: 82
+        port=30303
+    }
+    # ethereumj.conf: 119
+    maxActivePeers=30
+    # ethereumj.conf: 85
+    networkId=1
+    # ethereumj.conf: 134
+    p2p {
+        # ethereumj.conf: 144
+        eip8=true
+        # ethereumj.conf: 140
+        framing {
+            # ethereumj.conf: 140
+            maxSize=32768
+        }
+    }
+    # ethereumj.conf: 105
+    trusted=[]
+}
+# ethereumj.conf: 379
+play {
+    # ethereumj.conf: 379
+    vm=true
+}
+# ethereumj.conf: 400
+record {
+    # ethereumj.conf: 400
+    blocks=false
+}
+# ethereumj.conf: 395
+root {
+    # ethereumj.conf: 395
+    hash {
+        # ethereumj.conf: 395
+        start=null
+    }
+}
+# ethereumj.conf: 313
+solc {
+    # ethereumj.conf: 316
+    path=null
+}
+# ethereumj.conf: 235
+sync {
+    # ethereumj.conf: 239
+    enabled=true
+    # ethereumj.conf: 269
+    exitOnBlockConflict=false
+    # ethereumj.conf: 242
+    fast {
+        # ethereumj.conf: 246
+        enabled=false
+    }
+    # ethereumj.conf: 260
+    peer {
+        # ethereumj.conf: 260
+        count=30
+    }
+}
+# ethereumj.conf: 372
+trace {
+    # ethereumj.conf: 372
+    startblock=-1
+}
+# ethereumj.conf: 328-332
+transaction {
+    # ethereumj.conf: 328
+    approve {
+        # ethereumj.conf: 328
+        timeout=15
+    }
+    # ethereumj.conf: 332
+    outdated {
+        # ethereumj.conf: 332
+        threshold=10
+    }
+}
+# ethereumj.conf: 362
+vm {
+    # ethereumj.conf: 362
+    structured {
+        # ethereumj.conf: 365
+        compressed=true
+        # ethereumj.conf: 364
+        dir=vmtrace
+        # ethereumj.conf: 366
+        initStorageLimit=10000
+        # ethereumj.conf: 363
+        trace=false
+    }
+}
+
+13:56:22.944 INFO [general]  Running ropsten.json,  core version: 1.4.1-RELEASE
+13:56:22.944 INFO [general]  git.hash: [441119d]
+13:56:22.944 INFO [general]  build.time: [GMT]-[06/Feb/2017]-[11:23]
+13:56:22.948 INFO [general]  Created database version file
+13:56:22.950 INFO [general]  capability eth version: [62, 63]
+13:56:22.950 INFO [general]  capability shh version: [3]
+13:56:22.950 INFO [general]  capability bzz version: [0]
+13:56:23.588 INFO [general]  New nodeID generated: f3b0bbc676af57f656a31c493ef49e8f3e811ea584db4e17b00acf5716ca559ee293ad5da16c6ab313bc4ffed9a53dd91bda48f39e7693ef4da940d1c5a48262
+13:56:23.588 INFO [general]  Generated nodeID and its private key stored in database-ropsten\nodeId.properties
+13:56:23.615 INFO [general]  External IP wasn't set, using checkip.amazonaws.com to identify it...
+13:56:23.858 INFO [general]  External address identified: 85.91.180.48
+13:56:23.859 INFO [general]  EthereumJ node started: enode://f3b0bbc676af57f656a31c493ef49e8f3e811ea584db4e17b00acf5716ca559ee293ad5da16c6ab313bc4ffed9a53dd91bda48f39e7693ef4da940d1c5a48262@85.91.180.48:30303
+13:56:23.907 INFO [general]  Config ( yes ): default properties from resource 'ethereumj.conf'
+13:56:23.907 INFO [general]  Config ( no  ): user properties from -Dethereumj.conf.res resource 'null'
+13:56:23.908 INFO [general]  Config ( no  ): user properties from resource 'user.conf'
+13:56:23.908 INFO [general]  Config ( no  ): user properties from file 'C:\Projects\demo\config\ethereumj.conf'
+13:56:23.908 INFO [general]  Config ( no  ): test properties from resource 'test-ethereumj.conf'
+13:56:23.908 INFO [general]  Config ( no  ): test properties from resource 'test-user.conf'
+13:56:23.909 INFO [general]  Config ( no  ): user properties from -Dethereumj.conf.file file 'null'
+13:56:23.909 INFO [general]  Config ( no  ): config passed via constructor
+13:56:23.909 DEBUG [general]  Config trace: # ethereumj.conf: 166-401
+blockchain {
+    # ethereumj.conf: 166
+    config {
+        # ethereumj.conf: 166
+        name=main
+    }
+    # ethereumj.conf: 401
+    only=false
+}
+# ethereumj.conf: 407
+blocks {
+    # ethereumj.conf: 407
+    loader=""
+}
+# ethereumj.conf: 207
+cache {
+    # ethereumj.conf: 228
+    blockQueueSize=32
+    # ethereumj.conf: 209
+    flush {
+        # ethereumj.conf: 218
+        blocks=0
+        # ethereumj.conf: 221
+        shortSyncFlush=true
+        # ethereumj.conf: 213
+        writeCacheSize=64
+    }
+    # ethereumj.conf: 231
+    headerQueueSize=8
+    # ethereumj.conf: 225
+    stateCacheSize=256
+}
+# ethereumj.conf: 174
+database {
+    # ethereumj.conf: 177
+    dir=database
+    # ethereumj.conf: 190
+    incompatibleDatabaseBehavior=EXIT
+    # ethereumj.conf: 196
+    prune {
+        # ethereumj.conf: 197
+        enabled=true
+        # ethereumj.conf: 202
+        maxDepth=192
+    }
+    # ethereumj.conf: 183
+    reset=false
+}
+# ethereumj.conf: 335
+dump {
+    # ethereumj.conf: 348
+    block=-1
+    # ethereumj.conf: 352
+    clean {
+        # ethereumj.conf: 352
+        on {
+            # ethereumj.conf: 352
+            restart=true
+        }
+    }
+    # ethereumj.conf: 342
+    dir=dmp
+    # ethereumj.conf: 341
+    full=false
+    # ethereumj.conf: 349
+    style=pretty
+}
+# ethereumj.conf: 152
+genesis="frontier.json"
+# ethereumj.conf: 383
+hello {
+    # ethereumj.conf: 383
+    phrase=Dev
+}
+# ethereumj.conf: 398
+keyvalue {
+    # ethereumj.conf: 398
+    datasource=leveldb
+}
+# ethereumj.conf: 273
+mine {
+    # ethereumj.conf: 292
+    coinbase="0000000000000000000000000000000000000000"
+    # ethereumj.conf: 283
+    cpuMineThreads=4
+    # ethereumj.conf: 296
+    extraData="EthereumJ powered"
+    # ethereumj.conf: 289
+    fullDataSet=true
+    # ethereumj.conf: 305
+    minBlockTimeoutMsec=0
+    # ethereumj.conf: 302
+    minGasPrice=15000000000
+    # ethereumj.conf: 279
+    start=false
+    # ethereumj.conf: 309
+    startNonce=null
+}
+# ethereumj.conf: 1-79
+peer {
+    # ethereumj.conf: 94
+    active=[]
+    # ethereumj.conf: 123
+    capabilities=[
+        # ethereumj.conf: 123
+        eth
+    ]
+    # ethereumj.conf: 132
+    channel {
+        # ethereumj.conf: 132
+        read {
+            # ethereumj.conf: 132
+            timeout=90
+        }
+    }
+    # ethereumj.conf: 127
+    connection {
+        # ethereumj.conf: 127
+        timeout=2
+    }
+    # ethereumj.conf: 1
+    discovery {
+        # ethereumj.conf: 54
+        bind {
+            # ethereumj.conf: 54
+            ip=""
+        }
+        # ethereumj.conf: 8
+        enabled=true
+        # ethereumj.conf: 46
+        external {
+            # ethereumj.conf: 46
+            ip=null
+        }
+        # ethereumj.conf: 13
+        ip {
+            # ethereumj.conf: 13
+            list=[
+                # ethereumj.conf: 15
+                "frontier-2.ether.camp:30303",
+                # ethereumj.conf: 16
+                "frontier-3.ether.camp:30303",
+                # ethereumj.conf: 17
+                "frontier-4.ether.camp:30303",
+                # ethereumj.conf: 20
+                "5.1.83.226:30303",
+                # ethereumj.conf: 23
+                "54.94.239.50:30303",
+                # ethereumj.conf: 24
+                "52.16.188.185:30303",
+                # ethereumj.conf: 25
+                "52.74.57.123:30303",
+                # ethereumj.conf: 28
+                "163.172.157.114:30303",
+                # ethereumj.conf: 29
+                "136.243.154.244:30303",
+                # ethereumj.conf: 30
+                "88.212.206.70:30303",
+                # ethereumj.conf: 31
+                "37.128.191.230:30303",
+                # ethereumj.conf: 32
+                "46.20.235.22:30303",
+                # ethereumj.conf: 33
+                "216.158.85.185:30303",
+                # ethereumj.conf: 34
+                "212.47.247.103:30303",
+                # ethereumj.conf: 35
+                "138.201.144.135:30303",
+                # ethereumj.conf: 36
+                "45.55.33.62:30303",
+                # ethereumj.conf: 37
+                "188.166.255.12:30303",
+                # ethereumj.conf: 38
+                "159.203.210.80:30303",
+                # ethereumj.conf: 39
+                "51.15.42.252:30303",
+                # ethereumj.conf: 40
+                "163.172.171.38:30303"
+            ]
+        }
+        # ethereumj.conf: 62
+        persist=true
+        # ethereumj.conf: 58
+        public {
+            # ethereumj.conf: 58
+            home {
+                # ethereumj.conf: 58
+                node=true
+            }
+        }
+        # ethereumj.conf: 71
+        touchMaxNodes=100
+        # ethereumj.conf: 67
+        touchPeriod=600
+        # ethereumj.conf: 76
+        workers=8
+    }
+    # ethereumj.conf: 82
+    listen {
+        # ethereumj.conf: 82
+        port=30303
+    }
+    # ethereumj.conf: 119
+    maxActivePeers=30
+    # ethereumj.conf: 85
+    networkId=1
+    # ethereumj.conf: 134
+    p2p {
+        # ethereumj.conf: 144
+        eip8=true
+        # ethereumj.conf: 140
+        framing {
+            # ethereumj.conf: 140
+            maxSize=32768
+        }
+    }
+    # ethereumj.conf: 105
+    trusted=[]
+}
+# ethereumj.conf: 379
+play {
+    # ethereumj.conf: 379
+    vm=true
+}
+# ethereumj.conf: 400
+record {
+    # ethereumj.conf: 400
+    blocks=false
+}
+# ethereumj.conf: 395
+root {
+    # ethereumj.conf: 395
+    hash {
+        # ethereumj.conf: 395
+        start=null
+    }
+}
+# ethereumj.conf: 313
+solc {
+    # ethereumj.conf: 316
+    path=null
+}
+# ethereumj.conf: 235
+sync {
+    # ethereumj.conf: 239
+    enabled=true
+    # ethereumj.conf: 269
+    exitOnBlockConflict=false
+    # ethereumj.conf: 242
+    fast {
+        # ethereumj.conf: 246
+        enabled=false
+    }
+    # ethereumj.conf: 260
+    peer {
+        # ethereumj.conf: 260
+        count=30
+    }
+}
+# ethereumj.conf: 372
+trace {
+    # ethereumj.conf: 372
+    startblock=-1
+}
+# ethereumj.conf: 328-332
+transaction {
+    # ethereumj.conf: 328
+    approve {
+        # ethereumj.conf: 328
+        timeout=15
+    }
+    # ethereumj.conf: 332
+    outdated {
+        # ethereumj.conf: 332
+        threshold=10
+    }
+}
+# ethereumj.conf: 362
+vm {
+    # ethereumj.conf: 362
+    structured {
+        # ethereumj.conf: 365
+        compressed=true
+        # ethereumj.conf: 364
+        dir=vmtrace
+        # ethereumj.conf: 366
+        initStorageLimit=10000
+        # ethereumj.conf: 363
+        trace=false
+    }
+}
+
+13:56:23.925 INFO [general]  leveldb key-value data source created.
+13:56:23.928 DEBUG [db]  ~> LevelDbDataSource.init(): state
+13:56:23.930 DEBUG [db]  Opening database
+13:56:23.932 DEBUG [db]  Initializing new or existing database: 'state'
+13:56:24.036 DEBUG [db]  <~ LevelDbDataSource.init(): state
+13:56:24.073 INFO [general]  leveldb key-value data source created.
+13:56:24.073 DEBUG [db]  ~> LevelDbDataSource.init(): journal
+13:56:24.073 DEBUG [db]  Opening database
+13:56:24.075 DEBUG [db]  Initializing new or existing database: 'journal'
+13:56:24.103 DEBUG [db]  <~ LevelDbDataSource.init(): journal
+13:56:24.128 INFO [general]  leveldb key-value data source created.
+13:56:24.128 DEBUG [db]  ~> LevelDbDataSource.init(): index
+13:56:24.128 DEBUG [db]  Opening database
+13:56:24.130 DEBUG [db]  Initializing new or existing database: 'index'
+13:56:24.155 DEBUG [db]  <~ LevelDbDataSource.init(): index
+13:56:24.156 INFO [general]  leveldb key-value data source created.
+13:56:24.156 DEBUG [db]  ~> LevelDbDataSource.init(): block
+13:56:24.156 DEBUG [db]  Opening database
+13:56:24.157 DEBUG [db]  Initializing new or existing database: 'block'
+13:56:24.183 DEBUG [db]  <~ LevelDbDataSource.init(): block
+13:56:24.189 INFO [general]  leveldb key-value data source created.
+13:56:24.190 DEBUG [db]  ~> LevelDbDataSource.init(): transactions
+13:56:24.190 DEBUG [db]  Opening database
+13:56:24.190 DEBUG [db]  Initializing new or existing database: 'transactions'
+13:56:24.217 DEBUG [db]  <~ LevelDbDataSource.init(): transactions
+13:56:24.501 INFO [general]  DB is empty - adding Genesis
+13:56:24.611 INFO [general]  Genesis block loaded
+13:56:24.627 INFO [general]  Bind address wasn't set, Punching to identify it...
+13:56:24.659 INFO [general]  UDP local bound to: 192.168.11.124
+13:56:24.661 INFO [discover]  Discovery UDPListener started
+13:56:24.665 INFO [sync]  Sync Manager: ON
+13:56:24.665 INFO [sync]  Initializing SyncManager.
+13:56:24.669 INFO [sync]  FastSync: looking for best block number...
+13:56:24.674 DEBUG [discover]  (tried.isEmpty()) Terminating discover after 0 rounds.
+13:56:25.204 INFO [discover]  Reading Node statistics from DB: 0 nodes.
+13:56:25.247 DEBUG [discover]  <===  [PingMessage (129)] NodeHandler[state: null, node: 94.242.229.4:40404, id=dc689787]
+13:56:25.247 INFO [discover]  Pinging discovery nodes...
+13:56:25.252 INFO [net]  Listening for incoming connections, port: [30303] 
+13:56:25.256 INFO [net]  NodeId: [f3b0bbc676af57f656a31c493ef49e8f3e811ea584db4e17b00acf5716ca559ee293ad5da16c6ab313bc4ffed9a53dd91bda48f39e7693ef4da940d1c5a48262] 
+13:56:25.272 DEBUG [discover]   +++ New node: NodeHandler[state: Discovered, node: 94.242.229.4:40404, id=dc689787] Node{ host='94.242.229.4', port=40404, id=dc689787bdd919e46001bd19f84c78dce14faab3a16cafa8118d8c096e2c5c7938c43d904e3c455e0e66505df686dc439aca4233be59872eb1539121de9e041b}
+13:56:25.281 DEBUG [discover]  <===  [PingMessage (129)] NodeHandler[state: null, node: 94.242.229.203:30303, id=a8ee7fda]
+13:56:25.282 DEBUG [discover]   +++ New node: NodeHandler[state: Discovered, node: 94.242.229.203:30303, id=a8ee7fda] Node{ host='94.242.229.203', port=30303, id=a8ee7fda50ebaafd1015d9900879fb7a06e53810160dec22837bf8c10bf3d8767789cbae6ee1ec4e3568b88821914cffb5bf806e818c26d5c18d6cf0f7329bf9}
+13:56:25.385 INFO [general]  Ethereum listener added
+13:56:25.672 DEBUG [discover]  (tried.isEmpty()) Terminating discover after 0 rounds.
+13:56:27.673 TRACE [sync]  Node list obtained from discovery: empty
+13:56:29.677 INFO [sync]  FastSync: waiting for at least 5 peers or 54 sec to select pivot block... (0 peers so far)
+13:56:30.679 TRACE [sync]  Node list obtained from discovery: empty
+13:56:31.877 DEBUG [discover]  (tried.isEmpty()) Terminating discover after 0 rounds.
+13:56:33.685 TRACE [sync]  Node list obtained from discovery: empty
+13:56:34.668 INFO [sync]  Sync state: PivotBlock (9 of 60), last block #0, best known #0
+13:56:34.743 INFO [sync]  FastSync: waiting for at least 5 peers or 49 sec to select pivot block... (0 peers so far)
+13:56:36.690 TRACE [sync]  Node list obtained from discovery: empty
+13:56:39.079 DEBUG [discover]  (tried.isEmpty()) Terminating discover after 0 rounds.
+13:56:39.695 TRACE [sync]  Node list obtained from discovery: empty
+13:56:39.748 INFO [sync]  FastSync: waiting for at least 5 peers or 44 sec to select pivot block... (0 peers so far)
+13:56:40.284 DEBUG [discover]  <===  [PingMessage (129)] NodeHandler[state: Discovered, node: 94.242.229.4:40404, id=dc689787]
+13:56:40.296 DEBUG [discover]  <===  [PingMessage (129)] NodeHandler[state: Discovered, node: 94.242.229.203:30303, id=a8ee7fda]
+13:56:42.698 TRACE [sync]  Node list obtained from discovery: empty
+13:56:44.665 INFO [sync]  Sync state: PivotBlock (19 of 60), last block #0, best known #0
+13:56:44.751 INFO [sync]  FastSync: waiting for at least 5 peers or 39 sec to select pivot block... (0 peers so far)
+13:56:45.702 TRACE [sync]  Node list obtained from discovery: empty
+13:56:46.279 DEBUG [discover]  (tried.isEmpty()) Terminating discover after 0 rounds.
+13:56:48.711 TRACE [sync]  Node list obtained from discovery: empty
+13:56:49.754 INFO [sync]  FastSync: waiting for at least 5 peers or 34 sec to select pivot block... (0 peers so far)
+13:56:51.715 TRACE [sync]  Node list obtained from discovery: empty
+13:56:53.480 DEBUG [discover]  (tried.isEmpty()) Terminating discover after 0 rounds.
+13:56:54.667 INFO [sync]  Sync state: PivotBlock (29 of 60), last block #0, best known #0
+13:56:54.668 INFO [sync]  Peer stats:
+Active peers
+============
+Other connected peers
+============
+
+13:56:54.668 INFO [sync]  
+
+13:56:54.719 TRACE [sync]  Node list obtained from discovery: empty
+13:56:54.762 INFO [sync]  FastSync: waiting for at least 5 peers or 29 sec to select pivot block... (0 peers so far)
+13:56:55.297 DEBUG [discover]  <===  [PingMessage (129)] NodeHandler[state: Discovered, node: 94.242.229.4:40404, id=dc689787]
+13:56:55.309 DEBUG [discover]  <===  [PingMessage (129)] NodeHandler[state: Discovered, node: 94.242.229.203:30303, id=a8ee7fda]
+13:56:55.673 DEBUG [discover]  (tried.isEmpty()) Terminating discover after 0 rounds.
+13:56:57.724 TRACE [sync]  Node list obtained from discovery: empty
+13:56:59.765 INFO [sync]  FastSync: waiting for at least 5 peers or 24 sec to select pivot block... (0 peers so far)
+13:57:00.681 DEBUG [discover]  (tried.isEmpty()) Terminating discover after 0 rounds.
+13:57:00.729 TRACE [sync]  Node list obtained from discovery: empty
+13:57:03.734 TRACE [sync]  Node list obtained from discovery: empty
+13:57:04.667 INFO [sync]  Sync state: PivotBlock (39 of 60), last block #0, best known #0
+13:57:04.770 INFO [sync]  FastSync: waiting for at least 5 peers or 19 sec to select pivot block... (0 peers so far)
+13:57:06.738 TRACE [sync]  Node list obtained from discovery: empty
+13:57:07.881 DEBUG [discover]  (tried.isEmpty()) Terminating discover after 0 rounds.
+13:57:09.741 TRACE [sync]  Node list obtained from discovery: empty
+13:57:09.773 INFO [sync]  FastSync: waiting for at least 5 peers or 14 sec to select pivot block... (0 peers so far)
+13:57:12.748 TRACE [sync]  Node list obtained from discovery: empty
+13:57:14.667 INFO [sync]  Sync state: PivotBlock (49 of 60), last block #0, best known #0
+13:57:14.777 INFO [sync]  FastSync: waiting for at least 5 peers or 9 sec to select pivot block... (0 peers so far)
+13:57:15.082 DEBUG [discover]  (tried.isEmpty()) Terminating discover after 0 rounds.
+13:57:15.754 TRACE [sync]  Node list obtained from discovery: empty
+13:57:18.768 TRACE [sync]  Node list obtained from discovery: empty
+13:57:19.781 INFO [sync]  FastSync: waiting for at least 5 peers or 4 sec to select pivot block... (0 peers so far)
+13:57:21.772 TRACE [sync]  Node list obtained from discovery: empty
+13:57:22.284 DEBUG [discover]  (tried.isEmpty()) Terminating discover after 0 rounds.
+13:57:24.666 INFO [sync]  Sync state: PivotBlock (59 of 60), last block #0, best known #0
+13:57:24.670 INFO [sync]  Peer stats:
+Active peers
+============
+Other connected peers
+============
+
+13:57:24.670 INFO [sync]  
+
+13:57:24.776 TRACE [sync]  Node list obtained from discovery: empty
+13:57:24.786 INFO [sync]  FastSync: waiting for at least 5 peers or 0 sec to select pivot block... (0 peers so far)
+13:57:25.303 INFO [discover]  Write Node statistics to DB: 2 nodes.
+13:57:25.675 DEBUG [discover]  (tried.isEmpty()) Terminating discover after 0 rounds.
+13:57:27.780 TRACE [sync]  Node list obtained from discovery: empty
+13:57:29.485 DEBUG [discover]  (tried.isEmpty()) Terminating discover after 0 rounds.
+13:57:29.790 INFO [sync]  FastSync: waiting for at least 5 peers or -5 sec to select pivot block... (0 peers so far)
+13:57:30.787 TRACE [sync]  Node list obtained from discovery: empty
+13:57:33.792 TRACE [sync]  Node list obtained from discovery: empty
+13:57:34.667 INFO [sync]  Sync state: PivotBlock (69 of 60), last block #0, best known #0
+13:57:34.794 INFO [sync]  FastSync: waiting for at least 5 peers or -10 sec to select pivot block... (0 peers so far)
+13:57:36.687 DEBUG [discover]  (tried.isEmpty()) Terminating discover after 0 rounds.
+13:57:36.796 TRACE [sync]  Node list obtained from discovery: empty
+13:57:39.798 INFO [sync]  FastSync: waiting for at least 5 peers or -15 sec to select pivot block... (0 peers so far)
+13:57:39.800 TRACE [sync]  Node list obtained from discovery: empty
+13:57:42.805 TRACE [sync]  Node list obtained from discovery: empty
+13:57:43.888 DEBUG [discover]  (tried.isEmpty()) Terminating discover after 0 rounds.
+13:57:44.667 INFO [sync]  Sync state: PivotBlock (79 of 60), last block #0, best known #0
+13:57:44.802 INFO [sync]  FastSync: waiting for at least 5 peers or -20 sec to select pivot block... (0 peers so far)
+13:57:45.810 TRACE [sync]  Node list obtained from discovery: empty
+13:57:48.815 TRACE [sync]  Node list obtained from discovery: empty
+13:57:49.806 INFO [sync]  FastSync: waiting for at least 5 peers or -25 sec to select pivot block... (0 peers so far)
+13:57:51.089 DEBUG [discover]  (tried.isEmpty()) Terminating discover after 0 rounds.
+13:57:51.821 TRACE [sync]  Node list obtained from discovery: empty
+13:57:54.668 INFO [sync]  Sync state: PivotBlock (89 of 60), last block #0, best known #0
+13:57:54.671 INFO [sync]  Peer stats:
+Active peers
+============
+Other connected peers
+============
+
+13:57:54.671 INFO [sync]  
+
+13:57:54.810 INFO [sync]  FastSync: waiting for at least 5 peers or -30 sec to select pivot block... (0 peers so far)
+13:57:54.826 TRACE [sync]  Node list obtained from discovery: empty
+13:57:55.676 DEBUG [discover]  (tried.isEmpty()) Terminating discover after 0 rounds.
+13:57:57.829 TRACE [sync]  Node list obtained from discovery: empty
+13:57:58.290 DEBUG [discover]  (tried.isEmpty()) Terminating discover after 0 rounds.
+13:57:59.813 INFO [sync]  FastSync: waiting for at least 5 peers or -35 sec to select pivot block... (0 peers so far)
+13:58:00.833 TRACE [sync]  Node list obtained from discovery: empty
+13:59:35.367 INFO [c.e.d.ExtraTest]  Starting ExtraTest on WLA-ICT-45 with PID 9996 (started by vandebroeck.k in C:\Projects\demo)
+13:59:35.370 DEBUG [c.e.d.ExtraTest]  Running with Spring Boot v1.5.7.RELEASE, Spring v4.3.11.RELEASE
+13:59:35.371 INFO [c.e.d.ExtraTest]  No active profile set, falling back to default profiles: default
+13:59:35.858 DEBUG [o.j.logging]  Logging Provider: org.jboss.logging.Slf4jLoggerProvider found via system property
+13:59:37.718 INFO [c.e.d.ExtraTest]  Started ExtraTest in 2.772 seconds (JVM running for 4.709)
+13:59:37.780 INFO [general]  Starting EthereumJ...
+13:59:38.431 INFO [general]  Config ( yes ): default properties from resource 'ethereumj.conf'
+13:59:38.431 INFO [general]  Config ( no  ): user properties from -Dethereumj.conf.res resource 'null'
+13:59:38.431 INFO [general]  Config ( no  ): user properties from resource 'user.conf'
+13:59:38.432 INFO [general]  Config ( no  ): user properties from file 'C:\Projects\demo\config\ethereumj.conf'
+13:59:38.433 INFO [general]  Config ( no  ): test properties from resource 'test-ethereumj.conf'
+13:59:38.433 INFO [general]  Config ( no  ): test properties from resource 'test-user.conf'
+13:59:38.433 INFO [general]  Config ( no  ): user properties from -Dethereumj.conf.file file 'null'
+13:59:38.433 INFO [general]  Config ( no  ): config passed via constructor
+13:59:38.435 DEBUG [general]  Config trace: # ethereumj.conf: 166-401
+blockchain {
+    # ethereumj.conf: 166
+    config {
+        # ethereumj.conf: 166
+        name=main
+    }
+    # ethereumj.conf: 401
+    only=false
+}
+# ethereumj.conf: 407
+blocks {
+    # ethereumj.conf: 407
+    loader=""
+}
+# ethereumj.conf: 207
+cache {
+    # ethereumj.conf: 228
+    blockQueueSize=32
+    # ethereumj.conf: 209
+    flush {
+        # ethereumj.conf: 218
+        blocks=0
+        # ethereumj.conf: 221
+        shortSyncFlush=true
+        # ethereumj.conf: 213
+        writeCacheSize=64
+    }
+    # ethereumj.conf: 231
+    headerQueueSize=8
+    # ethereumj.conf: 225
+    stateCacheSize=256
+}
+# ethereumj.conf: 174
+database {
+    # ethereumj.conf: 177
+    dir=database
+    # ethereumj.conf: 190
+    incompatibleDatabaseBehavior=EXIT
+    # ethereumj.conf: 196
+    prune {
+        # ethereumj.conf: 197
+        enabled=true
+        # ethereumj.conf: 202
+        maxDepth=192
+    }
+    # ethereumj.conf: 183
+    reset=false
+}
+# ethereumj.conf: 335
+dump {
+    # ethereumj.conf: 348
+    block=-1
+    # ethereumj.conf: 352
+    clean {
+        # ethereumj.conf: 352
+        on {
+            # ethereumj.conf: 352
+            restart=true
+        }
+    }
+    # ethereumj.conf: 342
+    dir=dmp
+    # ethereumj.conf: 341
+    full=false
+    # ethereumj.conf: 349
+    style=pretty
+}
+# ethereumj.conf: 152
+genesis="frontier.json"
+# ethereumj.conf: 383
+hello {
+    # ethereumj.conf: 383
+    phrase=Dev
+}
+# ethereumj.conf: 398
+keyvalue {
+    # ethereumj.conf: 398
+    datasource=leveldb
+}
+# ethereumj.conf: 273
+mine {
+    # ethereumj.conf: 292
+    coinbase="0000000000000000000000000000000000000000"
+    # ethereumj.conf: 283
+    cpuMineThreads=4
+    # ethereumj.conf: 296
+    extraData="EthereumJ powered"
+    # ethereumj.conf: 289
+    fullDataSet=true
+    # ethereumj.conf: 305
+    minBlockTimeoutMsec=0
+    # ethereumj.conf: 302
+    minGasPrice=15000000000
+    # ethereumj.conf: 279
+    start=false
+    # ethereumj.conf: 309
+    startNonce=null
+}
+# ethereumj.conf: 1-79
+peer {
+    # ethereumj.conf: 94
+    active=[]
+    # ethereumj.conf: 123
+    capabilities=[
+        # ethereumj.conf: 123
+        eth
+    ]
+    # ethereumj.conf: 132
+    channel {
+        # ethereumj.conf: 132
+        read {
+            # ethereumj.conf: 132
+            timeout=90
+        }
+    }
+    # ethereumj.conf: 127
+    connection {
+        # ethereumj.conf: 127
+        timeout=2
+    }
+    # ethereumj.conf: 1
+    discovery {
+        # ethereumj.conf: 54
+        bind {
+            # ethereumj.conf: 54
+            ip=""
+        }
+        # ethereumj.conf: 8
+        enabled=true
+        # ethereumj.conf: 46
+        external {
+            # ethereumj.conf: 46
+            ip=null
+        }
+        # ethereumj.conf: 13
+        ip {
+            # ethereumj.conf: 13
+            list=[
+                # ethereumj.conf: 15
+                "frontier-2.ether.camp:30303",
+                # ethereumj.conf: 16
+                "frontier-3.ether.camp:30303",
+                # ethereumj.conf: 17
+                "frontier-4.ether.camp:30303",
+                # ethereumj.conf: 20
+                "5.1.83.226:30303",
+                # ethereumj.conf: 23
+                "54.94.239.50:30303",
+                # ethereumj.conf: 24
+                "52.16.188.185:30303",
+                # ethereumj.conf: 25
+                "52.74.57.123:30303",
+                # ethereumj.conf: 28
+                "163.172.157.114:30303",
+                # ethereumj.conf: 29
+                "136.243.154.244:30303",
+                # ethereumj.conf: 30
+                "88.212.206.70:30303",
+                # ethereumj.conf: 31
+                "37.128.191.230:30303",
+                # ethereumj.conf: 32
+                "46.20.235.22:30303",
+                # ethereumj.conf: 33
+                "216.158.85.185:30303",
+                # ethereumj.conf: 34
+                "212.47.247.103:30303",
+                # ethereumj.conf: 35
+                "138.201.144.135:30303",
+                # ethereumj.conf: 36
+                "45.55.33.62:30303",
+                # ethereumj.conf: 37
+                "188.166.255.12:30303",
+                # ethereumj.conf: 38
+                "159.203.210.80:30303",
+                # ethereumj.conf: 39
+                "51.15.42.252:30303",
+                # ethereumj.conf: 40
+                "163.172.171.38:30303"
+            ]
+        }
+        # ethereumj.conf: 62
+        persist=true
+        # ethereumj.conf: 58
+        public {
+            # ethereumj.conf: 58
+            home {
+                # ethereumj.conf: 58
+                node=true
+            }
+        }
+        # ethereumj.conf: 71
+        touchMaxNodes=100
+        # ethereumj.conf: 67
+        touchPeriod=600
+        # ethereumj.conf: 76
+        workers=8
+    }
+    # ethereumj.conf: 82
+    listen {
+        # ethereumj.conf: 82
+        port=30303
+    }
+    # ethereumj.conf: 119
+    maxActivePeers=30
+    # ethereumj.conf: 85
+    networkId=1
+    # ethereumj.conf: 134
+    p2p {
+        # ethereumj.conf: 144
+        eip8=true
+        # ethereumj.conf: 140
+        framing {
+            # ethereumj.conf: 140
+            maxSize=32768
+        }
+    }
+    # ethereumj.conf: 105
+    trusted=[]
+}
+# ethereumj.conf: 379
+play {
+    # ethereumj.conf: 379
+    vm=true
+}
+# ethereumj.conf: 400
+record {
+    # ethereumj.conf: 400
+    blocks=false
+}
+# ethereumj.conf: 395
+root {
+    # ethereumj.conf: 395
+    hash {
+        # ethereumj.conf: 395
+        start=null
+    }
+}
+# ethereumj.conf: 313
+solc {
+    # ethereumj.conf: 316
+    path=null
+}
+# ethereumj.conf: 235
+sync {
+    # ethereumj.conf: 239
+    enabled=true
+    # ethereumj.conf: 269
+    exitOnBlockConflict=false
+    # ethereumj.conf: 242
+    fast {
+        # ethereumj.conf: 246
+        enabled=false
+    }
+    # ethereumj.conf: 260
+    peer {
+        # ethereumj.conf: 260
+        count=30
+    }
+}
+# ethereumj.conf: 372
+trace {
+    # ethereumj.conf: 372
+    startblock=-1
+}
+# ethereumj.conf: 328-332
+transaction {
+    # ethereumj.conf: 328
+    approve {
+        # ethereumj.conf: 328
+        timeout=15
+    }
+    # ethereumj.conf: 332
+    outdated {
+        # ethereumj.conf: 332
+        threshold=10
+    }
+}
+# ethereumj.conf: 362
+vm {
+    # ethereumj.conf: 362
+    structured {
+        # ethereumj.conf: 365
+        compressed=true
+        # ethereumj.conf: 364
+        dir=vmtrace
+        # ethereumj.conf: 366
+        initStorageLimit=10000
+        # ethereumj.conf: 363
+        trace=false
+    }
+}
+
+13:59:38.480 INFO [general]  Running private-genesis.json,  core version: 1.4.1-RELEASE
+13:59:38.481 INFO [general]  git.hash: [441119d]
+13:59:38.481 INFO [general]  build.time: [GMT]-[06/Feb/2017]-[11:23]
+13:59:38.485 INFO [general]  Created database version file
+13:59:38.486 INFO [general]  capability eth version: [62, 63]
+13:59:38.486 INFO [general]  capability shh version: [3]
+13:59:38.486 INFO [general]  capability bzz version: [0]
+13:59:38.930 INFO [general]  External IP wasn't set, using checkip.amazonaws.com to identify it...
+13:59:39.170 INFO [general]  External address identified: 85.91.180.48
+13:59:39.170 INFO [general]  EthereumJ node started: enode://26ba1aadaf59d7607ad7f437146927d79e80312f026cfa635c6b2ccf2c5d3521f5812ca2beb3b295b14f97110e6448c1c7ff68f14c5328d43a3c62b44143e9b1@85.91.180.48:55555
+13:59:39.202 INFO [general]  Config ( yes ): default properties from resource 'ethereumj.conf'
+13:59:39.202 INFO [general]  Config ( no  ): user properties from -Dethereumj.conf.res resource 'null'
+13:59:39.203 INFO [general]  Config ( no  ): user properties from resource 'user.conf'
+13:59:39.203 INFO [general]  Config ( no  ): user properties from file 'C:\Projects\demo\config\ethereumj.conf'
+13:59:39.204 INFO [general]  Config ( no  ): test properties from resource 'test-ethereumj.conf'
+13:59:39.204 INFO [general]  Config ( no  ): test properties from resource 'test-user.conf'
+13:59:39.204 INFO [general]  Config ( no  ): user properties from -Dethereumj.conf.file file 'null'
+13:59:39.204 INFO [general]  Config ( no  ): config passed via constructor
+13:59:39.205 DEBUG [general]  Config trace: # ethereumj.conf: 166-401
+blockchain {
+    # ethereumj.conf: 166
+    config {
+        # ethereumj.conf: 166
+        name=main
+    }
+    # ethereumj.conf: 401
+    only=false
+}
+# ethereumj.conf: 407
+blocks {
+    # ethereumj.conf: 407
+    loader=""
+}
+# ethereumj.conf: 207
+cache {
+    # ethereumj.conf: 228
+    blockQueueSize=32
+    # ethereumj.conf: 209
+    flush {
+        # ethereumj.conf: 218
+        blocks=0
+        # ethereumj.conf: 221
+        shortSyncFlush=true
+        # ethereumj.conf: 213
+        writeCacheSize=64
+    }
+    # ethereumj.conf: 231
+    headerQueueSize=8
+    # ethereumj.conf: 225
+    stateCacheSize=256
+}
+# ethereumj.conf: 174
+database {
+    # ethereumj.conf: 177
+    dir=database
+    # ethereumj.conf: 190
+    incompatibleDatabaseBehavior=EXIT
+    # ethereumj.conf: 196
+    prune {
+        # ethereumj.conf: 197
+        enabled=true
+        # ethereumj.conf: 202
+        maxDepth=192
+    }
+    # ethereumj.conf: 183
+    reset=false
+}
+# ethereumj.conf: 335
+dump {
+    # ethereumj.conf: 348
+    block=-1
+    # ethereumj.conf: 352
+    clean {
+        # ethereumj.conf: 352
+        on {
+            # ethereumj.conf: 352
+            restart=true
+        }
+    }
+    # ethereumj.conf: 342
+    dir=dmp
+    # ethereumj.conf: 341
+    full=false
+    # ethereumj.conf: 349
+    style=pretty
+}
+# ethereumj.conf: 152
+genesis="frontier.json"
+# ethereumj.conf: 383
+hello {
+    # ethereumj.conf: 383
+    phrase=Dev
+}
+# ethereumj.conf: 398
+keyvalue {
+    # ethereumj.conf: 398
+    datasource=leveldb
+}
+# ethereumj.conf: 273
+mine {
+    # ethereumj.conf: 292
+    coinbase="0000000000000000000000000000000000000000"
+    # ethereumj.conf: 283
+    cpuMineThreads=4
+    # ethereumj.conf: 296
+    extraData="EthereumJ powered"
+    # ethereumj.conf: 289
+    fullDataSet=true
+    # ethereumj.conf: 305
+    minBlockTimeoutMsec=0
+    # ethereumj.conf: 302
+    minGasPrice=15000000000
+    # ethereumj.conf: 279
+    start=false
+    # ethereumj.conf: 309
+    startNonce=null
+}
+# ethereumj.conf: 1-79
+peer {
+    # ethereumj.conf: 94
+    active=[]
+    # ethereumj.conf: 123
+    capabilities=[
+        # ethereumj.conf: 123
+        eth
+    ]
+    # ethereumj.conf: 132
+    channel {
+        # ethereumj.conf: 132
+        read {
+            # ethereumj.conf: 132
+            timeout=90
+        }
+    }
+    # ethereumj.conf: 127
+    connection {
+        # ethereumj.conf: 127
+        timeout=2
+    }
+    # ethereumj.conf: 1
+    discovery {
+        # ethereumj.conf: 54
+        bind {
+            # ethereumj.conf: 54
+            ip=""
+        }
+        # ethereumj.conf: 8
+        enabled=true
+        # ethereumj.conf: 46
+        external {
+            # ethereumj.conf: 46
+            ip=null
+        }
+        # ethereumj.conf: 13
+        ip {
+            # ethereumj.conf: 13
+            list=[
+                # ethereumj.conf: 15
+                "frontier-2.ether.camp:30303",
+                # ethereumj.conf: 16
+                "frontier-3.ether.camp:30303",
+                # ethereumj.conf: 17
+                "frontier-4.ether.camp:30303",
+                # ethereumj.conf: 20
+                "5.1.83.226:30303",
+                # ethereumj.conf: 23
+                "54.94.239.50:30303",
+                # ethereumj.conf: 24
+                "52.16.188.185:30303",
+                # ethereumj.conf: 25
+                "52.74.57.123:30303",
+                # ethereumj.conf: 28
+                "163.172.157.114:30303",
+                # ethereumj.conf: 29
+                "136.243.154.244:30303",
+                # ethereumj.conf: 30
+                "88.212.206.70:30303",
+                # ethereumj.conf: 31
+                "37.128.191.230:30303",
+                # ethereumj.conf: 32
+                "46.20.235.22:30303",
+                # ethereumj.conf: 33
+                "216.158.85.185:30303",
+                # ethereumj.conf: 34
+                "212.47.247.103:30303",
+                # ethereumj.conf: 35
+                "138.201.144.135:30303",
+                # ethereumj.conf: 36
+                "45.55.33.62:30303",
+                # ethereumj.conf: 37
+                "188.166.255.12:30303",
+                # ethereumj.conf: 38
+                "159.203.210.80:30303",
+                # ethereumj.conf: 39
+                "51.15.42.252:30303",
+                # ethereumj.conf: 40
+                "163.172.171.38:30303"
+            ]
+        }
+        # ethereumj.conf: 62
+        persist=true
+        # ethereumj.conf: 58
+        public {
+            # ethereumj.conf: 58
+            home {
+                # ethereumj.conf: 58
+                node=true
+            }
+        }
+        # ethereumj.conf: 71
+        touchMaxNodes=100
+        # ethereumj.conf: 67
+        touchPeriod=600
+        # ethereumj.conf: 76
+        workers=8
+    }
+    # ethereumj.conf: 82
+    listen {
+        # ethereumj.conf: 82
+        port=30303
+    }
+    # ethereumj.conf: 119
+    maxActivePeers=30
+    # ethereumj.conf: 85
+    networkId=1
+    # ethereumj.conf: 134
+    p2p {
+        # ethereumj.conf: 144
+        eip8=true
+        # ethereumj.conf: 140
+        framing {
+            # ethereumj.conf: 140
+            maxSize=32768
+        }
+    }
+    # ethereumj.conf: 105
+    trusted=[]
+}
+# ethereumj.conf: 379
+play {
+    # ethereumj.conf: 379
+    vm=true
+}
+# ethereumj.conf: 400
+record {
+    # ethereumj.conf: 400
+    blocks=false
+}
+# ethereumj.conf: 395
+root {
+    # ethereumj.conf: 395
+    hash {
+        # ethereumj.conf: 395
+        start=null
+    }
+}
+# ethereumj.conf: 313
+solc {
+    # ethereumj.conf: 316
+    path=null
+}
+# ethereumj.conf: 235
+sync {
+    # ethereumj.conf: 239
+    enabled=true
+    # ethereumj.conf: 269
+    exitOnBlockConflict=false
+    # ethereumj.conf: 242
+    fast {
+        # ethereumj.conf: 246
+        enabled=false
+    }
+    # ethereumj.conf: 260
+    peer {
+        # ethereumj.conf: 260
+        count=30
+    }
+}
+# ethereumj.conf: 372
+trace {
+    # ethereumj.conf: 372
+    startblock=-1
+}
+# ethereumj.conf: 328-332
+transaction {
+    # ethereumj.conf: 328
+    approve {
+        # ethereumj.conf: 328
+        timeout=15
+    }
+    # ethereumj.conf: 332
+    outdated {
+        # ethereumj.conf: 332
+        threshold=10
+    }
+}
+# ethereumj.conf: 362
+vm {
+    # ethereumj.conf: 362
+    structured {
+        # ethereumj.conf: 365
+        compressed=true
+        # ethereumj.conf: 364
+        dir=vmtrace
+        # ethereumj.conf: 366
+        initStorageLimit=10000
+        # ethereumj.conf: 363
+        trace=false
+    }
+}
+
+13:59:39.220 INFO [general]  leveldb key-value data source created.
+13:59:39.224 DEBUG [db]  ~> LevelDbDataSource.init(): state
+13:59:39.225 DEBUG [db]  Opening database
+13:59:39.231 DEBUG [db]  Initializing new or existing database: 'state'
+13:59:39.423 DEBUG [db]  <~ LevelDbDataSource.init(): state
+13:59:39.467 INFO [general]  leveldb key-value data source created.
+13:59:39.467 DEBUG [db]  ~> LevelDbDataSource.init(): journal
+13:59:39.467 DEBUG [db]  Opening database
+13:59:39.468 DEBUG [db]  Initializing new or existing database: 'journal'
+13:59:39.493 DEBUG [db]  <~ LevelDbDataSource.init(): journal
+13:59:39.516 INFO [general]  leveldb key-value data source created.
+13:59:39.516 DEBUG [db]  ~> LevelDbDataSource.init(): index
+13:59:39.516 DEBUG [db]  Opening database
+13:59:39.517 DEBUG [db]  Initializing new or existing database: 'index'
+13:59:39.540 DEBUG [db]  <~ LevelDbDataSource.init(): index
+13:59:39.541 INFO [general]  leveldb key-value data source created.
+13:59:39.541 DEBUG [db]  ~> LevelDbDataSource.init(): block
+13:59:39.541 DEBUG [db]  Opening database
+13:59:39.542 DEBUG [db]  Initializing new or existing database: 'block'
+13:59:39.565 DEBUG [db]  <~ LevelDbDataSource.init(): block
+13:59:39.572 INFO [general]  leveldb key-value data source created.
+13:59:39.572 DEBUG [db]  ~> LevelDbDataSource.init(): transactions
+13:59:39.572 DEBUG [db]  Opening database
+13:59:39.573 DEBUG [db]  Initializing new or existing database: 'transactions'
+13:59:39.597 DEBUG [db]  <~ LevelDbDataSource.init(): transactions
+13:59:39.869 INFO [general]  DB is empty - adding Genesis
+13:59:39.875 INFO [general]  Genesis block loaded
+13:59:39.895 INFO [general]  Bind address wasn't set, Punching to identify it...
+13:59:39.918 INFO [general]  UDP local bound to: 192.168.11.124
+13:59:39.922 INFO [sync]  Sync Manager: OFF
+13:59:40.573 INFO [general]  Ethereum listener added
+13:59:40.573 INFO [sampleMiner]  Sample component created. Listening for ethereum events...
+13:59:40.573 INFO [sampleMiner]  Generating Full Dataset (may take up to 10 min if not cached)...
+13:59:40.583 INFO [mine]  Calculating full dataset...
+13:59:40.583 INFO [mine]  Calculating light dataset...
+13:59:40.608 INFO [net]  Listening for incoming connections, port: [55555] 
+13:59:40.617 INFO [net]  NodeId: [26ba1aadaf59d7607ad7f437146927d79e80312f026cfa635c6b2ccf2c5d3521f5812ca2beb3b295b14f97110e6448c1c7ff68f14c5328d43a3c62b44143e9b1] 
+13:59:40.658 INFO [sync]  Sync Manager: ON
+13:59:40.658 INFO [sync]  Initializing SyncManager.
+13:59:40.664 INFO [sync]  FastSync: looking for best block number...
+13:59:40.667 WARN [o.a.e.e.p.PrivateEthereumFacadeProvider]  couldn't copy files: Source 'privateIntegration\mine-dag.dat' does not exist
+13:59:40.775 INFO [general]  Ethereum listener added
+13:59:41.318 INFO [net]  submit tx: [TransactionData [hash=50981cb72a3fbad11e136fa3d4a215d1609dc5ae58ab4af629a340c8b72a7b22  nonce=00, gasPrice=104c533c00, gas=035f48, receiveAddress=defe833b759012a672234fe95b21e7fc671943a0, sendAddress=defe833b759012a672234fe95b21e7fc671943a0, value=8ac7230489e80000, data=, signatureV=27, signatureR=bf609f5ee71b64fec7dc60114135b279283d5aba93dad1680ef86e4deee8d927, signatureS=7d7ac9475444963e8783afe97be112cd771a8556d297ca0692aeee3345ccda5d]]
+13:59:41.323 DEBUG [pending]  PendingTransactionUpdate: (Tot:   1)  NEW_PENDING : defe833b        0 #0 (660c1d <~ 000000) Txs:0, Unc: 0 []
+13:59:41.330 DEBUG [pending]  Wire transaction list added: total: 1, new: 1, valid (added to pending): [TransactionData [hash=50981cb72a3fbad11e136fa3d4a215d1609dc5ae58ab4af629a340c8b72a7b22  nonce=00, gasPrice=104c533c00, gas=035f48, receiveAddress=defe833b759012a672234fe95b21e7fc671943a0, sendAddress=defe833b759012a672234fe95b21e7fc671943a0, value=8ac7230489e80000, data=, signatureV=27, signatureR=bf609f5ee71b64fec7dc60114135b279283d5aba93dad1680ef86e4deee8d927, signatureS=7d7ac9475444963e8783afe97be112cd771a8556d297ca0692aeee3345ccda5d]] (current #of known txs: 1)
+13:59:43.746 TRACE [sync]  Node list obtained from discovery: empty
+13:59:45.739 INFO [sync]  FastSync: waiting for at least 5 peers or 54 sec to select pivot block... (0 peers so far)
+13:59:46.759 TRACE [sync]  Node list obtained from discovery: empty
+13:59:47.739 INFO [mine]  Light dataset calculated.
+13:59:47.741 INFO [mine]  Writing light dataset to C:\Projects\demo\privateIntegration\mine-dag-light.dat
+13:59:48.010 ERROR [general]  Uncaught exception
+java.lang.OutOfMemoryError: Java heap space
+	at org.ethereum.mine.EthashAlgo.calcDataset(EthashAlgo.java:130)
+	at org.ethereum.mine.Ethash.getFullDataset(Ethash.java:131)
+	at org.adridadou.ethereum.ethj.provider.PrivateEthereumFacadeProvider$MinerNode.run(PrivateEthereumFacadeProvider.java:159)
+	at java.lang.Thread.run(Thread.java:748)
+13:59:49.763 TRACE [sync]  Node list obtained from discovery: empty
+13:59:49.923 INFO [sync]  Sync state: PivotBlock (9 of 60), last block #0, best known #0
+13:59:50.762 INFO [sync]  FastSync: waiting for at least 5 peers or 49 sec to select pivot block... (0 peers so far)
+13:59:52.766 TRACE [sync]  Node list obtained from discovery: empty
+13:59:55.766 INFO [sync]  FastSync: waiting for at least 5 peers or 44 sec to select pivot block... (0 peers so far)
+13:59:55.769 TRACE [sync]  Node list obtained from discovery: empty
+13:59:58.773 TRACE [sync]  Node list obtained from discovery: empty
+13:59:59.923 INFO [sync]  Sync state: PivotBlock (19 of 60), last block #0, best known #0
+14:00:00.771 INFO [sync]  FastSync: waiting for at least 5 peers or 39 sec to select pivot block... (0 peers so far)
+14:00:01.780 TRACE [sync]  Node list obtained from discovery: empty
+14:00:04.786 TRACE [sync]  Node list obtained from discovery: empty
+14:00:05.779 INFO [sync]  FastSync: waiting for at least 5 peers or 34 sec to select pivot block... (0 peers so far)
+14:00:07.790 TRACE [sync]  Node list obtained from discovery: empty
+14:00:09.923 INFO [sync]  Sync state: PivotBlock (29 of 60), last block #0, best known #0
+14:00:10.661 INFO [sync]  Peer stats:
+Active peers
+============
+Other connected peers
+============
+
+14:00:10.661 INFO [sync]  
+
+14:00:10.783 INFO [sync]  FastSync: waiting for at least 5 peers or 29 sec to select pivot block... (0 peers so far)
+14:00:10.799 TRACE [sync]  Node list obtained from discovery: empty
+14:03:00.888 INFO [c.e.d.ExtraTest]  Starting ExtraTest on WLA-ICT-45 with PID 4008 (started by vandebroeck.k in C:\Projects\demo)
+14:03:00.893 DEBUG [c.e.d.ExtraTest]  Running with Spring Boot v1.5.7.RELEASE, Spring v4.3.11.RELEASE
+14:03:00.893 INFO [c.e.d.ExtraTest]  No active profile set, falling back to default profiles: default
+14:03:01.585 DEBUG [o.j.logging]  Logging Provider: org.jboss.logging.Slf4jLoggerProvider found via system property
+14:03:03.727 INFO [c.e.d.ExtraTest]  Started ExtraTest in 3.159 seconds (JVM running for 5.188)
+14:03:03.846 INFO [general]  Config ( yes ): default properties from resource 'ethereumj.conf'
+14:03:03.846 INFO [general]  Config ( no  ): user properties from -Dethereumj.conf.res resource 'null'
+14:03:03.846 INFO [general]  Config ( no  ): user properties from resource 'user.conf'
+14:03:03.846 INFO [general]  Config ( no  ): user properties from file 'C:\Projects\demo\config\ethereumj.conf'
+14:03:03.847 INFO [general]  Config ( no  ): test properties from resource 'test-ethereumj.conf'
+14:03:03.847 INFO [general]  Config ( no  ): test properties from resource 'test-user.conf'
+14:03:03.847 INFO [general]  Config ( no  ): user properties from -Dethereumj.conf.file file 'null'
+14:03:03.847 INFO [general]  Config ( no  ): config passed via constructor
+14:03:03.848 DEBUG [general]  Config trace: # ethereumj.conf: 166-401
+blockchain {
+    # ethereumj.conf: 166
+    config {
+        # ethereumj.conf: 166
+        name=main
+    }
+    # ethereumj.conf: 401
+    only=false
+}
+# ethereumj.conf: 407
+blocks {
+    # ethereumj.conf: 407
+    loader=""
+}
+# ethereumj.conf: 207
+cache {
+    # ethereumj.conf: 228
+    blockQueueSize=32
+    # ethereumj.conf: 209
+    flush {
+        # ethereumj.conf: 218
+        blocks=0
+        # ethereumj.conf: 221
+        shortSyncFlush=true
+        # ethereumj.conf: 213
+        writeCacheSize=64
+    }
+    # ethereumj.conf: 231
+    headerQueueSize=8
+    # ethereumj.conf: 225
+    stateCacheSize=256
+}
+# ethereumj.conf: 174
+database {
+    # ethereumj.conf: 177
+    dir=database
+    # ethereumj.conf: 190
+    incompatibleDatabaseBehavior=EXIT
+    # ethereumj.conf: 196
+    prune {
+        # ethereumj.conf: 197
+        enabled=true
+        # ethereumj.conf: 202
+        maxDepth=192
+    }
+    # ethereumj.conf: 183
+    reset=false
+}
+# ethereumj.conf: 335
+dump {
+    # ethereumj.conf: 348
+    block=-1
+    # ethereumj.conf: 352
+    clean {
+        # ethereumj.conf: 352
+        on {
+            # ethereumj.conf: 352
+            restart=true
+        }
+    }
+    # ethereumj.conf: 342
+    dir=dmp
+    # ethereumj.conf: 341
+    full=false
+    # ethereumj.conf: 349
+    style=pretty
+}
+# ethereumj.conf: 152
+genesis="frontier.json"
+# ethereumj.conf: 383
+hello {
+    # ethereumj.conf: 383
+    phrase=Dev
+}
+# ethereumj.conf: 398
+keyvalue {
+    # ethereumj.conf: 398
+    datasource=leveldb
+}
+# ethereumj.conf: 273
+mine {
+    # ethereumj.conf: 292
+    coinbase="0000000000000000000000000000000000000000"
+    # ethereumj.conf: 283
+    cpuMineThreads=4
+    # ethereumj.conf: 296
+    extraData="EthereumJ powered"
+    # ethereumj.conf: 289
+    fullDataSet=true
+    # ethereumj.conf: 305
+    minBlockTimeoutMsec=0
+    # ethereumj.conf: 302
+    minGasPrice=15000000000
+    # ethereumj.conf: 279
+    start=false
+    # ethereumj.conf: 309
+    startNonce=null
+}
+# ethereumj.conf: 1-79
+peer {
+    # ethereumj.conf: 94
+    active=[]
+    # ethereumj.conf: 123
+    capabilities=[
+        # ethereumj.conf: 123
+        eth
+    ]
+    # ethereumj.conf: 132
+    channel {
+        # ethereumj.conf: 132
+        read {
+            # ethereumj.conf: 132
+            timeout=90
+        }
+    }
+    # ethereumj.conf: 127
+    connection {
+        # ethereumj.conf: 127
+        timeout=2
+    }
+    # ethereumj.conf: 1
+    discovery {
+        # ethereumj.conf: 54
+        bind {
+            # ethereumj.conf: 54
+            ip=""
+        }
+        # ethereumj.conf: 8
+        enabled=true
+        # ethereumj.conf: 46
+        external {
+            # ethereumj.conf: 46
+            ip=null
+        }
+        # ethereumj.conf: 13
+        ip {
+            # ethereumj.conf: 13
+            list=[
+                # ethereumj.conf: 15
+                "frontier-2.ether.camp:30303",
+                # ethereumj.conf: 16
+                "frontier-3.ether.camp:30303",
+                # ethereumj.conf: 17
+                "frontier-4.ether.camp:30303",
+                # ethereumj.conf: 20
+                "5.1.83.226:30303",
+                # ethereumj.conf: 23
+                "54.94.239.50:30303",
+                # ethereumj.conf: 24
+                "52.16.188.185:30303",
+                # ethereumj.conf: 25
+                "52.74.57.123:30303",
+                # ethereumj.conf: 28
+                "163.172.157.114:30303",
+                # ethereumj.conf: 29
+                "136.243.154.244:30303",
+                # ethereumj.conf: 30
+                "88.212.206.70:30303",
+                # ethereumj.conf: 31
+                "37.128.191.230:30303",
+                # ethereumj.conf: 32
+                "46.20.235.22:30303",
+                # ethereumj.conf: 33
+                "216.158.85.185:30303",
+                # ethereumj.conf: 34
+                "212.47.247.103:30303",
+                # ethereumj.conf: 35
+                "138.201.144.135:30303",
+                # ethereumj.conf: 36
+                "45.55.33.62:30303",
+                # ethereumj.conf: 37
+                "188.166.255.12:30303",
+                # ethereumj.conf: 38
+                "159.203.210.80:30303",
+                # ethereumj.conf: 39
+                "51.15.42.252:30303",
+                # ethereumj.conf: 40
+                "163.172.171.38:30303"
+            ]
+        }
+        # ethereumj.conf: 62
+        persist=true
+        # ethereumj.conf: 58
+        public {
+            # ethereumj.conf: 58
+            home {
+                # ethereumj.conf: 58
+                node=true
+            }
+        }
+        # ethereumj.conf: 71
+        touchMaxNodes=100
+        # ethereumj.conf: 67
+        touchPeriod=600
+        # ethereumj.conf: 76
+        workers=8
+    }
+    # ethereumj.conf: 82
+    listen {
+        # ethereumj.conf: 82
+        port=30303
+    }
+    # ethereumj.conf: 119
+    maxActivePeers=30
+    # ethereumj.conf: 85
+    networkId=1
+    # ethereumj.conf: 134
+    p2p {
+        # ethereumj.conf: 144
+        eip8=true
+        # ethereumj.conf: 140
+        framing {
+            # ethereumj.conf: 140
+            maxSize=32768
+        }
+    }
+    # ethereumj.conf: 105
+    trusted=[]
+}
+# ethereumj.conf: 379
+play {
+    # ethereumj.conf: 379
+    vm=true
+}
+# ethereumj.conf: 400
+record {
+    # ethereumj.conf: 400
+    blocks=false
+}
+# ethereumj.conf: 395
+root {
+    # ethereumj.conf: 395
+    hash {
+        # ethereumj.conf: 395
+        start=null
+    }
+}
+# ethereumj.conf: 313
+solc {
+    # ethereumj.conf: 316
+    path=null
+}
+# ethereumj.conf: 235
+sync {
+    # ethereumj.conf: 239
+    enabled=true
+    # ethereumj.conf: 269
+    exitOnBlockConflict=false
+    # ethereumj.conf: 242
+    fast {
+        # ethereumj.conf: 246
+        enabled=false
+    }
+    # ethereumj.conf: 260
+    peer {
+        # ethereumj.conf: 260
+        count=30
+    }
+}
+# ethereumj.conf: 372
+trace {
+    # ethereumj.conf: 372
+    startblock=-1
+}
+# ethereumj.conf: 328-332
+transaction {
+    # ethereumj.conf: 328
+    approve {
+        # ethereumj.conf: 328
+        timeout=15
+    }
+    # ethereumj.conf: 332
+    outdated {
+        # ethereumj.conf: 332
+        threshold=10
+    }
+}
+# ethereumj.conf: 362
+vm {
+    # ethereumj.conf: 362
+    structured {
+        # ethereumj.conf: 365
+        compressed=true
+        # ethereumj.conf: 364
+        dir=vmtrace
+        # ethereumj.conf: 366
+        initStorageLimit=10000
+        # ethereumj.conf: 363
+        trace=false
+    }
+}
+
+14:03:05.670 INFO [mine]  Loading light dataset from C:\Projects\demo\database\mine-dag-light.dat
+14:03:05.795 INFO [mine]  Dataset loaded.
+14:03:06.335 DEBUG [pending]  New best block from another fork: #1 (a2a49c <~ bdb784) Txs:1, Unc: 0, old best: #1 (a2a49c <~ bdb784) Txs:1, Unc: 0, ancestor: #1 (a2a49c <~ bdb784) Txs:1, Unc: 0
+14:03:06.520 DEBUG [pending]  PendingStateImpl.processBest: #2 (550206 <~ a2a49c) Txs:1, Unc: 0
+14:03:06.843 DEBUG [pending]  PendingStateImpl.processBest: #3 (0b7e0e <~ 550206) Txs:1, Unc: 0
+14:03:06.937 DEBUG [pending]  PendingStateImpl.processBest: #4 (78c3c6 <~ 0b7e0e) Txs:1, Unc: 0
+14:33:36.753 INFO [c.e.d.ExtraTest]  Starting ExtraTest on WLA-ICT-45 with PID 17388 (started by vandebroeck.k in C:\Projects\demo)
+14:33:36.756 DEBUG [c.e.d.ExtraTest]  Running with Spring Boot v1.5.7.RELEASE, Spring v4.3.11.RELEASE
+14:33:36.756 INFO [c.e.d.ExtraTest]  No active profile set, falling back to default profiles: default
+14:33:37.267 DEBUG [o.j.logging]  Logging Provider: org.jboss.logging.Slf4jLoggerProvider found via system property
+14:33:39.211 INFO [c.e.d.ExtraTest]  Started ExtraTest in 2.793 seconds (JVM running for 4.924)
+14:33:39.327 INFO [general]  Config ( yes ): default properties from resource 'ethereumj.conf'
+14:33:39.327 INFO [general]  Config ( no  ): user properties from -Dethereumj.conf.res resource 'null'
+14:33:39.328 INFO [general]  Config ( no  ): user properties from resource 'user.conf'
+14:33:39.328 INFO [general]  Config ( no  ): user properties from file 'C:\Projects\demo\config\ethereumj.conf'
+14:33:39.329 INFO [general]  Config ( no  ): test properties from resource 'test-ethereumj.conf'
+14:33:39.329 INFO [general]  Config ( no  ): test properties from resource 'test-user.conf'
+14:33:39.329 INFO [general]  Config ( no  ): user properties from -Dethereumj.conf.file file 'null'
+14:33:39.329 INFO [general]  Config ( no  ): config passed via constructor
+14:33:39.330 DEBUG [general]  Config trace: # ethereumj.conf: 166-401
+blockchain {
+    # ethereumj.conf: 166
+    config {
+        # ethereumj.conf: 166
+        name=main
+    }
+    # ethereumj.conf: 401
+    only=false
+}
+# ethereumj.conf: 407
+blocks {
+    # ethereumj.conf: 407
+    loader=""
+}
+# ethereumj.conf: 207
+cache {
+    # ethereumj.conf: 228
+    blockQueueSize=32
+    # ethereumj.conf: 209
+    flush {
+        # ethereumj.conf: 218
+        blocks=0
+        # ethereumj.conf: 221
+        shortSyncFlush=true
+        # ethereumj.conf: 213
+        writeCacheSize=64
+    }
+    # ethereumj.conf: 231
+    headerQueueSize=8
+    # ethereumj.conf: 225
+    stateCacheSize=256
+}
+# ethereumj.conf: 174
+database {
+    # ethereumj.conf: 177
+    dir=database
+    # ethereumj.conf: 190
+    incompatibleDatabaseBehavior=EXIT
+    # ethereumj.conf: 196
+    prune {
+        # ethereumj.conf: 197
+        enabled=true
+        # ethereumj.conf: 202
+        maxDepth=192
+    }
+    # ethereumj.conf: 183
+    reset=false
+}
+# ethereumj.conf: 335
+dump {
+    # ethereumj.conf: 348
+    block=-1
+    # ethereumj.conf: 352
+    clean {
+        # ethereumj.conf: 352
+        on {
+            # ethereumj.conf: 352
+            restart=true
+        }
+    }
+    # ethereumj.conf: 342
+    dir=dmp
+    # ethereumj.conf: 341
+    full=false
+    # ethereumj.conf: 349
+    style=pretty
+}
+# ethereumj.conf: 152
+genesis="frontier.json"
+# ethereumj.conf: 383
+hello {
+    # ethereumj.conf: 383
+    phrase=Dev
+}
+# ethereumj.conf: 398
+keyvalue {
+    # ethereumj.conf: 398
+    datasource=leveldb
+}
+# ethereumj.conf: 273
+mine {
+    # ethereumj.conf: 292
+    coinbase="0000000000000000000000000000000000000000"
+    # ethereumj.conf: 283
+    cpuMineThreads=4
+    # ethereumj.conf: 296
+    extraData="EthereumJ powered"
+    # ethereumj.conf: 289
+    fullDataSet=true
+    # ethereumj.conf: 305
+    minBlockTimeoutMsec=0
+    # ethereumj.conf: 302
+    minGasPrice=15000000000
+    # ethereumj.conf: 279
+    start=false
+    # ethereumj.conf: 309
+    startNonce=null
+}
+# ethereumj.conf: 1-79
+peer {
+    # ethereumj.conf: 94
+    active=[]
+    # ethereumj.conf: 123
+    capabilities=[
+        # ethereumj.conf: 123
+        eth
+    ]
+    # ethereumj.conf: 132
+    channel {
+        # ethereumj.conf: 132
+        read {
+            # ethereumj.conf: 132
+            timeout=90
+        }
+    }
+    # ethereumj.conf: 127
+    connection {
+        # ethereumj.conf: 127
+        timeout=2
+    }
+    # ethereumj.conf: 1
+    discovery {
+        # ethereumj.conf: 54
+        bind {
+            # ethereumj.conf: 54
+            ip=""
+        }
+        # ethereumj.conf: 8
+        enabled=true
+        # ethereumj.conf: 46
+        external {
+            # ethereumj.conf: 46
+            ip=null
+        }
+        # ethereumj.conf: 13
+        ip {
+            # ethereumj.conf: 13
+            list=[
+                # ethereumj.conf: 15
+                "frontier-2.ether.camp:30303",
+                # ethereumj.conf: 16
+                "frontier-3.ether.camp:30303",
+                # ethereumj.conf: 17
+                "frontier-4.ether.camp:30303",
+                # ethereumj.conf: 20
+                "5.1.83.226:30303",
+                # ethereumj.conf: 23
+                "54.94.239.50:30303",
+                # ethereumj.conf: 24
+                "52.16.188.185:30303",
+                # ethereumj.conf: 25
+                "52.74.57.123:30303",
+                # ethereumj.conf: 28
+                "163.172.157.114:30303",
+                # ethereumj.conf: 29
+                "136.243.154.244:30303",
+                # ethereumj.conf: 30
+                "88.212.206.70:30303",
+                # ethereumj.conf: 31
+                "37.128.191.230:30303",
+                # ethereumj.conf: 32
+                "46.20.235.22:30303",
+                # ethereumj.conf: 33
+                "216.158.85.185:30303",
+                # ethereumj.conf: 34
+                "212.47.247.103:30303",
+                # ethereumj.conf: 35
+                "138.201.144.135:30303",
+                # ethereumj.conf: 36
+                "45.55.33.62:30303",
+                # ethereumj.conf: 37
+                "188.166.255.12:30303",
+                # ethereumj.conf: 38
+                "159.203.210.80:30303",
+                # ethereumj.conf: 39
+                "51.15.42.252:30303",
+                # ethereumj.conf: 40
+                "163.172.171.38:30303"
+            ]
+        }
+        # ethereumj.conf: 62
+        persist=true
+        # ethereumj.conf: 58
+        public {
+            # ethereumj.conf: 58
+            home {
+                # ethereumj.conf: 58
+                node=true
+            }
+        }
+        # ethereumj.conf: 71
+        touchMaxNodes=100
+        # ethereumj.conf: 67
+        touchPeriod=600
+        # ethereumj.conf: 76
+        workers=8
+    }
+    # ethereumj.conf: 82
+    listen {
+        # ethereumj.conf: 82
+        port=30303
+    }
+    # ethereumj.conf: 119
+    maxActivePeers=30
+    # ethereumj.conf: 85
+    networkId=1
+    # ethereumj.conf: 134
+    p2p {
+        # ethereumj.conf: 144
+        eip8=true
+        # ethereumj.conf: 140
+        framing {
+            # ethereumj.conf: 140
+            maxSize=32768
+        }
+    }
+    # ethereumj.conf: 105
+    trusted=[]
+}
+# ethereumj.conf: 379
+play {
+    # ethereumj.conf: 379
+    vm=true
+}
+# ethereumj.conf: 400
+record {
+    # ethereumj.conf: 400
+    blocks=false
+}
+# ethereumj.conf: 395
+root {
+    # ethereumj.conf: 395
+    hash {
+        # ethereumj.conf: 395
+        start=null
+    }
+}
+# ethereumj.conf: 313
+solc {
+    # ethereumj.conf: 316
+    path=null
+}
+# ethereumj.conf: 235
+sync {
+    # ethereumj.conf: 239
+    enabled=true
+    # ethereumj.conf: 269
+    exitOnBlockConflict=false
+    # ethereumj.conf: 242
+    fast {
+        # ethereumj.conf: 246
+        enabled=false
+    }
+    # ethereumj.conf: 260
+    peer {
+        # ethereumj.conf: 260
+        count=30
+    }
+}
+# ethereumj.conf: 372
+trace {
+    # ethereumj.conf: 372
+    startblock=-1
+}
+# ethereumj.conf: 328-332
+transaction {
+    # ethereumj.conf: 328
+    approve {
+        # ethereumj.conf: 328
+        timeout=15
+    }
+    # ethereumj.conf: 332
+    outdated {
+        # ethereumj.conf: 332
+        threshold=10
+    }
+}
+# ethereumj.conf: 362
+vm {
+    # ethereumj.conf: 362
+    structured {
+        # ethereumj.conf: 365
+        compressed=true
+        # ethereumj.conf: 364
+        dir=vmtrace
+        # ethereumj.conf: 366
+        initStorageLimit=10000
+        # ethereumj.conf: 363
+        trace=false
+    }
+}
+
+14:33:41.152 INFO [mine]  Loading light dataset from C:\Projects\demo\database\mine-dag-light.dat
+14:33:41.277 INFO [mine]  Dataset loaded.
+14:33:41.368 DEBUG [pending]  New best block from another fork: #1 (bbad50 <~ bdb784) Txs:1, Unc: 0, old best: #1 (bbad50 <~ bdb784) Txs:1, Unc: 0, ancestor: #1 (bbad50 <~ bdb784) Txs:1, Unc: 0
+14:33:41.840 DEBUG [pending]  PendingStateImpl.processBest: #2 (160cf8 <~ bbad50) Txs:1, Unc: 0
+14:33:42.013 DEBUG [pending]  PendingStateImpl.processBest: #3 (0f364c <~ 160cf8) Txs:1, Unc: 0
+14:33:42.242 DEBUG [pending]  PendingStateImpl.processBest: #4 (e7d039 <~ 0f364c) Txs:1, Unc: 0
+14:43:57.061 INFO [c.e.d.ExtraTest]  Starting ExtraTest on WLA-ICT-45 with PID 7500 (started by vandebroeck.k in C:\Projects\demo)
+14:43:57.063 DEBUG [c.e.d.ExtraTest]  Running with Spring Boot v1.5.7.RELEASE, Spring v4.3.11.RELEASE
+14:43:57.063 INFO [c.e.d.ExtraTest]  No active profile set, falling back to default profiles: default
+14:43:57.684 DEBUG [o.j.logging]  Logging Provider: org.jboss.logging.Slf4jLoggerProvider found via system property
+14:43:59.814 INFO [c.e.d.ExtraTest]  Started ExtraTest in 3.057 seconds (JVM running for 5.433)
+14:43:59.909 INFO [general]  Starting EthereumJ...
+14:44:00.652 INFO [general]  Config ( yes ): default properties from resource 'ethereumj.conf'
+14:44:00.652 INFO [general]  Config ( no  ): user properties from -Dethereumj.conf.res resource 'null'
+14:44:00.652 INFO [general]  Config ( no  ): user properties from resource 'user.conf'
+14:44:00.653 INFO [general]  Config ( no  ): user properties from file 'C:\Projects\demo\config\ethereumj.conf'
+14:44:00.653 INFO [general]  Config ( no  ): test properties from resource 'test-ethereumj.conf'
+14:44:00.653 INFO [general]  Config ( no  ): test properties from resource 'test-user.conf'
+14:44:00.653 INFO [general]  Config ( no  ): user properties from -Dethereumj.conf.file file 'null'
+14:44:00.653 INFO [general]  Config ( no  ): config passed via constructor
+14:44:00.655 DEBUG [general]  Config trace: # ethereumj.conf: 166-401
+blockchain {
+    # ethereumj.conf: 166
+    config {
+        # ethereumj.conf: 166
+        name=main
+    }
+    # ethereumj.conf: 401
+    only=false
+}
+# ethereumj.conf: 407
+blocks {
+    # ethereumj.conf: 407
+    loader=""
+}
+# ethereumj.conf: 207
+cache {
+    # ethereumj.conf: 228
+    blockQueueSize=32
+    # ethereumj.conf: 209
+    flush {
+        # ethereumj.conf: 218
+        blocks=0
+        # ethereumj.conf: 221
+        shortSyncFlush=true
+        # ethereumj.conf: 213
+        writeCacheSize=64
+    }
+    # ethereumj.conf: 231
+    headerQueueSize=8
+    # ethereumj.conf: 225
+    stateCacheSize=256
+}
+# ethereumj.conf: 174
+database {
+    # ethereumj.conf: 177
+    dir=database
+    # ethereumj.conf: 190
+    incompatibleDatabaseBehavior=EXIT
+    # ethereumj.conf: 196
+    prune {
+        # ethereumj.conf: 197
+        enabled=true
+        # ethereumj.conf: 202
+        maxDepth=192
+    }
+    # ethereumj.conf: 183
+    reset=false
+}
+# ethereumj.conf: 335
+dump {
+    # ethereumj.conf: 348
+    block=-1
+    # ethereumj.conf: 352
+    clean {
+        # ethereumj.conf: 352
+        on {
+            # ethereumj.conf: 352
+            restart=true
+        }
+    }
+    # ethereumj.conf: 342
+    dir=dmp
+    # ethereumj.conf: 341
+    full=false
+    # ethereumj.conf: 349
+    style=pretty
+}
+# ethereumj.conf: 152
+genesis="frontier.json"
+# ethereumj.conf: 383
+hello {
+    # ethereumj.conf: 383
+    phrase=Dev
+}
+# ethereumj.conf: 398
+keyvalue {
+    # ethereumj.conf: 398
+    datasource=leveldb
+}
+# ethereumj.conf: 273
+mine {
+    # ethereumj.conf: 292
+    coinbase="0000000000000000000000000000000000000000"
+    # ethereumj.conf: 283
+    cpuMineThreads=4
+    # ethereumj.conf: 296
+    extraData="EthereumJ powered"
+    # ethereumj.conf: 289
+    fullDataSet=true
+    # ethereumj.conf: 305
+    minBlockTimeoutMsec=0
+    # ethereumj.conf: 302
+    minGasPrice=15000000000
+    # ethereumj.conf: 279
+    start=false
+    # ethereumj.conf: 309
+    startNonce=null
+}
+# ethereumj.conf: 1-79
+peer {
+    # ethereumj.conf: 94
+    active=[]
+    # ethereumj.conf: 123
+    capabilities=[
+        # ethereumj.conf: 123
+        eth
+    ]
+    # ethereumj.conf: 132
+    channel {
+        # ethereumj.conf: 132
+        read {
+            # ethereumj.conf: 132
+            timeout=90
+        }
+    }
+    # ethereumj.conf: 127
+    connection {
+        # ethereumj.conf: 127
+        timeout=2
+    }
+    # ethereumj.conf: 1
+    discovery {
+        # ethereumj.conf: 54
+        bind {
+            # ethereumj.conf: 54
+            ip=""
+        }
+        # ethereumj.conf: 8
+        enabled=true
+        # ethereumj.conf: 46
+        external {
+            # ethereumj.conf: 46
+            ip=null
+        }
+        # ethereumj.conf: 13
+        ip {
+            # ethereumj.conf: 13
+            list=[
+                # ethereumj.conf: 15
+                "frontier-2.ether.camp:30303",
+                # ethereumj.conf: 16
+                "frontier-3.ether.camp:30303",
+                # ethereumj.conf: 17
+                "frontier-4.ether.camp:30303",
+                # ethereumj.conf: 20
+                "5.1.83.226:30303",
+                # ethereumj.conf: 23
+                "54.94.239.50:30303",
+                # ethereumj.conf: 24
+                "52.16.188.185:30303",
+                # ethereumj.conf: 25
+                "52.74.57.123:30303",
+                # ethereumj.conf: 28
+                "163.172.157.114:30303",
+                # ethereumj.conf: 29
+                "136.243.154.244:30303",
+                # ethereumj.conf: 30
+                "88.212.206.70:30303",
+                # ethereumj.conf: 31
+                "37.128.191.230:30303",
+                # ethereumj.conf: 32
+                "46.20.235.22:30303",
+                # ethereumj.conf: 33
+                "216.158.85.185:30303",
+                # ethereumj.conf: 34
+                "212.47.247.103:30303",
+                # ethereumj.conf: 35
+                "138.201.144.135:30303",
+                # ethereumj.conf: 36
+                "45.55.33.62:30303",
+                # ethereumj.conf: 37
+                "188.166.255.12:30303",
+                # ethereumj.conf: 38
+                "159.203.210.80:30303",
+                # ethereumj.conf: 39
+                "51.15.42.252:30303",
+                # ethereumj.conf: 40
+                "163.172.171.38:30303"
+            ]
+        }
+        # ethereumj.conf: 62
+        persist=true
+        # ethereumj.conf: 58
+        public {
+            # ethereumj.conf: 58
+            home {
+                # ethereumj.conf: 58
+                node=true
+            }
+        }
+        # ethereumj.conf: 71
+        touchMaxNodes=100
+        # ethereumj.conf: 67
+        touchPeriod=600
+        # ethereumj.conf: 76
+        workers=8
+    }
+    # ethereumj.conf: 82
+    listen {
+        # ethereumj.conf: 82
+        port=30303
+    }
+    # ethereumj.conf: 119
+    maxActivePeers=30
+    # ethereumj.conf: 85
+    networkId=1
+    # ethereumj.conf: 134
+    p2p {
+        # ethereumj.conf: 144
+        eip8=true
+        # ethereumj.conf: 140
+        framing {
+            # ethereumj.conf: 140
+            maxSize=32768
+        }
+    }
+    # ethereumj.conf: 105
+    trusted=[]
+}
+# ethereumj.conf: 379
+play {
+    # ethereumj.conf: 379
+    vm=true
+}
+# ethereumj.conf: 400
+record {
+    # ethereumj.conf: 400
+    blocks=false
+}
+# ethereumj.conf: 395
+root {
+    # ethereumj.conf: 395
+    hash {
+        # ethereumj.conf: 395
+        start=null
+    }
+}
+# ethereumj.conf: 313
+solc {
+    # ethereumj.conf: 316
+    path=null
+}
+# ethereumj.conf: 235
+sync {
+    # ethereumj.conf: 239
+    enabled=true
+    # ethereumj.conf: 269
+    exitOnBlockConflict=false
+    # ethereumj.conf: 242
+    fast {
+        # ethereumj.conf: 246
+        enabled=false
+    }
+    # ethereumj.conf: 260
+    peer {
+        # ethereumj.conf: 260
+        count=30
+    }
+}
+# ethereumj.conf: 372
+trace {
+    # ethereumj.conf: 372
+    startblock=-1
+}
+# ethereumj.conf: 328-332
+transaction {
+    # ethereumj.conf: 328
+    approve {
+        # ethereumj.conf: 328
+        timeout=15
+    }
+    # ethereumj.conf: 332
+    outdated {
+        # ethereumj.conf: 332
+        threshold=10
+    }
+}
+# ethereumj.conf: 362
+vm {
+    # ethereumj.conf: 362
+    structured {
+        # ethereumj.conf: 365
+        compressed=true
+        # ethereumj.conf: 364
+        dir=vmtrace
+        # ethereumj.conf: 366
+        initStorageLimit=10000
+        # ethereumj.conf: 363
+        trace=false
+    }
+}
+
+14:44:00.672 INFO [general]  Running ropsten.json,  core version: 1.4.1-RELEASE
+14:44:00.672 INFO [general]  git.hash: [441119d]
+14:44:00.672 INFO [general]  build.time: [GMT]-[06/Feb/2017]-[11:23]
+14:44:00.673 INFO [general]  Database directory location: 'database-ropsten', version: 4
+14:44:00.674 INFO [general]  capability eth version: [62, 63]
+14:44:00.674 INFO [general]  capability shh version: [3]
+14:44:00.674 INFO [general]  capability bzz version: [0]
+14:44:01.073 INFO [general]  External IP wasn't set, using checkip.amazonaws.com to identify it...
+14:44:01.308 INFO [general]  External address identified: 85.91.180.48
+14:44:01.308 INFO [general]  EthereumJ node started: enode://f3b0bbc676af57f656a31c493ef49e8f3e811ea584db4e17b00acf5716ca559ee293ad5da16c6ab313bc4ffed9a53dd91bda48f39e7693ef4da940d1c5a48262@85.91.180.48:30303
+14:44:01.339 INFO [general]  Config ( yes ): default properties from resource 'ethereumj.conf'
+14:44:01.339 INFO [general]  Config ( no  ): user properties from -Dethereumj.conf.res resource 'null'
+14:44:01.339 INFO [general]  Config ( no  ): user properties from resource 'user.conf'
+14:44:01.339 INFO [general]  Config ( no  ): user properties from file 'C:\Projects\demo\config\ethereumj.conf'
+14:44:01.340 INFO [general]  Config ( no  ): test properties from resource 'test-ethereumj.conf'
+14:44:01.340 INFO [general]  Config ( no  ): test properties from resource 'test-user.conf'
+14:44:01.340 INFO [general]  Config ( no  ): user properties from -Dethereumj.conf.file file 'null'
+14:44:01.340 INFO [general]  Config ( no  ): config passed via constructor
+14:44:01.341 DEBUG [general]  Config trace: # ethereumj.conf: 166-401
+blockchain {
+    # ethereumj.conf: 166
+    config {
+        # ethereumj.conf: 166
+        name=main
+    }
+    # ethereumj.conf: 401
+    only=false
+}
+# ethereumj.conf: 407
+blocks {
+    # ethereumj.conf: 407
+    loader=""
+}
+# ethereumj.conf: 207
+cache {
+    # ethereumj.conf: 228
+    blockQueueSize=32
+    # ethereumj.conf: 209
+    flush {
+        # ethereumj.conf: 218
+        blocks=0
+        # ethereumj.conf: 221
+        shortSyncFlush=true
+        # ethereumj.conf: 213
+        writeCacheSize=64
+    }
+    # ethereumj.conf: 231
+    headerQueueSize=8
+    # ethereumj.conf: 225
+    stateCacheSize=256
+}
+# ethereumj.conf: 174
+database {
+    # ethereumj.conf: 177
+    dir=database
+    # ethereumj.conf: 190
+    incompatibleDatabaseBehavior=EXIT
+    # ethereumj.conf: 196
+    prune {
+        # ethereumj.conf: 197
+        enabled=true
+        # ethereumj.conf: 202
+        maxDepth=192
+    }
+    # ethereumj.conf: 183
+    reset=false
+}
+# ethereumj.conf: 335
+dump {
+    # ethereumj.conf: 348
+    block=-1
+    # ethereumj.conf: 352
+    clean {
+        # ethereumj.conf: 352
+        on {
+            # ethereumj.conf: 352
+            restart=true
+        }
+    }
+    # ethereumj.conf: 342
+    dir=dmp
+    # ethereumj.conf: 341
+    full=false
+    # ethereumj.conf: 349
+    style=pretty
+}
+# ethereumj.conf: 152
+genesis="frontier.json"
+# ethereumj.conf: 383
+hello {
+    # ethereumj.conf: 383
+    phrase=Dev
+}
+# ethereumj.conf: 398
+keyvalue {
+    # ethereumj.conf: 398
+    datasource=leveldb
+}
+# ethereumj.conf: 273
+mine {
+    # ethereumj.conf: 292
+    coinbase="0000000000000000000000000000000000000000"
+    # ethereumj.conf: 283
+    cpuMineThreads=4
+    # ethereumj.conf: 296
+    extraData="EthereumJ powered"
+    # ethereumj.conf: 289
+    fullDataSet=true
+    # ethereumj.conf: 305
+    minBlockTimeoutMsec=0
+    # ethereumj.conf: 302
+    minGasPrice=15000000000
+    # ethereumj.conf: 279
+    start=false
+    # ethereumj.conf: 309
+    startNonce=null
+}
+# ethereumj.conf: 1-79
+peer {
+    # ethereumj.conf: 94
+    active=[]
+    # ethereumj.conf: 123
+    capabilities=[
+        # ethereumj.conf: 123
+        eth
+    ]
+    # ethereumj.conf: 132
+    channel {
+        # ethereumj.conf: 132
+        read {
+            # ethereumj.conf: 132
+            timeout=90
+        }
+    }
+    # ethereumj.conf: 127
+    connection {
+        # ethereumj.conf: 127
+        timeout=2
+    }
+    # ethereumj.conf: 1
+    discovery {
+        # ethereumj.conf: 54
+        bind {
+            # ethereumj.conf: 54
+            ip=""
+        }
+        # ethereumj.conf: 8
+        enabled=true
+        # ethereumj.conf: 46
+        external {
+            # ethereumj.conf: 46
+            ip=null
+        }
+        # ethereumj.conf: 13
+        ip {
+            # ethereumj.conf: 13
+            list=[
+                # ethereumj.conf: 15
+                "frontier-2.ether.camp:30303",
+                # ethereumj.conf: 16
+                "frontier-3.ether.camp:30303",
+                # ethereumj.conf: 17
+                "frontier-4.ether.camp:30303",
+                # ethereumj.conf: 20
+                "5.1.83.226:30303",
+                # ethereumj.conf: 23
+                "54.94.239.50:30303",
+                # ethereumj.conf: 24
+                "52.16.188.185:30303",
+                # ethereumj.conf: 25
+                "52.74.57.123:30303",
+                # ethereumj.conf: 28
+                "163.172.157.114:30303",
+                # ethereumj.conf: 29
+                "136.243.154.244:30303",
+                # ethereumj.conf: 30
+                "88.212.206.70:30303",
+                # ethereumj.conf: 31
+                "37.128.191.230:30303",
+                # ethereumj.conf: 32
+                "46.20.235.22:30303",
+                # ethereumj.conf: 33
+                "216.158.85.185:30303",
+                # ethereumj.conf: 34
+                "212.47.247.103:30303",
+                # ethereumj.conf: 35
+                "138.201.144.135:30303",
+                # ethereumj.conf: 36
+                "45.55.33.62:30303",
+                # ethereumj.conf: 37
+                "188.166.255.12:30303",
+                # ethereumj.conf: 38
+                "159.203.210.80:30303",
+                # ethereumj.conf: 39
+                "51.15.42.252:30303",
+                # ethereumj.conf: 40
+                "163.172.171.38:30303"
+            ]
+        }
+        # ethereumj.conf: 62
+        persist=true
+        # ethereumj.conf: 58
+        public {
+            # ethereumj.conf: 58
+            home {
+                # ethereumj.conf: 58
+                node=true
+            }
+        }
+        # ethereumj.conf: 71
+        touchMaxNodes=100
+        # ethereumj.conf: 67
+        touchPeriod=600
+        # ethereumj.conf: 76
+        workers=8
+    }
+    # ethereumj.conf: 82
+    listen {
+        # ethereumj.conf: 82
+        port=30303
+    }
+    # ethereumj.conf: 119
+    maxActivePeers=30
+    # ethereumj.conf: 85
+    networkId=1
+    # ethereumj.conf: 134
+    p2p {
+        # ethereumj.conf: 144
+        eip8=true
+        # ethereumj.conf: 140
+        framing {
+            # ethereumj.conf: 140
+            maxSize=32768
+        }
+    }
+    # ethereumj.conf: 105
+    trusted=[]
+}
+# ethereumj.conf: 379
+play {
+    # ethereumj.conf: 379
+    vm=true
+}
+# ethereumj.conf: 400
+record {
+    # ethereumj.conf: 400
+    blocks=false
+}
+# ethereumj.conf: 395
+root {
+    # ethereumj.conf: 395
+    hash {
+        # ethereumj.conf: 395
+        start=null
+    }
+}
+# ethereumj.conf: 313
+solc {
+    # ethereumj.conf: 316
+    path=null
+}
+# ethereumj.conf: 235
+sync {
+    # ethereumj.conf: 239
+    enabled=true
+    # ethereumj.conf: 269
+    exitOnBlockConflict=false
+    # ethereumj.conf: 242
+    fast {
+        # ethereumj.conf: 246
+        enabled=false
+    }
+    # ethereumj.conf: 260
+    peer {
+        # ethereumj.conf: 260
+        count=30
+    }
+}
+# ethereumj.conf: 372
+trace {
+    # ethereumj.conf: 372
+    startblock=-1
+}
+# ethereumj.conf: 328-332
+transaction {
+    # ethereumj.conf: 328
+    approve {
+        # ethereumj.conf: 328
+        timeout=15
+    }
+    # ethereumj.conf: 332
+    outdated {
+        # ethereumj.conf: 332
+        threshold=10
+    }
+}
+# ethereumj.conf: 362
+vm {
+    # ethereumj.conf: 362
+    structured {
+        # ethereumj.conf: 365
+        compressed=true
+        # ethereumj.conf: 364
+        dir=vmtrace
+        # ethereumj.conf: 366
+        initStorageLimit=10000
+        # ethereumj.conf: 363
+        trace=false
+    }
+}
+
+14:44:01.357 INFO [general]  leveldb key-value data source created.
+14:44:01.360 DEBUG [db]  ~> LevelDbDataSource.init(): state
+14:44:01.361 DEBUG [db]  Opening database
+14:44:01.368 DEBUG [db]  Initializing new or existing database: 'state'
+14:44:01.593 DEBUG [db]  <~ LevelDbDataSource.init(): state
+14:44:01.641 INFO [general]  leveldb key-value data source created.
+14:44:01.641 DEBUG [db]  ~> LevelDbDataSource.init(): journal
+14:44:01.641 DEBUG [db]  Opening database
+14:44:01.641 DEBUG [db]  Initializing new or existing database: 'journal'
+14:44:01.657 DEBUG [db]  <~ LevelDbDataSource.init(): journal
+14:44:01.685 INFO [general]  leveldb key-value data source created.
+14:44:01.685 DEBUG [db]  ~> LevelDbDataSource.init(): index
+14:44:01.685 DEBUG [db]  Opening database
+14:44:01.686 DEBUG [db]  Initializing new or existing database: 'index'
+14:44:01.702 DEBUG [db]  <~ LevelDbDataSource.init(): index
+14:44:01.703 INFO [general]  leveldb key-value data source created.
+14:44:01.703 DEBUG [db]  ~> LevelDbDataSource.init(): block
+14:44:01.703 DEBUG [db]  Opening database
+14:44:01.703 DEBUG [db]  Initializing new or existing database: 'block'
+14:44:01.719 DEBUG [db]  <~ LevelDbDataSource.init(): block
+14:44:01.725 INFO [general]  leveldb key-value data source created.
+14:44:01.725 DEBUG [db]  ~> LevelDbDataSource.init(): transactions
+14:44:01.725 DEBUG [db]  Opening database
+14:44:01.725 DEBUG [db]  Initializing new or existing database: 'transactions'
+14:44:01.742 DEBUG [db]  <~ LevelDbDataSource.init(): transactions
+14:44:02.044 INFO [general]  DB is empty - adding Genesis
+14:44:02.099 INFO [general]  Genesis block loaded
+14:44:02.117 INFO [general]  Bind address wasn't set, Punching to identify it...
+14:44:02.140 INFO [general]  UDP local bound to: 192.168.11.124
+14:44:02.141 INFO [discover]  Discovery UDPListener started
+14:44:02.145 INFO [sync]  Sync Manager: ON
+14:44:02.146 INFO [sync]  Initializing SyncManager.
+14:44:02.155 INFO [sync]  FastSync: looking for best block number...
+14:44:02.160 DEBUG [discover]  (tried.isEmpty()) Terminating discover after 0 rounds.
+14:44:02.549 INFO [discover]  Reading Node statistics from DB: 2 nodes.
+14:44:02.684 DEBUG [discover]  <===  [PingMessage (129)] NodeHandler[state: null, node: 94.242.229.203:30303, id=a8ee7fda]
+14:44:02.684 INFO [discover]  Pinging discovery nodes...
+14:44:02.714 DEBUG [discover]   +++ New node: NodeHandler[state: Discovered, node: 94.242.229.203:30303, id=a8ee7fda] Node{ host='94.242.229.203', port=30303, id=a8ee7fda50ebaafd1015d9900879fb7a06e53810160dec22837bf8c10bf3d8767789cbae6ee1ec4e3568b88821914cffb5bf806e818c26d5c18d6cf0f7329bf9}
+14:44:02.725 DEBUG [discover]  <===  [PingMessage (129)] NodeHandler[state: null, node: 94.242.229.4:40404, id=dc689787]
+14:44:02.726 DEBUG [discover]   +++ New node: NodeHandler[state: Discovered, node: 94.242.229.4:40404, id=dc689787] Node{ host='94.242.229.4', port=40404, id=dc689787bdd919e46001bd19f84c78dce14faab3a16cafa8118d8c096e2c5c7938c43d904e3c455e0e66505df686dc439aca4233be59872eb1539121de9e041b}
+14:44:02.922 INFO [net]  Listening for incoming connections, port: [30303] 
+14:44:02.926 INFO [net]  NodeId: [f3b0bbc676af57f656a31c493ef49e8f3e811ea584db4e17b00acf5716ca559ee293ad5da16c6ab313bc4ffed9a53dd91bda48f39e7693ef4da940d1c5a48262] 
+14:44:03.075 INFO [general]  Ethereum listener added
+14:44:03.158 DEBUG [discover]  (tried.isEmpty()) Terminating discover after 0 rounds.
+14:44:05.151 TRACE [sync]  Node list obtained from discovery: empty
+14:44:07.165 INFO [sync]  FastSync: waiting for at least 5 peers or 54 sec to select pivot block... (0 peers so far)
+14:44:08.155 TRACE [sync]  Node list obtained from discovery: empty
+14:44:09.361 DEBUG [discover]  (tried.isEmpty()) Terminating discover after 0 rounds.
+14:44:11.160 TRACE [sync]  Node list obtained from discovery: empty
+14:44:12.147 INFO [sync]  Sync state: PivotBlock (9 of 60), last block #0, best known #0
+14:44:12.170 INFO [sync]  FastSync: waiting for at least 5 peers or 49 sec to select pivot block... (0 peers so far)
+14:44:14.163 TRACE [sync]  Node list obtained from discovery: empty
+14:44:16.562 DEBUG [discover]  (tried.isEmpty()) Terminating discover after 0 rounds.
+14:44:17.165 TRACE [sync]  Node list obtained from discovery: empty
+14:44:17.175 INFO [sync]  FastSync: waiting for at least 5 peers or 44 sec to select pivot block... (0 peers so far)
+14:44:17.734 DEBUG [discover]  <===  [PingMessage (129)] NodeHandler[state: Discovered, node: 94.242.229.203:30303, id=a8ee7fda]
+14:44:17.746 DEBUG [discover]  <===  [PingMessage (129)] NodeHandler[state: Discovered, node: 94.242.229.4:40404, id=dc689787]
+14:44:20.169 TRACE [sync]  Node list obtained from discovery: empty
+14:44:22.146 INFO [sync]  Sync state: PivotBlock (19 of 60), last block #0, best known #0
+14:44:22.181 INFO [sync]  FastSync: waiting for at least 5 peers or 39 sec to select pivot block... (0 peers so far)
+14:44:23.173 TRACE [sync]  Node list obtained from discovery: empty
+14:44:23.762 DEBUG [discover]  (tried.isEmpty()) Terminating discover after 0 rounds.
+14:44:26.177 TRACE [sync]  Node list obtained from discovery: empty
+14:44:27.185 INFO [sync]  FastSync: waiting for at least 5 peers or 34 sec to select pivot block... (0 peers so far)
+14:44:29.179 TRACE [sync]  Node list obtained from discovery: empty
+14:44:30.964 DEBUG [discover]  (tried.isEmpty()) Terminating discover after 0 rounds.
+14:44:32.146 INFO [sync]  Sync state: PivotBlock (29 of 60), last block #0, best known #0
+14:44:32.149 INFO [sync]  Peer stats:
+Active peers
+============
+Other connected peers
+============
+
+14:44:32.149 INFO [sync]  
+
+14:44:32.187 TRACE [sync]  Node list obtained from discovery: empty
+14:44:32.188 INFO [sync]  FastSync: waiting for at least 5 peers or 29 sec to select pivot block... (0 peers so far)
+14:44:32.745 DEBUG [discover]  <===  [PingMessage (129)] NodeHandler[state: Discovered, node: 94.242.229.203:30303, id=a8ee7fda]
+14:44:32.764 DEBUG [discover]  <===  [PingMessage (129)] NodeHandler[state: Discovered, node: 94.242.229.4:40404, id=dc689787]
+14:44:33.161 DEBUG [discover]  (tried.isEmpty()) Terminating discover after 0 rounds.
+14:44:35.192 TRACE [sync]  Node list obtained from discovery: empty
+14:44:37.193 INFO [sync]  FastSync: waiting for at least 5 peers or 24 sec to select pivot block... (0 peers so far)
+14:44:38.165 DEBUG [discover]  (tried.isEmpty()) Terminating discover after 0 rounds.
+14:44:38.196 TRACE [sync]  Node list obtained from discovery: empty
+14:44:41.201 TRACE [sync]  Node list obtained from discovery: empty
+14:44:42.147 INFO [sync]  Sync state: PivotBlock (39 of 60), last block #0, best known #0
+14:44:42.198 INFO [sync]  FastSync: waiting for at least 5 peers or 19 sec to select pivot block... (0 peers so far)
+14:44:44.205 TRACE [sync]  Node list obtained from discovery: empty
+14:44:45.365 DEBUG [discover]  (tried.isEmpty()) Terminating discover after 0 rounds.
+14:44:47.201 INFO [sync]  FastSync: waiting for at least 5 peers or 14 sec to select pivot block... (0 peers so far)
+14:44:47.209 TRACE [sync]  Node list obtained from discovery: empty
+14:44:50.214 TRACE [sync]  Node list obtained from discovery: empty
+14:44:52.147 INFO [sync]  Sync state: PivotBlock (49 of 60), last block #0, best known #0
+14:44:52.204 INFO [sync]  FastSync: waiting for at least 5 peers or 9 sec to select pivot block... (0 peers so far)
+14:44:52.566 DEBUG [discover]  (tried.isEmpty()) Terminating discover after 0 rounds.
+14:44:53.218 TRACE [sync]  Node list obtained from discovery: empty
+14:44:56.222 TRACE [sync]  Node list obtained from discovery: empty
+14:44:57.211 INFO [sync]  FastSync: waiting for at least 5 peers or 4 sec to select pivot block... (0 peers so far)
+14:44:59.225 TRACE [sync]  Node list obtained from discovery: empty
+14:44:59.767 DEBUG [discover]  (tried.isEmpty()) Terminating discover after 0 rounds.
+14:45:02.147 INFO [sync]  Sync state: PivotBlock (59 of 60), last block #0, best known #0
+14:45:02.150 INFO [sync]  Peer stats:
+Active peers
+============
+Other connected peers
+============
+
+14:45:02.150 INFO [sync]  
+
+14:45:02.214 INFO [sync]  FastSync: waiting for at least 5 peers or 0 sec to select pivot block... (0 peers so far)
+14:45:02.228 TRACE [sync]  Node list obtained from discovery: empty
+14:45:02.799 INFO [discover]  Write Node statistics to DB: 2 nodes.
+14:45:03.164 DEBUG [discover]  (tried.isEmpty()) Terminating discover after 0 rounds.
+14:45:05.235 TRACE [sync]  Node list obtained from discovery: empty
+14:45:06.969 DEBUG [discover]  (tried.isEmpty()) Terminating discover after 0 rounds.
+14:45:07.218 INFO [sync]  FastSync: waiting for at least 5 peers or -5 sec to select pivot block... (0 peers so far)
+14:45:08.240 TRACE [sync]  Node list obtained from discovery: empty
+14:45:11.247 TRACE [sync]  Node list obtained from discovery: empty
+14:45:12.147 INFO [sync]  Sync state: PivotBlock (69 of 60), last block #0, best known #0
+14:45:12.225 INFO [sync]  FastSync: waiting for at least 5 peers or -10 sec to select pivot block... (0 peers so far)
+14:45:14.170 DEBUG [discover]  (tried.isEmpty()) Terminating discover after 0 rounds.
+14:45:14.257 TRACE [sync]  Node list obtained from discovery: empty
+14:45:17.231 INFO [sync]  FastSync: waiting for at least 5 peers or -15 sec to select pivot block... (0 peers so far)
+14:45:17.261 TRACE [sync]  Node list obtained from discovery: empty
+14:45:20.267 TRACE [sync]  Node list obtained from discovery: empty
+14:45:21.371 DEBUG [discover]  (tried.isEmpty()) Terminating discover after 0 rounds.
+14:45:22.147 INFO [sync]  Sync state: PivotBlock (79 of 60), last block #0, best known #0
+14:45:22.237 INFO [sync]  FastSync: waiting for at least 5 peers or -20 sec to select pivot block... (0 peers so far)
+14:45:23.270 TRACE [sync]  Node list obtained from discovery: empty
+14:45:26.272 TRACE [sync]  Node list obtained from discovery: empty
+14:45:27.242 INFO [sync]  FastSync: waiting for at least 5 peers or -25 sec to select pivot block... (0 peers so far)
+14:45:28.572 DEBUG [discover]  (tried.isEmpty()) Terminating discover after 0 rounds.
+14:45:29.278 TRACE [sync]  Node list obtained from discovery: empty
+14:45:32.148 INFO [sync]  Sync state: PivotBlock (89 of 60), last block #0, best known #0
+14:45:32.152 INFO [sync]  Peer stats:
+Active peers
+============
+Other connected peers
+============
+
+14:45:32.152 INFO [sync]  
+
+14:45:32.248 INFO [sync]  FastSync: waiting for at least 5 peers or -30 sec to select pivot block... (0 peers so far)
+14:45:32.281 TRACE [sync]  Node list obtained from discovery: empty
+14:45:33.165 DEBUG [discover]  (tried.isEmpty()) Terminating discover after 0 rounds.
+14:45:35.286 TRACE [sync]  Node list obtained from discovery: empty
+14:45:35.774 DEBUG [discover]  (tried.isEmpty()) Terminating discover after 0 rounds.
+14:45:37.251 INFO [sync]  FastSync: waiting for at least 5 peers or -35 sec to select pivot block... (0 peers so far)
+14:45:38.293 TRACE [sync]  Node list obtained from discovery: empty
+14:45:41.312 TRACE [sync]  Node list obtained from discovery: empty
+14:45:42.147 INFO [sync]  Sync state: PivotBlock (99 of 60), last block #0, best known #0
+14:45:42.257 INFO [sync]  FastSync: waiting for at least 5 peers or -40 sec to select pivot block... (0 peers so far)
+14:45:42.975 DEBUG [discover]  (tried.isEmpty()) Terminating discover after 0 rounds.
+14:45:44.314 TRACE [sync]  Node list obtained from discovery: empty
+14:45:47.260 INFO [sync]  FastSync: waiting for at least 5 peers or -45 sec to select pivot block... (0 peers so far)
+14:45:47.318 TRACE [sync]  Node list obtained from discovery: empty
+14:45:50.176 DEBUG [discover]  (tried.isEmpty()) Terminating discover after 0 rounds.
+14:45:50.321 TRACE [sync]  Node list obtained from discovery: empty
+14:45:52.148 INFO [sync]  Sync state: PivotBlock (109 of 60), last block #0, best known #0
+14:45:52.264 INFO [sync]  FastSync: waiting for at least 5 peers or -50 sec to select pivot block... (0 peers so far)
+14:45:53.326 TRACE [sync]  Node list obtained from discovery: empty
+14:45:56.332 TRACE [sync]  Node list obtained from discovery: empty
+14:45:57.267 INFO [sync]  FastSync: waiting for at least 5 peers or -55 sec to select pivot block... (0 peers so far)
+14:45:57.377 DEBUG [discover]  (tried.isEmpty()) Terminating discover after 0 rounds.
+14:45:59.335 TRACE [sync]  Node list obtained from discovery: empty
+14:46:02.148 INFO [sync]  Sync state: PivotBlock (119 of 60), last block #0, best known #0
+14:46:02.153 INFO [sync]  Peer stats:
+Active peers
+============
+Other connected peers
+============
+
+14:46:02.154 INFO [sync]  
+
+14:46:02.271 INFO [sync]  FastSync: waiting for at least 5 peers or -60 sec to select pivot block... (0 peers so far)
+14:46:02.341 TRACE [sync]  Node list obtained from discovery: empty
+14:46:02.807 INFO [discover]  Write Node statistics to DB: 2 nodes.
+14:46:03.166 DEBUG [discover]  (tried.isEmpty()) Terminating discover after 0 rounds.
+14:46:04.579 DEBUG [discover]  (tried.isEmpty()) Terminating discover after 0 rounds.
+14:46:05.345 TRACE [sync]  Node list obtained from discovery: empty
+14:46:07.275 INFO [sync]  FastSync: waiting for at least 5 peers or -65 sec to select pivot block... (0 peers so far)
+14:46:08.349 TRACE [sync]  Node list obtained from discovery: empty
+14:46:11.352 TRACE [sync]  Node list obtained from discovery: empty
+14:46:11.781 DEBUG [discover]  (tried.isEmpty()) Terminating discover after 0 rounds.
+14:46:12.147 INFO [sync]  Sync state: PivotBlock (129 of 60), last block #0, best known #0
+14:46:12.283 INFO [sync]  FastSync: waiting for at least 5 peers or -70 sec to select pivot block... (0 peers so far)
+14:46:14.358 TRACE [sync]  Node list obtained from discovery: empty
+14:46:17.287 INFO [sync]  FastSync: waiting for at least 5 peers or -75 sec to select pivot block... (0 peers so far)
+14:46:17.362 TRACE [sync]  Node list obtained from discovery: empty
+14:46:18.982 DEBUG [discover]  (tried.isEmpty()) Terminating discover after 0 rounds.
+14:46:20.366 TRACE [sync]  Node list obtained from discovery: empty
+14:46:22.149 INFO [sync]  Sync state: PivotBlock (139 of 60), last block #0, best known #0
+14:46:22.290 INFO [sync]  FastSync: waiting for at least 5 peers or -80 sec to select pivot block... (0 peers so far)
+14:46:23.371 TRACE [sync]  Node list obtained from discovery: empty
+14:46:26.184 DEBUG [discover]  (tried.isEmpty()) Terminating discover after 0 rounds.
+14:46:26.375 TRACE [sync]  Node list obtained from discovery: empty
+14:46:27.294 INFO [sync]  FastSync: waiting for at least 5 peers or -85 sec to select pivot block... (0 peers so far)
+14:46:29.379 TRACE [sync]  Node list obtained from discovery: empty
+14:46:32.149 INFO [sync]  Sync state: PivotBlock (149 of 60), last block #0, best known #0
+14:46:32.155 INFO [sync]  Peer stats:
+Active peers
+============
+Other connected peers
+============
+
+14:46:32.155 INFO [sync]  
+
+14:46:32.303 INFO [sync]  FastSync: waiting for at least 5 peers or -90 sec to select pivot block... (0 peers so far)
+14:46:32.383 TRACE [sync]  Node list obtained from discovery: empty
+14:46:33.167 DEBUG [discover]  (tried.isEmpty()) Terminating discover after 0 rounds.
+14:46:33.386 DEBUG [discover]  (tried.isEmpty()) Terminating discover after 0 rounds.
+14:46:35.385 TRACE [sync]  Node list obtained from discovery: empty
+14:46:37.308 INFO [sync]  FastSync: waiting for at least 5 peers or -95 sec to select pivot block... (0 peers so far)
+14:46:38.388 TRACE [sync]  Node list obtained from discovery: empty
+14:46:40.587 DEBUG [discover]  (tried.isEmpty()) Terminating discover after 0 rounds.
+14:46:41.393 TRACE [sync]  Node list obtained from discovery: empty
+14:46:42.149 INFO [sync]  Sync state: PivotBlock (159 of 60), last block #0, best known #0
+14:46:42.312 INFO [sync]  FastSync: waiting for at least 5 peers or -100 sec to select pivot block... (0 peers so far)
+14:46:44.400 TRACE [sync]  Node list obtained from discovery: empty
+14:46:47.316 INFO [sync]  FastSync: waiting for at least 5 peers or -105 sec to select pivot block... (0 peers so far)
+14:46:47.402 TRACE [sync]  Node list obtained from discovery: empty
+14:46:47.789 DEBUG [discover]  (tried.isEmpty()) Terminating discover after 0 rounds.
+14:46:50.405 TRACE [sync]  Node list obtained from discovery: empty
+14:46:52.149 INFO [sync]  Sync state: PivotBlock (169 of 60), last block #0, best known #0
+14:46:52.321 INFO [sync]  FastSync: waiting for at least 5 peers or -110 sec to select pivot block... (0 peers so far)
+14:46:53.409 TRACE [sync]  Node list obtained from discovery: empty
+14:46:54.990 DEBUG [discover]  (tried.isEmpty()) Terminating discover after 0 rounds.
+14:46:56.414 TRACE [sync]  Node list obtained from discovery: empty
+14:46:57.325 INFO [sync]  FastSync: waiting for at least 5 peers or -115 sec to select pivot block... (0 peers so far)
+14:46:59.417 TRACE [sync]  Node list obtained from discovery: empty
+14:47:02.149 INFO [sync]  Sync state: PivotBlock (179 of 60), last block #0, best known #0
+14:47:02.157 INFO [sync]  Peer stats:
+Active peers
+============
+Other connected peers
+============
+
+14:47:02.157 INFO [sync]  
+
+14:47:02.191 DEBUG [discover]  (tried.isEmpty()) Terminating discover after 0 rounds.
+14:47:02.329 INFO [sync]  FastSync: waiting for at least 5 peers or -120 sec to select pivot block... (0 peers so far)
+14:47:02.421 TRACE [sync]  Node list obtained from discovery: empty
+14:47:02.793 INFO [discover]  Write Node statistics to DB: 2 nodes.
+14:47:03.169 DEBUG [discover]  (tried.isEmpty()) Terminating discover after 0 rounds.
+14:47:05.426 TRACE [sync]  Node list obtained from discovery: empty
+14:47:07.337 INFO [sync]  FastSync: waiting for at least 5 peers or -125 sec to select pivot block... (0 peers so far)
+14:47:08.433 TRACE [sync]  Node list obtained from discovery: empty
+14:47:09.391 DEBUG [discover]  (tried.isEmpty()) Terminating discover after 0 rounds.
+14:47:11.439 TRACE [sync]  Node list obtained from discovery: empty
+14:47:12.149 INFO [sync]  Sync state: PivotBlock (189 of 60), last block #0, best known #0
+14:47:12.341 INFO [sync]  FastSync: waiting for at least 5 peers or -130 sec to select pivot block... (0 peers so far)
+14:47:14.443 TRACE [sync]  Node list obtained from discovery: empty
+14:47:16.592 DEBUG [discover]  (tried.isEmpty()) Terminating discover after 0 rounds.
+14:47:17.344 INFO [sync]  FastSync: waiting for at least 5 peers or -135 sec to select pivot block... (0 peers so far)
+14:47:17.447 TRACE [sync]  Node list obtained from discovery: empty
+14:47:20.461 TRACE [sync]  Node list obtained from discovery: empty
+14:47:22.149 INFO [sync]  Sync state: PivotBlock (199 of 60), last block #0, best known #0
+14:47:22.413 INFO [sync]  FastSync: waiting for at least 5 peers or -140 sec to select pivot block... (0 peers so far)
+14:47:23.468 TRACE [sync]  Node list obtained from discovery: empty
+14:47:23.793 DEBUG [discover]  (tried.isEmpty()) Terminating discover after 0 rounds.
+14:47:26.472 TRACE [sync]  Node list obtained from discovery: empty
+14:47:27.418 INFO [sync]  FastSync: waiting for at least 5 peers or -145 sec to select pivot block... (0 peers so far)
+14:47:29.475 TRACE [sync]  Node list obtained from discovery: empty
+14:47:30.994 DEBUG [discover]  (tried.isEmpty()) Terminating discover after 0 rounds.
+14:47:32.149 INFO [sync]  Sync state: PivotBlock (209 of 60), last block #0, best known #0
+14:47:32.158 INFO [sync]  Peer stats:
+Active peers
+============
+Other connected peers
+============
+
+14:47:32.158 INFO [sync]  
+
+14:47:32.421 INFO [sync]  FastSync: waiting for at least 5 peers or -150 sec to select pivot block... (0 peers so far)
+14:47:32.481 TRACE [sync]  Node list obtained from discovery: empty
+14:47:33.172 DEBUG [discover]  (tried.isEmpty()) Terminating discover after 0 rounds.
+14:47:35.488 TRACE [sync]  Node list obtained from discovery: empty
+14:47:37.424 INFO [sync]  FastSync: waiting for at least 5 peers or -155 sec to select pivot block... (0 peers so far)
+14:47:38.196 DEBUG [discover]  (tried.isEmpty()) Terminating discover after 0 rounds.
+14:47:38.493 TRACE [sync]  Node list obtained from discovery: empty
+14:47:41.498 TRACE [sync]  Node list obtained from discovery: empty
+14:47:42.149 INFO [sync]  Sync state: PivotBlock (219 of 60), last block #0, best known #0
+14:47:42.429 INFO [sync]  FastSync: waiting for at least 5 peers or -160 sec to select pivot block... (0 peers so far)
+14:47:44.501 TRACE [sync]  Node list obtained from discovery: empty
+14:47:45.397 DEBUG [discover]  (tried.isEmpty()) Terminating discover after 0 rounds.
+14:47:47.435 INFO [sync]  FastSync: waiting for at least 5 peers or -165 sec to select pivot block... (0 peers so far)
+14:47:47.506 TRACE [sync]  Node list obtained from discovery: empty
+14:47:50.515 TRACE [sync]  Node list obtained from discovery: empty
+14:47:52.150 INFO [sync]  Sync state: PivotBlock (229 of 60), last block #0, best known #0
+14:47:52.439 INFO [sync]  FastSync: waiting for at least 5 peers or -170 sec to select pivot block... (0 peers so far)
+14:47:52.599 DEBUG [discover]  (tried.isEmpty()) Terminating discover after 0 rounds.
+14:47:53.519 TRACE [sync]  Node list obtained from discovery: empty
+14:47:56.527 TRACE [sync]  Node list obtained from discovery: empty
+14:47:57.605 INFO [sync]  FastSync: waiting for at least 5 peers or -175 sec to select pivot block... (0 peers so far)
+14:47:59.533 TRACE [sync]  Node list obtained from discovery: empty
+14:47:59.800 DEBUG [discover]  (tried.isEmpty()) Terminating discover after 0 rounds.
+14:48:02.150 INFO [sync]  Sync state: PivotBlock (239 of 60), last block #0, best known #0
+14:48:02.159 INFO [sync]  Peer stats:
+Active peers
+============
+Other connected peers
+============
+
+14:48:02.159 INFO [sync]  
+
+14:48:02.536 TRACE [sync]  Node list obtained from discovery: empty
+14:48:02.691 INFO [sync]  FastSync: waiting for at least 5 peers or -180 sec to select pivot block... (0 peers so far)
+14:48:02.788 INFO [discover]  Write Node statistics to DB: 2 nodes.
+14:48:03.175 DEBUG [discover]  (tried.isEmpty()) Terminating discover after 0 rounds.
+14:48:05.540 TRACE [sync]  Node list obtained from discovery: empty
+14:48:07.001 DEBUG [discover]  (tried.isEmpty()) Terminating discover after 0 rounds.
+14:48:07.694 INFO [sync]  FastSync: waiting for at least 5 peers or -185 sec to select pivot block... (0 peers so far)
+14:48:08.544 TRACE [sync]  Node list obtained from discovery: empty
+14:48:11.557 TRACE [sync]  Node list obtained from discovery: empty
+14:48:12.150 INFO [sync]  Sync state: PivotBlock (249 of 60), last block #0, best known #0
+14:48:12.698 INFO [sync]  FastSync: waiting for at least 5 peers or -190 sec to select pivot block... (0 peers so far)
+14:48:14.202 DEBUG [discover]  (tried.isEmpty()) Terminating discover after 0 rounds.
+14:48:14.561 TRACE [sync]  Node list obtained from discovery: empty
+14:48:17.563 TRACE [sync]  Node list obtained from discovery: empty
+14:48:17.703 INFO [sync]  FastSync: waiting for at least 5 peers or -195 sec to select pivot block... (0 peers so far)
+14:48:20.566 TRACE [sync]  Node list obtained from discovery: empty
+14:48:21.403 DEBUG [discover]  (tried.isEmpty()) Terminating discover after 0 rounds.
+14:48:22.150 INFO [sync]  Sync state: PivotBlock (259 of 60), last block #0, best known #0
+14:48:22.706 INFO [sync]  FastSync: waiting for at least 5 peers or -200 sec to select pivot block... (0 peers so far)
+14:48:23.574 TRACE [sync]  Node list obtained from discovery: empty
+14:48:26.578 TRACE [sync]  Node list obtained from discovery: empty
+14:48:27.709 INFO [sync]  FastSync: waiting for at least 5 peers or -205 sec to select pivot block... (0 peers so far)
+14:48:28.604 DEBUG [discover]  (tried.isEmpty()) Terminating discover after 0 rounds.
+14:48:29.581 TRACE [sync]  Node list obtained from discovery: empty
+14:48:32.150 INFO [sync]  Sync state: PivotBlock (269 of 60), last block #0, best known #0
+14:48:32.160 INFO [sync]  Peer stats:
+Active peers
+============
+Other connected peers
+============
+
+14:48:32.160 INFO [sync]  
+
+14:48:32.587 TRACE [sync]  Node list obtained from discovery: empty
+14:48:32.713 INFO [sync]  FastSync: waiting for at least 5 peers or -210 sec to select pivot block... (0 peers so far)
+14:48:33.178 DEBUG [discover]  (tried.isEmpty()) Terminating discover after 0 rounds.
+14:48:35.590 TRACE [sync]  Node list obtained from discovery: empty
+14:48:35.806 DEBUG [discover]  (tried.isEmpty()) Terminating discover after 0 rounds.
+14:48:37.726 INFO [sync]  FastSync: waiting for at least 5 peers or -215 sec to select pivot block... (0 peers so far)
+14:48:38.600 TRACE [sync]  Node list obtained from discovery: empty
+14:48:41.614 TRACE [sync]  Node list obtained from discovery: empty
+14:48:42.151 INFO [sync]  Sync state: PivotBlock (279 of 60), last block #0, best known #0
+14:48:42.732 INFO [sync]  FastSync: waiting for at least 5 peers or -220 sec to select pivot block... (0 peers so far)
+14:48:43.008 DEBUG [discover]  (tried.isEmpty()) Terminating discover after 0 rounds.
+14:48:44.632 TRACE [sync]  Node list obtained from discovery: empty
+14:48:47.649 TRACE [sync]  Node list obtained from discovery: empty
+14:48:47.737 INFO [sync]  FastSync: waiting for at least 5 peers or -225 sec to select pivot block... (0 peers so far)
+14:48:50.208 DEBUG [discover]  (tried.isEmpty()) Terminating discover after 0 rounds.
+14:48:50.659 TRACE [sync]  Node list obtained from discovery: empty
+14:48:52.151 INFO [sync]  Sync state: PivotBlock (289 of 60), last block #0, best known #0
+14:48:52.740 INFO [sync]  FastSync: waiting for at least 5 peers or -230 sec to select pivot block... (0 peers so far)
+14:48:53.662 TRACE [sync]  Node list obtained from discovery: empty
+14:48:56.668 TRACE [sync]  Node list obtained from discovery: empty
+14:48:57.410 DEBUG [discover]  (tried.isEmpty()) Terminating discover after 0 rounds.
+14:48:57.744 INFO [sync]  FastSync: waiting for at least 5 peers or -235 sec to select pivot block... (0 peers so far)
+14:48:59.673 TRACE [sync]  Node list obtained from discovery: empty
+14:49:02.152 INFO [sync]  Sync state: PivotBlock (299 of 60), last block #0, best known #0
+14:49:02.162 INFO [sync]  Peer stats:
+Active peers
+============
+Other connected peers
+============
+
+14:49:02.162 INFO [sync]  
+
+14:49:02.686 TRACE [sync]  Node list obtained from discovery: empty
+14:49:02.808 INFO [sync]  FastSync: waiting for at least 5 peers or -240 sec to select pivot block... (0 peers so far)
+14:49:02.810 INFO [discover]  Write Node statistics to DB: 2 nodes.
+14:49:03.179 DEBUG [discover]  (tried.isEmpty()) Terminating discover after 0 rounds.
+14:49:04.610 DEBUG [discover]  (tried.isEmpty()) Terminating discover after 0 rounds.
+14:49:05.690 TRACE [sync]  Node list obtained from discovery: empty
+14:49:10.358 INFO [c.e.d.ExtraTest]  Starting ExtraTest on WLA-ICT-45 with PID 3320 (started by vandebroeck.k in C:\Projects\demo)
+14:49:10.361 DEBUG [c.e.d.ExtraTest]  Running with Spring Boot v1.5.7.RELEASE, Spring v4.3.11.RELEASE
+14:49:10.361 INFO [c.e.d.ExtraTest]  No active profile set, falling back to default profiles: default
+14:49:10.894 DEBUG [o.j.logging]  Logging Provider: org.jboss.logging.Slf4jLoggerProvider found via system property
+14:49:12.911 INFO [c.e.d.ExtraTest]  Started ExtraTest in 2.881 seconds (JVM running for 4.912)
+14:49:12.986 INFO [general]  Starting EthereumJ...
+14:49:13.592 INFO [general]  Config ( yes ): default properties from resource 'ethereumj.conf'
+14:49:13.592 INFO [general]  Config ( no  ): user properties from -Dethereumj.conf.res resource 'null'
+14:49:13.592 INFO [general]  Config ( no  ): user properties from resource 'user.conf'
+14:49:13.593 INFO [general]  Config ( no  ): user properties from file 'C:\Projects\demo\config\ethereumj.conf'
+14:49:13.593 INFO [general]  Config ( no  ): test properties from resource 'test-ethereumj.conf'
+14:49:13.593 INFO [general]  Config ( no  ): test properties from resource 'test-user.conf'
+14:49:13.594 INFO [general]  Config ( no  ): user properties from -Dethereumj.conf.file file 'null'
+14:49:13.594 INFO [general]  Config ( no  ): config passed via constructor
+14:49:13.595 DEBUG [general]  Config trace: # ethereumj.conf: 166-401
+blockchain {
+    # ethereumj.conf: 166
+    config {
+        # ethereumj.conf: 166
+        name=main
+    }
+    # ethereumj.conf: 401
+    only=false
+}
+# ethereumj.conf: 407
+blocks {
+    # ethereumj.conf: 407
+    loader=""
+}
+# ethereumj.conf: 207
+cache {
+    # ethereumj.conf: 228
+    blockQueueSize=32
+    # ethereumj.conf: 209
+    flush {
+        # ethereumj.conf: 218
+        blocks=0
+        # ethereumj.conf: 221
+        shortSyncFlush=true
+        # ethereumj.conf: 213
+        writeCacheSize=64
+    }
+    # ethereumj.conf: 231
+    headerQueueSize=8
+    # ethereumj.conf: 225
+    stateCacheSize=256
+}
+# ethereumj.conf: 174
+database {
+    # ethereumj.conf: 177
+    dir=database
+    # ethereumj.conf: 190
+    incompatibleDatabaseBehavior=EXIT
+    # ethereumj.conf: 196
+    prune {
+        # ethereumj.conf: 197
+        enabled=true
+        # ethereumj.conf: 202
+        maxDepth=192
+    }
+    # ethereumj.conf: 183
+    reset=false
+}
+# ethereumj.conf: 335
+dump {
+    # ethereumj.conf: 348
+    block=-1
+    # ethereumj.conf: 352
+    clean {
+        # ethereumj.conf: 352
+        on {
+            # ethereumj.conf: 352
+            restart=true
+        }
+    }
+    # ethereumj.conf: 342
+    dir=dmp
+    # ethereumj.conf: 341
+    full=false
+    # ethereumj.conf: 349
+    style=pretty
+}
+# ethereumj.conf: 152
+genesis="frontier.json"
+# ethereumj.conf: 383
+hello {
+    # ethereumj.conf: 383
+    phrase=Dev
+}
+# ethereumj.conf: 398
+keyvalue {
+    # ethereumj.conf: 398
+    datasource=leveldb
+}
+# ethereumj.conf: 273
+mine {
+    # ethereumj.conf: 292
+    coinbase="0000000000000000000000000000000000000000"
+    # ethereumj.conf: 283
+    cpuMineThreads=4
+    # ethereumj.conf: 296
+    extraData="EthereumJ powered"
+    # ethereumj.conf: 289
+    fullDataSet=true
+    # ethereumj.conf: 305
+    minBlockTimeoutMsec=0
+    # ethereumj.conf: 302
+    minGasPrice=15000000000
+    # ethereumj.conf: 279
+    start=false
+    # ethereumj.conf: 309
+    startNonce=null
+}
+# ethereumj.conf: 1-79
+peer {
+    # ethereumj.conf: 94
+    active=[]
+    # ethereumj.conf: 123
+    capabilities=[
+        # ethereumj.conf: 123
+        eth
+    ]
+    # ethereumj.conf: 132
+    channel {
+        # ethereumj.conf: 132
+        read {
+            # ethereumj.conf: 132
+            timeout=90
+        }
+    }
+    # ethereumj.conf: 127
+    connection {
+        # ethereumj.conf: 127
+        timeout=2
+    }
+    # ethereumj.conf: 1
+    discovery {
+        # ethereumj.conf: 54
+        bind {
+            # ethereumj.conf: 54
+            ip=""
+        }
+        # ethereumj.conf: 8
+        enabled=true
+        # ethereumj.conf: 46
+        external {
+            # ethereumj.conf: 46
+            ip=null
+        }
+        # ethereumj.conf: 13
+        ip {
+            # ethereumj.conf: 13
+            list=[
+                # ethereumj.conf: 15
+                "frontier-2.ether.camp:30303",
+                # ethereumj.conf: 16
+                "frontier-3.ether.camp:30303",
+                # ethereumj.conf: 17
+                "frontier-4.ether.camp:30303",
+                # ethereumj.conf: 20
+                "5.1.83.226:30303",
+                # ethereumj.conf: 23
+                "54.94.239.50:30303",
+                # ethereumj.conf: 24
+                "52.16.188.185:30303",
+                # ethereumj.conf: 25
+                "52.74.57.123:30303",
+                # ethereumj.conf: 28
+                "163.172.157.114:30303",
+                # ethereumj.conf: 29
+                "136.243.154.244:30303",
+                # ethereumj.conf: 30
+                "88.212.206.70:30303",
+                # ethereumj.conf: 31
+                "37.128.191.230:30303",
+                # ethereumj.conf: 32
+                "46.20.235.22:30303",
+                # ethereumj.conf: 33
+                "216.158.85.185:30303",
+                # ethereumj.conf: 34
+                "212.47.247.103:30303",
+                # ethereumj.conf: 35
+                "138.201.144.135:30303",
+                # ethereumj.conf: 36
+                "45.55.33.62:30303",
+                # ethereumj.conf: 37
+                "188.166.255.12:30303",
+                # ethereumj.conf: 38
+                "159.203.210.80:30303",
+                # ethereumj.conf: 39
+                "51.15.42.252:30303",
+                # ethereumj.conf: 40
+                "163.172.171.38:30303"
+            ]
+        }
+        # ethereumj.conf: 62
+        persist=true
+        # ethereumj.conf: 58
+        public {
+            # ethereumj.conf: 58
+            home {
+                # ethereumj.conf: 58
+                node=true
+            }
+        }
+        # ethereumj.conf: 71
+        touchMaxNodes=100
+        # ethereumj.conf: 67
+        touchPeriod=600
+        # ethereumj.conf: 76
+        workers=8
+    }
+    # ethereumj.conf: 82
+    listen {
+        # ethereumj.conf: 82
+        port=30303
+    }
+    # ethereumj.conf: 119
+    maxActivePeers=30
+    # ethereumj.conf: 85
+    networkId=1
+    # ethereumj.conf: 134
+    p2p {
+        # ethereumj.conf: 144
+        eip8=true
+        # ethereumj.conf: 140
+        framing {
+            # ethereumj.conf: 140
+            maxSize=32768
+        }
+    }
+    # ethereumj.conf: 105
+    trusted=[]
+}
+# ethereumj.conf: 379
+play {
+    # ethereumj.conf: 379
+    vm=true
+}
+# ethereumj.conf: 400
+record {
+    # ethereumj.conf: 400
+    blocks=false
+}
+# ethereumj.conf: 395
+root {
+    # ethereumj.conf: 395
+    hash {
+        # ethereumj.conf: 395
+        start=null
+    }
+}
+# ethereumj.conf: 313
+solc {
+    # ethereumj.conf: 316
+    path=null
+}
+# ethereumj.conf: 235
+sync {
+    # ethereumj.conf: 239
+    enabled=true
+    # ethereumj.conf: 269
+    exitOnBlockConflict=false
+    # ethereumj.conf: 242
+    fast {
+        # ethereumj.conf: 246
+        enabled=false
+    }
+    # ethereumj.conf: 260
+    peer {
+        # ethereumj.conf: 260
+        count=30
+    }
+}
+# ethereumj.conf: 372
+trace {
+    # ethereumj.conf: 372
+    startblock=-1
+}
+# ethereumj.conf: 328-332
+transaction {
+    # ethereumj.conf: 328
+    approve {
+        # ethereumj.conf: 328
+        timeout=15
+    }
+    # ethereumj.conf: 332
+    outdated {
+        # ethereumj.conf: 332
+        threshold=10
+    }
+}
+# ethereumj.conf: 362
+vm {
+    # ethereumj.conf: 362
+    structured {
+        # ethereumj.conf: 365
+        compressed=true
+        # ethereumj.conf: 364
+        dir=vmtrace
+        # ethereumj.conf: 366
+        initStorageLimit=10000
+        # ethereumj.conf: 363
+        trace=false
+    }
+}
+
+14:49:13.610 INFO [general]  Running ropsten.json,  core version: 1.4.1-RELEASE
+14:49:13.610 INFO [general]  git.hash: [441119d]
+14:49:13.610 INFO [general]  build.time: [GMT]-[06/Feb/2017]-[11:23]
+14:49:13.612 INFO [general]  Database directory location: 'database-ropsten', version: 4
+14:49:13.612 INFO [general]  capability eth version: [62, 63]
+14:49:13.613 INFO [general]  capability shh version: [3]
+14:49:13.613 INFO [general]  capability bzz version: [0]
+14:49:13.974 INFO [general]  External IP wasn't set, using checkip.amazonaws.com to identify it...
+14:49:14.221 INFO [general]  External address identified: 85.91.180.48
+14:49:14.221 INFO [general]  EthereumJ node started: enode://f3b0bbc676af57f656a31c493ef49e8f3e811ea584db4e17b00acf5716ca559ee293ad5da16c6ab313bc4ffed9a53dd91bda48f39e7693ef4da940d1c5a48262@85.91.180.48:30303
+14:49:14.269 INFO [general]  Config ( yes ): default properties from resource 'ethereumj.conf'
+14:49:14.269 INFO [general]  Config ( no  ): user properties from -Dethereumj.conf.res resource 'null'
+14:49:14.272 INFO [general]  Config ( no  ): user properties from resource 'user.conf'
+14:49:14.272 INFO [general]  Config ( no  ): user properties from file 'C:\Projects\demo\config\ethereumj.conf'
+14:49:14.273 INFO [general]  Config ( no  ): test properties from resource 'test-ethereumj.conf'
+14:49:14.273 INFO [general]  Config ( no  ): test properties from resource 'test-user.conf'
+14:49:14.274 INFO [general]  Config ( no  ): user properties from -Dethereumj.conf.file file 'null'
+14:49:14.274 INFO [general]  Config ( no  ): config passed via constructor
+14:49:14.284 DEBUG [general]  Config trace: # ethereumj.conf: 166-401
+blockchain {
+    # ethereumj.conf: 166
+    config {
+        # ethereumj.conf: 166
+        name=main
+    }
+    # ethereumj.conf: 401
+    only=false
+}
+# ethereumj.conf: 407
+blocks {
+    # ethereumj.conf: 407
+    loader=""
+}
+# ethereumj.conf: 207
+cache {
+    # ethereumj.conf: 228
+    blockQueueSize=32
+    # ethereumj.conf: 209
+    flush {
+        # ethereumj.conf: 218
+        blocks=0
+        # ethereumj.conf: 221
+        shortSyncFlush=true
+        # ethereumj.conf: 213
+        writeCacheSize=64
+    }
+    # ethereumj.conf: 231
+    headerQueueSize=8
+    # ethereumj.conf: 225
+    stateCacheSize=256
+}
+# ethereumj.conf: 174
+database {
+    # ethereumj.conf: 177
+    dir=database
+    # ethereumj.conf: 190
+    incompatibleDatabaseBehavior=EXIT
+    # ethereumj.conf: 196
+    prune {
+        # ethereumj.conf: 197
+        enabled=true
+        # ethereumj.conf: 202
+        maxDepth=192
+    }
+    # ethereumj.conf: 183
+    reset=false
+}
+# ethereumj.conf: 335
+dump {
+    # ethereumj.conf: 348
+    block=-1
+    # ethereumj.conf: 352
+    clean {
+        # ethereumj.conf: 352
+        on {
+            # ethereumj.conf: 352
+            restart=true
+        }
+    }
+    # ethereumj.conf: 342
+    dir=dmp
+    # ethereumj.conf: 341
+    full=false
+    # ethereumj.conf: 349
+    style=pretty
+}
+# ethereumj.conf: 152
+genesis="frontier.json"
+# ethereumj.conf: 383
+hello {
+    # ethereumj.conf: 383
+    phrase=Dev
+}
+# ethereumj.conf: 398
+keyvalue {
+    # ethereumj.conf: 398
+    datasource=leveldb
+}
+# ethereumj.conf: 273
+mine {
+    # ethereumj.conf: 292
+    coinbase="0000000000000000000000000000000000000000"
+    # ethereumj.conf: 283
+    cpuMineThreads=4
+    # ethereumj.conf: 296
+    extraData="EthereumJ powered"
+    # ethereumj.conf: 289
+    fullDataSet=true
+    # ethereumj.conf: 305
+    minBlockTimeoutMsec=0
+    # ethereumj.conf: 302
+    minGasPrice=15000000000
+    # ethereumj.conf: 279
+    start=false
+    # ethereumj.conf: 309
+    startNonce=null
+}
+# ethereumj.conf: 1-79
+peer {
+    # ethereumj.conf: 94
+    active=[]
+    # ethereumj.conf: 123
+    capabilities=[
+        # ethereumj.conf: 123
+        eth
+    ]
+    # ethereumj.conf: 132
+    channel {
+        # ethereumj.conf: 132
+        read {
+            # ethereumj.conf: 132
+            timeout=90
+        }
+    }
+    # ethereumj.conf: 127
+    connection {
+        # ethereumj.conf: 127
+        timeout=2
+    }
+    # ethereumj.conf: 1
+    discovery {
+        # ethereumj.conf: 54
+        bind {
+            # ethereumj.conf: 54
+            ip=""
+        }
+        # ethereumj.conf: 8
+        enabled=true
+        # ethereumj.conf: 46
+        external {
+            # ethereumj.conf: 46
+            ip=null
+        }
+        # ethereumj.conf: 13
+        ip {
+            # ethereumj.conf: 13
+            list=[
+                # ethereumj.conf: 15
+                "frontier-2.ether.camp:30303",
+                # ethereumj.conf: 16
+                "frontier-3.ether.camp:30303",
+                # ethereumj.conf: 17
+                "frontier-4.ether.camp:30303",
+                # ethereumj.conf: 20
+                "5.1.83.226:30303",
+                # ethereumj.conf: 23
+                "54.94.239.50:30303",
+                # ethereumj.conf: 24
+                "52.16.188.185:30303",
+                # ethereumj.conf: 25
+                "52.74.57.123:30303",
+                # ethereumj.conf: 28
+                "163.172.157.114:30303",
+                # ethereumj.conf: 29
+                "136.243.154.244:30303",
+                # ethereumj.conf: 30
+                "88.212.206.70:30303",
+                # ethereumj.conf: 31
+                "37.128.191.230:30303",
+                # ethereumj.conf: 32
+                "46.20.235.22:30303",
+                # ethereumj.conf: 33
+                "216.158.85.185:30303",
+                # ethereumj.conf: 34
+                "212.47.247.103:30303",
+                # ethereumj.conf: 35
+                "138.201.144.135:30303",
+                # ethereumj.conf: 36
+                "45.55.33.62:30303",
+                # ethereumj.conf: 37
+                "188.166.255.12:30303",
+                # ethereumj.conf: 38
+                "159.203.210.80:30303",
+                # ethereumj.conf: 39
+                "51.15.42.252:30303",
+                # ethereumj.conf: 40
+                "163.172.171.38:30303"
+            ]
+        }
+        # ethereumj.conf: 62
+        persist=true
+        # ethereumj.conf: 58
+        public {
+            # ethereumj.conf: 58
+            home {
+                # ethereumj.conf: 58
+                node=true
+            }
+        }
+        # ethereumj.conf: 71
+        touchMaxNodes=100
+        # ethereumj.conf: 67
+        touchPeriod=600
+        # ethereumj.conf: 76
+        workers=8
+    }
+    # ethereumj.conf: 82
+    listen {
+        # ethereumj.conf: 82
+        port=30303
+    }
+    # ethereumj.conf: 119
+    maxActivePeers=30
+    # ethereumj.conf: 85
+    networkId=1
+    # ethereumj.conf: 134
+    p2p {
+        # ethereumj.conf: 144
+        eip8=true
+        # ethereumj.conf: 140
+        framing {
+            # ethereumj.conf: 140
+            maxSize=32768
+        }
+    }
+    # ethereumj.conf: 105
+    trusted=[]
+}
+# ethereumj.conf: 379
+play {
+    # ethereumj.conf: 379
+    vm=true
+}
+# ethereumj.conf: 400
+record {
+    # ethereumj.conf: 400
+    blocks=false
+}
+# ethereumj.conf: 395
+root {
+    # ethereumj.conf: 395
+    hash {
+        # ethereumj.conf: 395
+        start=null
+    }
+}
+# ethereumj.conf: 313
+solc {
+    # ethereumj.conf: 316
+    path=null
+}
+# ethereumj.conf: 235
+sync {
+    # ethereumj.conf: 239
+    enabled=true
+    # ethereumj.conf: 269
+    exitOnBlockConflict=false
+    # ethereumj.conf: 242
+    fast {
+        # ethereumj.conf: 246
+        enabled=false
+    }
+    # ethereumj.conf: 260
+    peer {
+        # ethereumj.conf: 260
+        count=30
+    }
+}
+# ethereumj.conf: 372
+trace {
+    # ethereumj.conf: 372
+    startblock=-1
+}
+# ethereumj.conf: 328-332
+transaction {
+    # ethereumj.conf: 328
+    approve {
+        # ethereumj.conf: 328
+        timeout=15
+    }
+    # ethereumj.conf: 332
+    outdated {
+        # ethereumj.conf: 332
+        threshold=10
+    }
+}
+# ethereumj.conf: 362
+vm {
+    # ethereumj.conf: 362
+    structured {
+        # ethereumj.conf: 365
+        compressed=true
+        # ethereumj.conf: 364
+        dir=vmtrace
+        # ethereumj.conf: 366
+        initStorageLimit=10000
+        # ethereumj.conf: 363
+        trace=false
+    }
+}
+
+14:49:14.318 INFO [general]  leveldb key-value data source created.
+14:49:14.332 DEBUG [db]  ~> LevelDbDataSource.init(): state
+14:49:14.334 DEBUG [db]  Opening database
+14:49:14.343 DEBUG [db]  Initializing new or existing database: 'state'
+14:49:14.603 DEBUG [db]  <~ LevelDbDataSource.init(): state
+14:49:14.636 INFO [general]  leveldb key-value data source created.
+14:49:14.636 DEBUG [db]  ~> LevelDbDataSource.init(): journal
+14:49:14.636 DEBUG [db]  Opening database
+14:49:14.637 DEBUG [db]  Initializing new or existing database: 'journal'
+14:49:14.653 DEBUG [db]  <~ LevelDbDataSource.init(): journal
+14:49:14.682 INFO [general]  leveldb key-value data source created.
+14:49:14.683 DEBUG [db]  ~> LevelDbDataSource.init(): index
+14:49:14.683 DEBUG [db]  Opening database
+14:49:14.683 DEBUG [db]  Initializing new or existing database: 'index'
+14:49:14.700 DEBUG [db]  <~ LevelDbDataSource.init(): index
+14:49:14.701 INFO [general]  leveldb key-value data source created.
+14:49:14.702 DEBUG [db]  ~> LevelDbDataSource.init(): block
+14:49:14.702 DEBUG [db]  Opening database
+14:49:14.702 DEBUG [db]  Initializing new or existing database: 'block'
+14:49:14.718 DEBUG [db]  <~ LevelDbDataSource.init(): block
+14:49:14.725 INFO [general]  leveldb key-value data source created.
+14:49:14.725 DEBUG [db]  ~> LevelDbDataSource.init(): transactions
+14:49:14.725 DEBUG [db]  Opening database
+14:49:14.726 DEBUG [db]  Initializing new or existing database: 'transactions'
+14:49:14.742 DEBUG [db]  <~ LevelDbDataSource.init(): transactions
+14:49:15.079 INFO [general]  DB is empty - adding Genesis
+14:49:15.216 INFO [general]  Genesis block loaded
+14:49:15.240 INFO [general]  Bind address wasn't set, Punching to identify it...
+14:49:15.263 INFO [general]  UDP local bound to: 192.168.11.124
+14:49:15.265 INFO [discover]  Discovery UDPListener started
+14:49:15.270 INFO [sync]  Sync Manager: ON
+14:49:15.270 INFO [sync]  Initializing SyncManager.
+14:49:15.281 INFO [sync]  FastSync: looking for best block number...
+14:49:15.312 DEBUG [discover]  (tried.isEmpty()) Terminating discover after 0 rounds.
+14:49:15.679 INFO [discover]  Reading Node statistics from DB: 2 nodes.
+14:49:15.716 DEBUG [discover]  <===  [PingMessage (129)] NodeHandler[state: null, node: 94.242.229.203:30303, id=a8ee7fda]
+14:49:15.716 INFO [discover]  Pinging discovery nodes...
+14:49:15.741 DEBUG [discover]   +++ New node: NodeHandler[state: Discovered, node: 94.242.229.203:30303, id=a8ee7fda] Node{ host='94.242.229.203', port=30303, id=a8ee7fda50ebaafd1015d9900879fb7a06e53810160dec22837bf8c10bf3d8767789cbae6ee1ec4e3568b88821914cffb5bf806e818c26d5c18d6cf0f7329bf9}
+14:49:15.762 DEBUG [discover]  <===  [PingMessage (129)] NodeHandler[state: null, node: 94.242.229.4:40404, id=dc689787]
+14:49:15.763 DEBUG [discover]   +++ New node: NodeHandler[state: Discovered, node: 94.242.229.4:40404, id=dc689787] Node{ host='94.242.229.4', port=40404, id=dc689787bdd919e46001bd19f84c78dce14faab3a16cafa8118d8c096e2c5c7938c43d904e3c455e0e66505df686dc439aca4233be59872eb1539121de9e041b}
+14:49:15.877 INFO [net]  Listening for incoming connections, port: [30303] 
+14:49:15.883 INFO [net]  NodeId: [f3b0bbc676af57f656a31c493ef49e8f3e811ea584db4e17b00acf5716ca559ee293ad5da16c6ab313bc4ffed9a53dd91bda48f39e7693ef4da940d1c5a48262] 
+14:49:16.074 INFO [general]  Ethereum listener added
+14:49:51.974 INFO [c.e.d.ExtraTest]  Starting ExtraTest on WLA-ICT-45 with PID 4772 (started by vandebroeck.k in C:\Projects\demo)
+14:49:51.977 DEBUG [c.e.d.ExtraTest]  Running with Spring Boot v1.5.7.RELEASE, Spring v4.3.11.RELEASE
+14:49:51.977 INFO [c.e.d.ExtraTest]  No active profile set, falling back to default profiles: default
+14:49:52.450 DEBUG [o.j.logging]  Logging Provider: org.jboss.logging.Slf4jLoggerProvider found via system property
+14:49:54.383 INFO [c.e.d.ExtraTest]  Started ExtraTest in 2.685 seconds (JVM running for 4.848)
+14:49:54.445 INFO [general]  Starting EthereumJ...
+14:49:56.112 INFO [general]  Config ( yes ): default properties from resource 'ethereumj.conf'
+14:49:56.112 INFO [general]  Config ( no  ): user properties from -Dethereumj.conf.res resource 'null'
+14:49:56.113 INFO [general]  Config ( no  ): user properties from resource 'user.conf'
+14:49:56.113 INFO [general]  Config ( no  ): user properties from file 'C:\Projects\demo\config\ethereumj.conf'
+14:49:56.114 INFO [general]  Config ( no  ): test properties from resource 'test-ethereumj.conf'
+14:49:56.115 INFO [general]  Config ( no  ): test properties from resource 'test-user.conf'
+14:49:56.115 INFO [general]  Config ( no  ): user properties from -Dethereumj.conf.file file 'null'
+14:49:56.115 INFO [general]  Config ( no  ): config passed via constructor
+14:49:56.119 DEBUG [general]  Config trace: # ethereumj.conf: 166-401
+blockchain {
+    # ethereumj.conf: 166
+    config {
+        # ethereumj.conf: 166
+        name=main
+    }
+    # ethereumj.conf: 401
+    only=false
+}
+# ethereumj.conf: 407
+blocks {
+    # ethereumj.conf: 407
+    loader=""
+}
+# ethereumj.conf: 207
+cache {
+    # ethereumj.conf: 228
+    blockQueueSize=32
+    # ethereumj.conf: 209
+    flush {
+        # ethereumj.conf: 218
+        blocks=0
+        # ethereumj.conf: 221
+        shortSyncFlush=true
+        # ethereumj.conf: 213
+        writeCacheSize=64
+    }
+    # ethereumj.conf: 231
+    headerQueueSize=8
+    # ethereumj.conf: 225
+    stateCacheSize=256
+}
+# ethereumj.conf: 174
+database {
+    # ethereumj.conf: 177
+    dir=database
+    # ethereumj.conf: 190
+    incompatibleDatabaseBehavior=EXIT
+    # ethereumj.conf: 196
+    prune {
+        # ethereumj.conf: 197
+        enabled=true
+        # ethereumj.conf: 202
+        maxDepth=192
+    }
+    # ethereumj.conf: 183
+    reset=false
+}
+# ethereumj.conf: 335
+dump {
+    # ethereumj.conf: 348
+    block=-1
+    # ethereumj.conf: 352
+    clean {
+        # ethereumj.conf: 352
+        on {
+            # ethereumj.conf: 352
+            restart=true
+        }
+    }
+    # ethereumj.conf: 342
+    dir=dmp
+    # ethereumj.conf: 341
+    full=false
+    # ethereumj.conf: 349
+    style=pretty
+}
+# ethereumj.conf: 152
+genesis="frontier.json"
+# ethereumj.conf: 383
+hello {
+    # ethereumj.conf: 383
+    phrase=Dev
+}
+# ethereumj.conf: 398
+keyvalue {
+    # ethereumj.conf: 398
+    datasource=leveldb
+}
+# ethereumj.conf: 273
+mine {
+    # ethereumj.conf: 292
+    coinbase="0000000000000000000000000000000000000000"
+    # ethereumj.conf: 283
+    cpuMineThreads=4
+    # ethereumj.conf: 296
+    extraData="EthereumJ powered"
+    # ethereumj.conf: 289
+    fullDataSet=true
+    # ethereumj.conf: 305
+    minBlockTimeoutMsec=0
+    # ethereumj.conf: 302
+    minGasPrice=15000000000
+    # ethereumj.conf: 279
+    start=false
+    # ethereumj.conf: 309
+    startNonce=null
+}
+# ethereumj.conf: 1-79
+peer {
+    # ethereumj.conf: 94
+    active=[]
+    # ethereumj.conf: 123
+    capabilities=[
+        # ethereumj.conf: 123
+        eth
+    ]
+    # ethereumj.conf: 132
+    channel {
+        # ethereumj.conf: 132
+        read {
+            # ethereumj.conf: 132
+            timeout=90
+        }
+    }
+    # ethereumj.conf: 127
+    connection {
+        # ethereumj.conf: 127
+        timeout=2
+    }
+    # ethereumj.conf: 1
+    discovery {
+        # ethereumj.conf: 54
+        bind {
+            # ethereumj.conf: 54
+            ip=""
+        }
+        # ethereumj.conf: 8
+        enabled=true
+        # ethereumj.conf: 46
+        external {
+            # ethereumj.conf: 46
+            ip=null
+        }
+        # ethereumj.conf: 13
+        ip {
+            # ethereumj.conf: 13
+            list=[
+                # ethereumj.conf: 15
+                "frontier-2.ether.camp:30303",
+                # ethereumj.conf: 16
+                "frontier-3.ether.camp:30303",
+                # ethereumj.conf: 17
+                "frontier-4.ether.camp:30303",
+                # ethereumj.conf: 20
+                "5.1.83.226:30303",
+                # ethereumj.conf: 23
+                "54.94.239.50:30303",
+                # ethereumj.conf: 24
+                "52.16.188.185:30303",
+                # ethereumj.conf: 25
+                "52.74.57.123:30303",
+                # ethereumj.conf: 28
+                "163.172.157.114:30303",
+                # ethereumj.conf: 29
+                "136.243.154.244:30303",
+                # ethereumj.conf: 30
+                "88.212.206.70:30303",
+                # ethereumj.conf: 31
+                "37.128.191.230:30303",
+                # ethereumj.conf: 32
+                "46.20.235.22:30303",
+                # ethereumj.conf: 33
+                "216.158.85.185:30303",
+                # ethereumj.conf: 34
+                "212.47.247.103:30303",
+                # ethereumj.conf: 35
+                "138.201.144.135:30303",
+                # ethereumj.conf: 36
+                "45.55.33.62:30303",
+                # ethereumj.conf: 37
+                "188.166.255.12:30303",
+                # ethereumj.conf: 38
+                "159.203.210.80:30303",
+                # ethereumj.conf: 39
+                "51.15.42.252:30303",
+                # ethereumj.conf: 40
+                "163.172.171.38:30303"
+            ]
+        }
+        # ethereumj.conf: 62
+        persist=true
+        # ethereumj.conf: 58
+        public {
+            # ethereumj.conf: 58
+            home {
+                # ethereumj.conf: 58
+                node=true
+            }
+        }
+        # ethereumj.conf: 71
+        touchMaxNodes=100
+        # ethereumj.conf: 67
+        touchPeriod=600
+        # ethereumj.conf: 76
+        workers=8
+    }
+    # ethereumj.conf: 82
+    listen {
+        # ethereumj.conf: 82
+        port=30303
+    }
+    # ethereumj.conf: 119
+    maxActivePeers=30
+    # ethereumj.conf: 85
+    networkId=1
+    # ethereumj.conf: 134
+    p2p {
+        # ethereumj.conf: 144
+        eip8=true
+        # ethereumj.conf: 140
+        framing {
+            # ethereumj.conf: 140
+            maxSize=32768
+        }
+    }
+    # ethereumj.conf: 105
+    trusted=[]
+}
+# ethereumj.conf: 379
+play {
+    # ethereumj.conf: 379
+    vm=true
+}
+# ethereumj.conf: 400
+record {
+    # ethereumj.conf: 400
+    blocks=false
+}
+# ethereumj.conf: 395
+root {
+    # ethereumj.conf: 395
+    hash {
+        # ethereumj.conf: 395
+        start=null
+    }
+}
+# ethereumj.conf: 313
+solc {
+    # ethereumj.conf: 316
+    path=null
+}
+# ethereumj.conf: 235
+sync {
+    # ethereumj.conf: 239
+    enabled=true
+    # ethereumj.conf: 269
+    exitOnBlockConflict=false
+    # ethereumj.conf: 242
+    fast {
+        # ethereumj.conf: 246
+        enabled=false
+    }
+    # ethereumj.conf: 260
+    peer {
+        # ethereumj.conf: 260
+        count=30
+    }
+}
+# ethereumj.conf: 372
+trace {
+    # ethereumj.conf: 372
+    startblock=-1
+}
+# ethereumj.conf: 328-332
+transaction {
+    # ethereumj.conf: 328
+    approve {
+        # ethereumj.conf: 328
+        timeout=15
+    }
+    # ethereumj.conf: 332
+    outdated {
+        # ethereumj.conf: 332
+        threshold=10
+    }
+}
+# ethereumj.conf: 362
+vm {
+    # ethereumj.conf: 362
+    structured {
+        # ethereumj.conf: 365
+        compressed=true
+        # ethereumj.conf: 364
+        dir=vmtrace
+        # ethereumj.conf: 366
+        initStorageLimit=10000
+        # ethereumj.conf: 363
+        trace=false
+    }
+}
+
+14:49:56.158 INFO [general]  Running frontier.json,  core version: 1.4.1-RELEASE
+14:49:56.159 INFO [general]  git.hash: [441119d]
+14:49:56.160 INFO [general]  build.time: [GMT]-[06/Feb/2017]-[11:23]
+14:49:56.184 WARN [general]  Detected incompatible database version. Detected:1, required:4
+14:49:56.190 ERROR [general]  Incompatible database version 1
+14:50:24.591 INFO [c.e.d.ExtraTest]  Starting ExtraTest on WLA-ICT-45 with PID 10732 (started by vandebroeck.k in C:\Projects\demo)
+14:50:24.595 DEBUG [c.e.d.ExtraTest]  Running with Spring Boot v1.5.7.RELEASE, Spring v4.3.11.RELEASE
+14:50:24.595 INFO [c.e.d.ExtraTest]  No active profile set, falling back to default profiles: default
+14:50:25.181 DEBUG [o.j.logging]  Logging Provider: org.jboss.logging.Slf4jLoggerProvider found via system property
+14:50:27.172 INFO [c.e.d.ExtraTest]  Started ExtraTest in 2.918 seconds (JVM running for 5.519)
+14:50:27.315 INFO [general]  Config ( yes ): default properties from resource 'ethereumj.conf'
+14:50:27.315 INFO [general]  Config ( no  ): user properties from -Dethereumj.conf.res resource 'null'
+14:50:27.315 INFO [general]  Config ( no  ): user properties from resource 'user.conf'
+14:50:27.316 INFO [general]  Config ( no  ): user properties from file 'C:\Projects\demo\config\ethereumj.conf'
+14:50:27.317 INFO [general]  Config ( no  ): test properties from resource 'test-ethereumj.conf'
+14:50:27.317 INFO [general]  Config ( no  ): test properties from resource 'test-user.conf'
+14:50:27.317 INFO [general]  Config ( no  ): user properties from -Dethereumj.conf.file file 'null'
+14:50:27.317 INFO [general]  Config ( no  ): config passed via constructor
+14:50:27.318 DEBUG [general]  Config trace: # ethereumj.conf: 166-401
+blockchain {
+    # ethereumj.conf: 166
+    config {
+        # ethereumj.conf: 166
+        name=main
+    }
+    # ethereumj.conf: 401
+    only=false
+}
+# ethereumj.conf: 407
+blocks {
+    # ethereumj.conf: 407
+    loader=""
+}
+# ethereumj.conf: 207
+cache {
+    # ethereumj.conf: 228
+    blockQueueSize=32
+    # ethereumj.conf: 209
+    flush {
+        # ethereumj.conf: 218
+        blocks=0
+        # ethereumj.conf: 221
+        shortSyncFlush=true
+        # ethereumj.conf: 213
+        writeCacheSize=64
+    }
+    # ethereumj.conf: 231
+    headerQueueSize=8
+    # ethereumj.conf: 225
+    stateCacheSize=256
+}
+# ethereumj.conf: 174
+database {
+    # ethereumj.conf: 177
+    dir=database
+    # ethereumj.conf: 190
+    incompatibleDatabaseBehavior=EXIT
+    # ethereumj.conf: 196
+    prune {
+        # ethereumj.conf: 197
+        enabled=true
+        # ethereumj.conf: 202
+        maxDepth=192
+    }
+    # ethereumj.conf: 183
+    reset=false
+}
+# ethereumj.conf: 335
+dump {
+    # ethereumj.conf: 348
+    block=-1
+    # ethereumj.conf: 352
+    clean {
+        # ethereumj.conf: 352
+        on {
+            # ethereumj.conf: 352
+            restart=true
+        }
+    }
+    # ethereumj.conf: 342
+    dir=dmp
+    # ethereumj.conf: 341
+    full=false
+    # ethereumj.conf: 349
+    style=pretty
+}
+# ethereumj.conf: 152
+genesis="frontier.json"
+# ethereumj.conf: 383
+hello {
+    # ethereumj.conf: 383
+    phrase=Dev
+}
+# ethereumj.conf: 398
+keyvalue {
+    # ethereumj.conf: 398
+    datasource=leveldb
+}
+# ethereumj.conf: 273
+mine {
+    # ethereumj.conf: 292
+    coinbase="0000000000000000000000000000000000000000"
+    # ethereumj.conf: 283
+    cpuMineThreads=4
+    # ethereumj.conf: 296
+    extraData="EthereumJ powered"
+    # ethereumj.conf: 289
+    fullDataSet=true
+    # ethereumj.conf: 305
+    minBlockTimeoutMsec=0
+    # ethereumj.conf: 302
+    minGasPrice=15000000000
+    # ethereumj.conf: 279
+    start=false
+    # ethereumj.conf: 309
+    startNonce=null
+}
+# ethereumj.conf: 1-79
+peer {
+    # ethereumj.conf: 94
+    active=[]
+    # ethereumj.conf: 123
+    capabilities=[
+        # ethereumj.conf: 123
+        eth
+    ]
+    # ethereumj.conf: 132
+    channel {
+        # ethereumj.conf: 132
+        read {
+            # ethereumj.conf: 132
+            timeout=90
+        }
+    }
+    # ethereumj.conf: 127
+    connection {
+        # ethereumj.conf: 127
+        timeout=2
+    }
+    # ethereumj.conf: 1
+    discovery {
+        # ethereumj.conf: 54
+        bind {
+            # ethereumj.conf: 54
+            ip=""
+        }
+        # ethereumj.conf: 8
+        enabled=true
+        # ethereumj.conf: 46
+        external {
+            # ethereumj.conf: 46
+            ip=null
+        }
+        # ethereumj.conf: 13
+        ip {
+            # ethereumj.conf: 13
+            list=[
+                # ethereumj.conf: 15
+                "frontier-2.ether.camp:30303",
+                # ethereumj.conf: 16
+                "frontier-3.ether.camp:30303",
+                # ethereumj.conf: 17
+                "frontier-4.ether.camp:30303",
+                # ethereumj.conf: 20
+                "5.1.83.226:30303",
+                # ethereumj.conf: 23
+                "54.94.239.50:30303",
+                # ethereumj.conf: 24
+                "52.16.188.185:30303",
+                # ethereumj.conf: 25
+                "52.74.57.123:30303",
+                # ethereumj.conf: 28
+                "163.172.157.114:30303",
+                # ethereumj.conf: 29
+                "136.243.154.244:30303",
+                # ethereumj.conf: 30
+                "88.212.206.70:30303",
+                # ethereumj.conf: 31
+                "37.128.191.230:30303",
+                # ethereumj.conf: 32
+                "46.20.235.22:30303",
+                # ethereumj.conf: 33
+                "216.158.85.185:30303",
+                # ethereumj.conf: 34
+                "212.47.247.103:30303",
+                # ethereumj.conf: 35
+                "138.201.144.135:30303",
+                # ethereumj.conf: 36
+                "45.55.33.62:30303",
+                # ethereumj.conf: 37
+                "188.166.255.12:30303",
+                # ethereumj.conf: 38
+                "159.203.210.80:30303",
+                # ethereumj.conf: 39
+                "51.15.42.252:30303",
+                # ethereumj.conf: 40
+                "163.172.171.38:30303"
+            ]
+        }
+        # ethereumj.conf: 62
+        persist=true
+        # ethereumj.conf: 58
+        public {
+            # ethereumj.conf: 58
+            home {
+                # ethereumj.conf: 58
+                node=true
+            }
+        }
+        # ethereumj.conf: 71
+        touchMaxNodes=100
+        # ethereumj.conf: 67
+        touchPeriod=600
+        # ethereumj.conf: 76
+        workers=8
+    }
+    # ethereumj.conf: 82
+    listen {
+        # ethereumj.conf: 82
+        port=30303
+    }
+    # ethereumj.conf: 119
+    maxActivePeers=30
+    # ethereumj.conf: 85
+    networkId=1
+    # ethereumj.conf: 134
+    p2p {
+        # ethereumj.conf: 144
+        eip8=true
+        # ethereumj.conf: 140
+        framing {
+            # ethereumj.conf: 140
+            maxSize=32768
+        }
+    }
+    # ethereumj.conf: 105
+    trusted=[]
+}
+# ethereumj.conf: 379
+play {
+    # ethereumj.conf: 379
+    vm=true
+}
+# ethereumj.conf: 400
+record {
+    # ethereumj.conf: 400
+    blocks=false
+}
+# ethereumj.conf: 395
+root {
+    # ethereumj.conf: 395
+    hash {
+        # ethereumj.conf: 395
+        start=null
+    }
+}
+# ethereumj.conf: 313
+solc {
+    # ethereumj.conf: 316
+    path=null
+}
+# ethereumj.conf: 235
+sync {
+    # ethereumj.conf: 239
+    enabled=true
+    # ethereumj.conf: 269
+    exitOnBlockConflict=false
+    # ethereumj.conf: 242
+    fast {
+        # ethereumj.conf: 246
+        enabled=false
+    }
+    # ethereumj.conf: 260
+    peer {
+        # ethereumj.conf: 260
+        count=30
+    }
+}
+# ethereumj.conf: 372
+trace {
+    # ethereumj.conf: 372
+    startblock=-1
+}
+# ethereumj.conf: 328-332
+transaction {
+    # ethereumj.conf: 328
+    approve {
+        # ethereumj.conf: 328
+        timeout=15
+    }
+    # ethereumj.conf: 332
+    outdated {
+        # ethereumj.conf: 332
+        threshold=10
+    }
+}
+# ethereumj.conf: 362
+vm {
+    # ethereumj.conf: 362
+    structured {
+        # ethereumj.conf: 365
+        compressed=true
+        # ethereumj.conf: 364
+        dir=vmtrace
+        # ethereumj.conf: 366
+        initStorageLimit=10000
+        # ethereumj.conf: 363
+        trace=false
+    }
+}
+
+14:50:29.127 INFO [mine]  Loading light dataset from C:\Projects\demo\database\mine-dag-light.dat
+14:50:29.259 INFO [mine]  Dataset loaded.
+14:50:29.296 DEBUG [pending]  New best block from another fork: #1 (30d7e3 <~ bdb784) Txs:1, Unc: 0, old best: #1 (30d7e3 <~ bdb784) Txs:1, Unc: 0, ancestor: #1 (30d7e3 <~ bdb784) Txs:1, Unc: 0
+14:50:29.689 DEBUG [pending]  PendingStateImpl.processBest: #2 (e8d1a3 <~ 30d7e3) Txs:1, Unc: 0
+14:50:30.088 DEBUG [pending]  PendingStateImpl.processBest: #3 (9567ba <~ e8d1a3) Txs:1, Unc: 0
+14:50:30.172 DEBUG [pending]  PendingStateImpl.processBest: #4 (5db69d <~ 9567ba) Txs:1, Unc: 0
+14:50:41.491 INFO [c.e.d.ExtraTest]  Starting ExtraTest on WLA-ICT-45 with PID 14512 (started by vandebroeck.k in C:\Projects\demo)
+14:50:41.493 DEBUG [c.e.d.ExtraTest]  Running with Spring Boot v1.5.7.RELEASE, Spring v4.3.11.RELEASE
+14:50:41.493 INFO [c.e.d.ExtraTest]  No active profile set, falling back to default profiles: default
+14:50:41.926 DEBUG [o.j.logging]  Logging Provider: org.jboss.logging.Slf4jLoggerProvider found via system property
+14:50:43.752 INFO [c.e.d.ExtraTest]  Started ExtraTest in 2.578 seconds (JVM running for 4.601)
+14:50:43.846 INFO [general]  Starting EthereumJ...
+14:50:44.428 INFO [general]  Config ( yes ): default properties from resource 'ethereumj.conf'
+14:50:44.428 INFO [general]  Config ( no  ): user properties from -Dethereumj.conf.res resource 'null'
+14:50:44.429 INFO [general]  Config ( no  ): user properties from resource 'user.conf'
+14:50:44.429 INFO [general]  Config ( no  ): user properties from file 'C:\Projects\demo\config\ethereumj.conf'
+14:50:44.430 INFO [general]  Config ( no  ): test properties from resource 'test-ethereumj.conf'
+14:50:44.430 INFO [general]  Config ( no  ): test properties from resource 'test-user.conf'
+14:50:44.430 INFO [general]  Config ( no  ): user properties from -Dethereumj.conf.file file 'null'
+14:50:44.430 INFO [general]  Config ( no  ): config passed via constructor
+14:50:44.432 DEBUG [general]  Config trace: # ethereumj.conf: 166-401
+blockchain {
+    # ethereumj.conf: 166
+    config {
+        # ethereumj.conf: 166
+        name=main
+    }
+    # ethereumj.conf: 401
+    only=false
+}
+# ethereumj.conf: 407
+blocks {
+    # ethereumj.conf: 407
+    loader=""
+}
+# ethereumj.conf: 207
+cache {
+    # ethereumj.conf: 228
+    blockQueueSize=32
+    # ethereumj.conf: 209
+    flush {
+        # ethereumj.conf: 218
+        blocks=0
+        # ethereumj.conf: 221
+        shortSyncFlush=true
+        # ethereumj.conf: 213
+        writeCacheSize=64
+    }
+    # ethereumj.conf: 231
+    headerQueueSize=8
+    # ethereumj.conf: 225
+    stateCacheSize=256
+}
+# ethereumj.conf: 174
+database {
+    # ethereumj.conf: 177
+    dir=database
+    # ethereumj.conf: 190
+    incompatibleDatabaseBehavior=EXIT
+    # ethereumj.conf: 196
+    prune {
+        # ethereumj.conf: 197
+        enabled=true
+        # ethereumj.conf: 202
+        maxDepth=192
+    }
+    # ethereumj.conf: 183
+    reset=false
+}
+# ethereumj.conf: 335
+dump {
+    # ethereumj.conf: 348
+    block=-1
+    # ethereumj.conf: 352
+    clean {
+        # ethereumj.conf: 352
+        on {
+            # ethereumj.conf: 352
+            restart=true
+        }
+    }
+    # ethereumj.conf: 342
+    dir=dmp
+    # ethereumj.conf: 341
+    full=false
+    # ethereumj.conf: 349
+    style=pretty
+}
+# ethereumj.conf: 152
+genesis="frontier.json"
+# ethereumj.conf: 383
+hello {
+    # ethereumj.conf: 383
+    phrase=Dev
+}
+# ethereumj.conf: 398
+keyvalue {
+    # ethereumj.conf: 398
+    datasource=leveldb
+}
+# ethereumj.conf: 273
+mine {
+    # ethereumj.conf: 292
+    coinbase="0000000000000000000000000000000000000000"
+    # ethereumj.conf: 283
+    cpuMineThreads=4
+    # ethereumj.conf: 296
+    extraData="EthereumJ powered"
+    # ethereumj.conf: 289
+    fullDataSet=true
+    # ethereumj.conf: 305
+    minBlockTimeoutMsec=0
+    # ethereumj.conf: 302
+    minGasPrice=15000000000
+    # ethereumj.conf: 279
+    start=false
+    # ethereumj.conf: 309
+    startNonce=null
+}
+# ethereumj.conf: 1-79
+peer {
+    # ethereumj.conf: 94
+    active=[]
+    # ethereumj.conf: 123
+    capabilities=[
+        # ethereumj.conf: 123
+        eth
+    ]
+    # ethereumj.conf: 132
+    channel {
+        # ethereumj.conf: 132
+        read {
+            # ethereumj.conf: 132
+            timeout=90
+        }
+    }
+    # ethereumj.conf: 127
+    connection {
+        # ethereumj.conf: 127
+        timeout=2
+    }
+    # ethereumj.conf: 1
+    discovery {
+        # ethereumj.conf: 54
+        bind {
+            # ethereumj.conf: 54
+            ip=""
+        }
+        # ethereumj.conf: 8
+        enabled=true
+        # ethereumj.conf: 46
+        external {
+            # ethereumj.conf: 46
+            ip=null
+        }
+        # ethereumj.conf: 13
+        ip {
+            # ethereumj.conf: 13
+            list=[
+                # ethereumj.conf: 15
+                "frontier-2.ether.camp:30303",
+                # ethereumj.conf: 16
+                "frontier-3.ether.camp:30303",
+                # ethereumj.conf: 17
+                "frontier-4.ether.camp:30303",
+                # ethereumj.conf: 20
+                "5.1.83.226:30303",
+                # ethereumj.conf: 23
+                "54.94.239.50:30303",
+                # ethereumj.conf: 24
+                "52.16.188.185:30303",
+                # ethereumj.conf: 25
+                "52.74.57.123:30303",
+                # ethereumj.conf: 28
+                "163.172.157.114:30303",
+                # ethereumj.conf: 29
+                "136.243.154.244:30303",
+                # ethereumj.conf: 30
+                "88.212.206.70:30303",
+                # ethereumj.conf: 31
+                "37.128.191.230:30303",
+                # ethereumj.conf: 32
+                "46.20.235.22:30303",
+                # ethereumj.conf: 33
+                "216.158.85.185:30303",
+                # ethereumj.conf: 34
+                "212.47.247.103:30303",
+                # ethereumj.conf: 35
+                "138.201.144.135:30303",
+                # ethereumj.conf: 36
+                "45.55.33.62:30303",
+                # ethereumj.conf: 37
+                "188.166.255.12:30303",
+                # ethereumj.conf: 38
+                "159.203.210.80:30303",
+                # ethereumj.conf: 39
+                "51.15.42.252:30303",
+                # ethereumj.conf: 40
+                "163.172.171.38:30303"
+            ]
+        }
+        # ethereumj.conf: 62
+        persist=true
+        # ethereumj.conf: 58
+        public {
+            # ethereumj.conf: 58
+            home {
+                # ethereumj.conf: 58
+                node=true
+            }
+        }
+        # ethereumj.conf: 71
+        touchMaxNodes=100
+        # ethereumj.conf: 67
+        touchPeriod=600
+        # ethereumj.conf: 76
+        workers=8
+    }
+    # ethereumj.conf: 82
+    listen {
+        # ethereumj.conf: 82
+        port=30303
+    }
+    # ethereumj.conf: 119
+    maxActivePeers=30
+    # ethereumj.conf: 85
+    networkId=1
+    # ethereumj.conf: 134
+    p2p {
+        # ethereumj.conf: 144
+        eip8=true
+        # ethereumj.conf: 140
+        framing {
+            # ethereumj.conf: 140
+            maxSize=32768
+        }
+    }
+    # ethereumj.conf: 105
+    trusted=[]
+}
+# ethereumj.conf: 379
+play {
+    # ethereumj.conf: 379
+    vm=true
+}
+# ethereumj.conf: 400
+record {
+    # ethereumj.conf: 400
+    blocks=false
+}
+# ethereumj.conf: 395
+root {
+    # ethereumj.conf: 395
+    hash {
+        # ethereumj.conf: 395
+        start=null
+    }
+}
+# ethereumj.conf: 313
+solc {
+    # ethereumj.conf: 316
+    path=null
+}
+# ethereumj.conf: 235
+sync {
+    # ethereumj.conf: 239
+    enabled=true
+    # ethereumj.conf: 269
+    exitOnBlockConflict=false
+    # ethereumj.conf: 242
+    fast {
+        # ethereumj.conf: 246
+        enabled=false
+    }
+    # ethereumj.conf: 260
+    peer {
+        # ethereumj.conf: 260
+        count=30
+    }
+}
+# ethereumj.conf: 372
+trace {
+    # ethereumj.conf: 372
+    startblock=-1
+}
+# ethereumj.conf: 328-332
+transaction {
+    # ethereumj.conf: 328
+    approve {
+        # ethereumj.conf: 328
+        timeout=15
+    }
+    # ethereumj.conf: 332
+    outdated {
+        # ethereumj.conf: 332
+        threshold=10
+    }
+}
+# ethereumj.conf: 362
+vm {
+    # ethereumj.conf: 362
+    structured {
+        # ethereumj.conf: 365
+        compressed=true
+        # ethereumj.conf: 364
+        dir=vmtrace
+        # ethereumj.conf: 366
+        initStorageLimit=10000
+        # ethereumj.conf: 363
+        trace=false
+    }
+}
+
+14:50:44.454 INFO [general]  Running private-genesis.json,  core version: 1.4.1-RELEASE
+14:50:44.454 INFO [general]  git.hash: [441119d]
+14:50:44.454 INFO [general]  build.time: [GMT]-[06/Feb/2017]-[11:23]
+14:50:44.458 INFO [general]  Created database version file
+14:50:44.459 INFO [general]  capability eth version: [62, 63]
+14:50:44.459 INFO [general]  capability shh version: [3]
+14:50:44.459 INFO [general]  capability bzz version: [0]
+14:50:44.830 INFO [general]  External IP wasn't set, using checkip.amazonaws.com to identify it...
+14:50:45.035 INFO [general]  External address identified: 85.91.180.48
+14:50:45.035 INFO [general]  EthereumJ node started: enode://26ba1aadaf59d7607ad7f437146927d79e80312f026cfa635c6b2ccf2c5d3521f5812ca2beb3b295b14f97110e6448c1c7ff68f14c5328d43a3c62b44143e9b1@85.91.180.48:55555
+14:50:45.069 INFO [general]  Config ( yes ): default properties from resource 'ethereumj.conf'
+14:50:45.069 INFO [general]  Config ( no  ): user properties from -Dethereumj.conf.res resource 'null'
+14:50:45.069 INFO [general]  Config ( no  ): user properties from resource 'user.conf'
+14:50:45.070 INFO [general]  Config ( no  ): user properties from file 'C:\Projects\demo\config\ethereumj.conf'
+14:50:45.070 INFO [general]  Config ( no  ): test properties from resource 'test-ethereumj.conf'
+14:50:45.071 INFO [general]  Config ( no  ): test properties from resource 'test-user.conf'
+14:50:45.071 INFO [general]  Config ( no  ): user properties from -Dethereumj.conf.file file 'null'
+14:50:45.071 INFO [general]  Config ( no  ): config passed via constructor
+14:50:45.072 DEBUG [general]  Config trace: # ethereumj.conf: 166-401
+blockchain {
+    # ethereumj.conf: 166
+    config {
+        # ethereumj.conf: 166
+        name=main
+    }
+    # ethereumj.conf: 401
+    only=false
+}
+# ethereumj.conf: 407
+blocks {
+    # ethereumj.conf: 407
+    loader=""
+}
+# ethereumj.conf: 207
+cache {
+    # ethereumj.conf: 228
+    blockQueueSize=32
+    # ethereumj.conf: 209
+    flush {
+        # ethereumj.conf: 218
+        blocks=0
+        # ethereumj.conf: 221
+        shortSyncFlush=true
+        # ethereumj.conf: 213
+        writeCacheSize=64
+    }
+    # ethereumj.conf: 231
+    headerQueueSize=8
+    # ethereumj.conf: 225
+    stateCacheSize=256
+}
+# ethereumj.conf: 174
+database {
+    # ethereumj.conf: 177
+    dir=database
+    # ethereumj.conf: 190
+    incompatibleDatabaseBehavior=EXIT
+    # ethereumj.conf: 196
+    prune {
+        # ethereumj.conf: 197
+        enabled=true
+        # ethereumj.conf: 202
+        maxDepth=192
+    }
+    # ethereumj.conf: 183
+    reset=false
+}
+# ethereumj.conf: 335
+dump {
+    # ethereumj.conf: 348
+    block=-1
+    # ethereumj.conf: 352
+    clean {
+        # ethereumj.conf: 352
+        on {
+            # ethereumj.conf: 352
+            restart=true
+        }
+    }
+    # ethereumj.conf: 342
+    dir=dmp
+    # ethereumj.conf: 341
+    full=false
+    # ethereumj.conf: 349
+    style=pretty
+}
+# ethereumj.conf: 152
+genesis="frontier.json"
+# ethereumj.conf: 383
+hello {
+    # ethereumj.conf: 383
+    phrase=Dev
+}
+# ethereumj.conf: 398
+keyvalue {
+    # ethereumj.conf: 398
+    datasource=leveldb
+}
+# ethereumj.conf: 273
+mine {
+    # ethereumj.conf: 292
+    coinbase="0000000000000000000000000000000000000000"
+    # ethereumj.conf: 283
+    cpuMineThreads=4
+    # ethereumj.conf: 296
+    extraData="EthereumJ powered"
+    # ethereumj.conf: 289
+    fullDataSet=true
+    # ethereumj.conf: 305
+    minBlockTimeoutMsec=0
+    # ethereumj.conf: 302
+    minGasPrice=15000000000
+    # ethereumj.conf: 279
+    start=false
+    # ethereumj.conf: 309
+    startNonce=null
+}
+# ethereumj.conf: 1-79
+peer {
+    # ethereumj.conf: 94
+    active=[]
+    # ethereumj.conf: 123
+    capabilities=[
+        # ethereumj.conf: 123
+        eth
+    ]
+    # ethereumj.conf: 132
+    channel {
+        # ethereumj.conf: 132
+        read {
+            # ethereumj.conf: 132
+            timeout=90
+        }
+    }
+    # ethereumj.conf: 127
+    connection {
+        # ethereumj.conf: 127
+        timeout=2
+    }
+    # ethereumj.conf: 1
+    discovery {
+        # ethereumj.conf: 54
+        bind {
+            # ethereumj.conf: 54
+            ip=""
+        }
+        # ethereumj.conf: 8
+        enabled=true
+        # ethereumj.conf: 46
+        external {
+            # ethereumj.conf: 46
+            ip=null
+        }
+        # ethereumj.conf: 13
+        ip {
+            # ethereumj.conf: 13
+            list=[
+                # ethereumj.conf: 15
+                "frontier-2.ether.camp:30303",
+                # ethereumj.conf: 16
+                "frontier-3.ether.camp:30303",
+                # ethereumj.conf: 17
+                "frontier-4.ether.camp:30303",
+                # ethereumj.conf: 20
+                "5.1.83.226:30303",
+                # ethereumj.conf: 23
+                "54.94.239.50:30303",
+                # ethereumj.conf: 24
+                "52.16.188.185:30303",
+                # ethereumj.conf: 25
+                "52.74.57.123:30303",
+                # ethereumj.conf: 28
+                "163.172.157.114:30303",
+                # ethereumj.conf: 29
+                "136.243.154.244:30303",
+                # ethereumj.conf: 30
+                "88.212.206.70:30303",
+                # ethereumj.conf: 31
+                "37.128.191.230:30303",
+                # ethereumj.conf: 32
+                "46.20.235.22:30303",
+                # ethereumj.conf: 33
+                "216.158.85.185:30303",
+                # ethereumj.conf: 34
+                "212.47.247.103:30303",
+                # ethereumj.conf: 35
+                "138.201.144.135:30303",
+                # ethereumj.conf: 36
+                "45.55.33.62:30303",
+                # ethereumj.conf: 37
+                "188.166.255.12:30303",
+                # ethereumj.conf: 38
+                "159.203.210.80:30303",
+                # ethereumj.conf: 39
+                "51.15.42.252:30303",
+                # ethereumj.conf: 40
+                "163.172.171.38:30303"
+            ]
+        }
+        # ethereumj.conf: 62
+        persist=true
+        # ethereumj.conf: 58
+        public {
+            # ethereumj.conf: 58
+            home {
+                # ethereumj.conf: 58
+                node=true
+            }
+        }
+        # ethereumj.conf: 71
+        touchMaxNodes=100
+        # ethereumj.conf: 67
+        touchPeriod=600
+        # ethereumj.conf: 76
+        workers=8
+    }
+    # ethereumj.conf: 82
+    listen {
+        # ethereumj.conf: 82
+        port=30303
+    }
+    # ethereumj.conf: 119
+    maxActivePeers=30
+    # ethereumj.conf: 85
+    networkId=1
+    # ethereumj.conf: 134
+    p2p {
+        # ethereumj.conf: 144
+        eip8=true
+        # ethereumj.conf: 140
+        framing {
+            # ethereumj.conf: 140
+            maxSize=32768
+        }
+    }
+    # ethereumj.conf: 105
+    trusted=[]
+}
+# ethereumj.conf: 379
+play {
+    # ethereumj.conf: 379
+    vm=true
+}
+# ethereumj.conf: 400
+record {
+    # ethereumj.conf: 400
+    blocks=false
+}
+# ethereumj.conf: 395
+root {
+    # ethereumj.conf: 395
+    hash {
+        # ethereumj.conf: 395
+        start=null
+    }
+}
+# ethereumj.conf: 313
+solc {
+    # ethereumj.conf: 316
+    path=null
+}
+# ethereumj.conf: 235
+sync {
+    # ethereumj.conf: 239
+    enabled=true
+    # ethereumj.conf: 269
+    exitOnBlockConflict=false
+    # ethereumj.conf: 242
+    fast {
+        # ethereumj.conf: 246
+        enabled=false
+    }
+    # ethereumj.conf: 260
+    peer {
+        # ethereumj.conf: 260
+        count=30
+    }
+}
+# ethereumj.conf: 372
+trace {
+    # ethereumj.conf: 372
+    startblock=-1
+}
+# ethereumj.conf: 328-332
+transaction {
+    # ethereumj.conf: 328
+    approve {
+        # ethereumj.conf: 328
+        timeout=15
+    }
+    # ethereumj.conf: 332
+    outdated {
+        # ethereumj.conf: 332
+        threshold=10
+    }
+}
+# ethereumj.conf: 362
+vm {
+    # ethereumj.conf: 362
+    structured {
+        # ethereumj.conf: 365
+        compressed=true
+        # ethereumj.conf: 364
+        dir=vmtrace
+        # ethereumj.conf: 366
+        initStorageLimit=10000
+        # ethereumj.conf: 363
+        trace=false
+    }
+}
+
+14:50:45.088 INFO [general]  leveldb key-value data source created.
+14:50:45.092 DEBUG [db]  ~> LevelDbDataSource.init(): state
+14:50:45.093 DEBUG [db]  Opening database
+14:50:45.105 DEBUG [db]  Initializing new or existing database: 'state'
+14:50:45.365 DEBUG [db]  <~ LevelDbDataSource.init(): state
+14:50:45.405 INFO [general]  leveldb key-value data source created.
+14:50:45.405 DEBUG [db]  ~> LevelDbDataSource.init(): journal
+14:50:45.405 DEBUG [db]  Opening database
+14:50:45.406 DEBUG [db]  Initializing new or existing database: 'journal'
+14:50:45.430 DEBUG [db]  <~ LevelDbDataSource.init(): journal
+14:50:45.461 INFO [general]  leveldb key-value data source created.
+14:50:45.461 DEBUG [db]  ~> LevelDbDataSource.init(): index
+14:50:45.461 DEBUG [db]  Opening database
+14:50:45.462 DEBUG [db]  Initializing new or existing database: 'index'
+14:50:45.486 DEBUG [db]  <~ LevelDbDataSource.init(): index
+14:50:45.487 INFO [general]  leveldb key-value data source created.
+14:50:45.487 DEBUG [db]  ~> LevelDbDataSource.init(): block
+14:50:45.487 DEBUG [db]  Opening database
+14:50:45.488 DEBUG [db]  Initializing new or existing database: 'block'
+14:50:45.512 DEBUG [db]  <~ LevelDbDataSource.init(): block
+14:50:45.520 INFO [general]  leveldb key-value data source created.
+14:50:45.520 DEBUG [db]  ~> LevelDbDataSource.init(): transactions
+14:50:45.520 DEBUG [db]  Opening database
+14:50:45.521 DEBUG [db]  Initializing new or existing database: 'transactions'
+14:50:45.543 DEBUG [db]  <~ LevelDbDataSource.init(): transactions
+14:50:45.819 INFO [general]  DB is empty - adding Genesis
+14:50:45.826 INFO [general]  Genesis block loaded
+14:50:45.853 INFO [general]  Bind address wasn't set, Punching to identify it...
+14:50:45.878 INFO [general]  UDP local bound to: 192.168.11.124
+14:50:45.883 INFO [sync]  Sync Manager: OFF
+14:50:46.444 INFO [net]  Listening for incoming connections, port: [55555] 
+14:50:46.451 INFO [net]  NodeId: [26ba1aadaf59d7607ad7f437146927d79e80312f026cfa635c6b2ccf2c5d3521f5812ca2beb3b295b14f97110e6448c1c7ff68f14c5328d43a3c62b44143e9b1] 
+14:50:46.465 INFO [general]  Ethereum listener added
+14:50:46.465 INFO [sampleMiner]  Sample component created. Listening for ethereum events...
+14:50:46.465 INFO [sampleMiner]  Generating Full Dataset (may take up to 10 min if not cached)...
+14:50:46.473 INFO [mine]  Calculating full dataset...
+14:50:46.474 INFO [mine]  Calculating light dataset...
+14:50:46.608 INFO [sync]  Sync Manager: ON
+14:50:46.608 INFO [sync]  Initializing SyncManager.
+14:50:46.612 INFO [sync]  FastSync: looking for best block number...
+14:50:46.617 WARN [o.a.e.e.p.PrivateEthereumFacadeProvider]  couldn't copy files: Source 'privateIntegration\mine-dag.dat' does not exist
+14:50:46.731 INFO [general]  Ethereum listener added
+14:50:47.272 INFO [net]  submit tx: [TransactionData [hash=50981cb72a3fbad11e136fa3d4a215d1609dc5ae58ab4af629a340c8b72a7b22  nonce=00, gasPrice=104c533c00, gas=035f48, receiveAddress=defe833b759012a672234fe95b21e7fc671943a0, sendAddress=defe833b759012a672234fe95b21e7fc671943a0, value=8ac7230489e80000, data=, signatureV=27, signatureR=bf609f5ee71b64fec7dc60114135b279283d5aba93dad1680ef86e4deee8d927, signatureS=7d7ac9475444963e8783afe97be112cd771a8556d297ca0692aeee3345ccda5d]]
+14:50:47.277 DEBUG [pending]  PendingTransactionUpdate: (Tot:   1)  NEW_PENDING : defe833b        0 #0 (660c1d <~ 000000) Txs:0, Unc: 0 []
+14:50:47.278 DEBUG [pending]  Wire transaction list added: total: 1, new: 1, valid (added to pending): [TransactionData [hash=50981cb72a3fbad11e136fa3d4a215d1609dc5ae58ab4af629a340c8b72a7b22  nonce=00, gasPrice=104c533c00, gas=035f48, receiveAddress=defe833b759012a672234fe95b21e7fc671943a0, sendAddress=defe833b759012a672234fe95b21e7fc671943a0, value=8ac7230489e80000, data=, signatureV=27, signatureR=bf609f5ee71b64fec7dc60114135b279283d5aba93dad1680ef86e4deee8d927, signatureS=7d7ac9475444963e8783afe97be112cd771a8556d297ca0692aeee3345ccda5d]] (current #of known txs: 1)
+14:50:49.615 TRACE [sync]  Node list obtained from discovery: empty
+14:50:51.700 INFO [sync]  FastSync: waiting for at least 5 peers or 54 sec to select pivot block... (0 peers so far)
+14:50:52.622 TRACE [sync]  Node list obtained from discovery: empty
+14:50:54.730 INFO [mine]  Light dataset calculated.
+14:50:54.732 INFO [mine]  Writing light dataset to C:\Projects\demo\privateIntegration\mine-dag-light.dat
+14:50:55.043 ERROR [general]  Uncaught exception
+java.lang.OutOfMemoryError: Java heap space
+	at org.ethereum.mine.EthashAlgo.calcDataset(EthashAlgo.java:130)
+	at org.ethereum.mine.Ethash.getFullDataset(Ethash.java:131)
+	at org.adridadou.ethereum.ethj.provider.PrivateEthereumFacadeProvider$MinerNode.run(PrivateEthereumFacadeProvider.java:159)
+	at java.lang.Thread.run(Thread.java:748)
+14:50:55.626 TRACE [sync]  Node list obtained from discovery: empty
+14:50:55.884 INFO [sync]  Sync state: PivotBlock (9 of 60), last block #0, best known #0
+14:50:56.708 INFO [sync]  FastSync: waiting for at least 5 peers or 49 sec to select pivot block... (0 peers so far)
+14:50:58.631 TRACE [sync]  Node list obtained from discovery: empty
+14:51:01.637 TRACE [sync]  Node list obtained from discovery: empty
+14:51:01.714 INFO [sync]  FastSync: waiting for at least 5 peers or 44 sec to select pivot block... (0 peers so far)
+14:51:04.640 TRACE [sync]  Node list obtained from discovery: empty
+14:51:05.884 INFO [sync]  Sync state: PivotBlock (19 of 60), last block #0, best known #0
+14:51:06.720 INFO [sync]  FastSync: waiting for at least 5 peers or 39 sec to select pivot block... (0 peers so far)
+14:51:07.646 TRACE [sync]  Node list obtained from discovery: empty
+14:51:10.652 TRACE [sync]  Node list obtained from discovery: empty
+14:51:11.726 INFO [sync]  FastSync: waiting for at least 5 peers or 34 sec to select pivot block... (0 peers so far)

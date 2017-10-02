@@ -5,6 +5,7 @@ package com.example.demo;
  */
 
 import org.adridadou.ethereum.EthereumFacade;
+import org.adridadou.ethereum.ethj.BlockchainConfig;
 import org.adridadou.ethereum.ethj.TestConfig;
 import org.adridadou.ethereum.ethj.provider.EthereumFacadeProvider;
 import org.adridadou.ethereum.ethj.provider.PrivateEthereumFacadeProvider;
@@ -30,18 +31,28 @@ import static org.adridadou.ethereum.ethj.provider.PrivateNetworkConfig.config;
 import static org.adridadou.ethereum.values.EthValue.ether;
 import static org.junit.Assert.*;
 
-/**
- * Created by davidroon on 20.04.16.
- * This code is released under Apache 2 license
- */
 @RunWith(SpringRunner.class)
 @SpringBootTest
 public class ExtraTest {
+
     private final PrivateEthereumFacadeProvider privateNetwork = new PrivateEthereumFacadeProvider();
     private EthAccount mainAccount = AccountProvider.fromSeed("cow");
-    private SoliditySource contractSource = SoliditySource.from(new File(this.getClass().getResource("/contract.sol").toURI()));
+    private SoliditySource contractSource = SoliditySource.from(new File(this.getClass().getResource("/contracts/contract.sol").toURI()));
 
     public ExtraTest() throws URISyntaxException {
+    }
+
+    @Test
+    public void main_example_how_the_lib_works() throws Exception {
+        // start ethereum here
+        final EthereumFacade ethereum = fromTest();
+        EthAddress address = publishAndMapContract(ethereum);
+        CompiledContract compiledContract = ethereum.compile(contractSource).get().get("myContract2");
+        MyContract2 myContract = ethereum.createContractProxy(compiledContract, address, mainAccount, MyContract2.class);
+
+        testMethodCalls(myContract, address, ethereum);
+
+        assertEquals(mainAccount.getAddress(), myContract.getOwner());
     }
 
     private EthereumFacade fromRopsten() {
@@ -63,7 +74,7 @@ public class ExtraTest {
     }
 
     private EthAddress publishAndMapContract(EthereumFacade ethereum) throws Exception {
-        ethereum.compile(SoliditySource.from(new File(this.getClass().getResource("/contract.sol").toURI()))).get();
+        ethereum.compile(SoliditySource.from(new File(this.getClass().getResource("/contracts/contract.sol").toURI()))).get();
         CompiledContract compiledContract = ethereum.compile(contractSource).get().get("myContract2");
         CompletableFuture<EthAddress> futureAddress = ethereum.publishContract(compiledContract, mainAccount);
         return futureAddress.get();
@@ -71,7 +82,7 @@ public class ExtraTest {
 
     private void testMethodCalls(MyContract2 myContract, EthAddress address, EthereumFacade ethereum) throws Exception {
         assertEquals("", myContract.getI1());
-        System.out.println("*** calling contractSource myMethod");
+        System.out.println("*** calling contractSource myMethod ***");
         Future<Integer> future = myContract.myMethod("this is a test");
         assertEquals(12, future.get().intValue());
         assertEquals("this is a test", myContract.getI1());
@@ -85,7 +96,7 @@ public class ExtraTest {
         assertEquals(new MyReturnType(true, "hello", 34), myContract.getM());
 
         assertEquals("", myContract.getI2());
-        System.out.println("*** calling contractSource myMethod2 async");
+        System.out.println("*** calling contractSource myMethod2 async ***");
         myContract.myMethod2("async call").get();
 
         myContract.myMethod3("async call").with(ether(150)).get();
@@ -108,17 +119,7 @@ public class ExtraTest {
         }
     }
 
-    @Test
-    public void main_example_how_the_lib_works() throws Exception {
-        final EthereumFacade ethereum = fromTest();
-        EthAddress address = publishAndMapContract(ethereum);
-        CompiledContract compiledContract = ethereum.compile(contractSource).get().get("myContract2");
-        MyContract2 myContract = ethereum.createContractProxy(compiledContract, address, mainAccount, MyContract2.class);
 
-        testMethodCalls(myContract, address, ethereum);
-
-        assertEquals(mainAccount.getAddress(), myContract.getOwner());
-    }
 
     private enum EnumTest {
         VAL1, VAL2, VAL3
