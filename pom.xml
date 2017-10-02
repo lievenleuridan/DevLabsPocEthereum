@@ -43,11 +43,11 @@
             <scope>test</scope>
         </dependency>
 
-        <dependency>
-            <groupId>com.itextpdf</groupId>
-            <artifactId>itextpdf</artifactId>
-            <version>5.0.6</version>
-        </dependency>
+        <!--<dependency>-->
+            <!--<groupId>com.itextpdf</groupId>-->
+            <!--<artifactId>itextpdf</artifactId>-->
+            <!--<version>5.0.6</version>-->
+        <!--</dependency>-->
         <dependency>
             <groupId>org.adridadou</groupId>
             <artifactId>eth-contract-api</artifactId>
