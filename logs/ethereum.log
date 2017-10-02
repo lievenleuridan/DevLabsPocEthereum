@@ -1,4 +1,36 @@
-08:58:30.869 INFO [c.e.d.DemoApplicationTests]  Starting DemoApplicationTests on WLA-ICT-45 with PID 16172 (started by vandebroeck.k in C:\Projects\demo)
-08:58:30.885 DEBUG [c.e.d.DemoApplicationTests]  Running with Spring Boot v1.5.7.RELEASE, Spring v4.3.11.RELEASE
-08:58:30.885 INFO [c.e.d.DemoApplicationTests]  No active profile set, falling back to default profiles: default
-08:58:32.105 INFO [c.e.d.DemoApplicationTests]  Started DemoApplicationTests in 1.565 seconds (JVM running for 2.356)
+09:25:47.805 INFO [c.e.d.DemoApplication]  Starting DemoApplication on WLA-ICT-45 with PID 9284 (C:\Projects\demo\target\classes started by vandebroeck.k in C:\Projects\demo)
+09:25:47.807 DEBUG [c.e.d.DemoApplication]  Running with Spring Boot v1.5.7.RELEASE, Spring v4.3.11.RELEASE
+09:25:47.807 INFO [c.e.d.DemoApplication]  No active profile set, falling back to default profiles: default
+09:25:48.300 DEBUG [o.j.logging]  Logging Provider: org.jboss.logging.Slf4jLoggerProvider found via system property
+09:25:49.963 INFO [o.a.c.c.StandardService]  Starting service [Tomcat]
+09:25:49.965 INFO [o.a.c.c.StandardEngine]  Starting Servlet Engine: Apache Tomcat/8.5.20
+09:25:50.096 INFO [o.a.c.c.C.[.[.[/]]  Initializing Spring embedded WebApplicationContext
+09:25:50.950 INFO [o.a.c.h.Http11NioProtocol]  Initializing ProtocolHandler ["http-nio-8080"]
+09:25:50.957 INFO [o.a.c.h.Http11NioProtocol]  Starting ProtocolHandler ["http-nio-8080"]
+09:25:50.965 INFO [o.a.t.u.n.NioSelectorPool]  Using a shared selector for servlet write/read
+09:25:50.990 INFO [c.e.d.DemoApplication]  Started DemoApplication in 3.692 seconds (JVM running for 4.655)
+09:26:07.757 INFO [o.a.c.c.C.[.[.[/]]  Initializing Spring FrameworkServlet 'dispatcherServlet'
+09:40:30.597 INFO [c.e.d.DemoApplication]  Starting DemoApplication on WLA-ICT-45 with PID 14536 (C:\Projects\demo\target\classes started by vandebroeck.k in C:\Projects\demo)
+09:40:30.601 DEBUG [c.e.d.DemoApplication]  Running with Spring Boot v1.5.7.RELEASE, Spring v4.3.11.RELEASE
+09:40:30.601 INFO [c.e.d.DemoApplication]  No active profile set, falling back to default profiles: default
+09:40:30.931 DEBUG [o.j.logging]  Logging Provider: org.jboss.logging.Slf4jLoggerProvider found via system property
+09:40:32.373 INFO [o.a.c.c.StandardService]  Starting service [Tomcat]
+09:40:32.375 INFO [o.a.c.c.StandardEngine]  Starting Servlet Engine: Apache Tomcat/8.5.20
+09:40:32.514 INFO [o.a.c.c.C.[.[.[/]]  Initializing Spring embedded WebApplicationContext
+09:40:33.443 INFO [o.a.c.h.Http11NioProtocol]  Initializing ProtocolHandler ["http-nio-8080"]
+09:40:33.451 INFO [o.a.c.h.Http11NioProtocol]  Starting ProtocolHandler ["http-nio-8080"]
+09:40:33.462 INFO [o.a.t.u.n.NioSelectorPool]  Using a shared selector for servlet write/read
+09:40:33.482 INFO [c.e.d.DemoApplication]  Started DemoApplication in 3.246 seconds (JVM running for 3.991)
+09:40:36.996 INFO [o.a.c.c.C.[.[.[/]]  Initializing Spring FrameworkServlet 'dispatcherServlet'
+09:42:37.344 INFO [c.e.d.DemoApplication]  Starting DemoApplication on WLA-ICT-45 with PID 7980 (C:\Projects\demo\target\classes started by vandebroeck.k in C:\Projects\demo)
+09:42:37.347 DEBUG [c.e.d.DemoApplication]  Running with Spring Boot v1.5.7.RELEASE, Spring v4.3.11.RELEASE
+09:42:37.347 INFO [c.e.d.DemoApplication]  No active profile set, falling back to default profiles: default
+09:42:37.689 DEBUG [o.j.logging]  Logging Provider: org.jboss.logging.Slf4jLoggerProvider found via system property
+09:42:39.117 INFO [o.a.c.c.StandardService]  Starting service [Tomcat]
+09:42:39.122 INFO [o.a.c.c.StandardEngine]  Starting Servlet Engine: Apache Tomcat/8.5.20
+09:42:39.255 INFO [o.a.c.c.C.[.[.[/]]  Initializing Spring embedded WebApplicationContext
+09:42:40.071 INFO [o.a.c.h.Http11NioProtocol]  Initializing ProtocolHandler ["http-nio-8080"]
+09:42:40.079 INFO [o.a.c.h.Http11NioProtocol]  Starting ProtocolHandler ["http-nio-8080"]
+09:42:40.089 INFO [o.a.t.u.n.NioSelectorPool]  Using a shared selector for servlet write/read
+09:42:40.110 INFO [c.e.d.DemoApplication]  Started DemoApplication in 3.062 seconds (JVM running for 3.699)
+09:42:42.783 INFO [o.a.c.c.C.[.[.[/]]  Initializing Spring FrameworkServlet 'dispatcherServlet'
