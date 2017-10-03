@@ -1,10 +1,15 @@
 package com.example.demo;
 
-import org.adridadou.ethereum.EthereumFacade;
+import org.adridadou.ethereum.EthjEthereumFacadeProvider;
 import org.adridadou.ethereum.ethj.TestConfig;
-import org.adridadou.ethereum.ethj.provider.EthereumFacadeProvider;
-import org.adridadou.ethereum.keystore.AccountProvider;
-import org.adridadou.ethereum.values.*;
+import org.adridadou.ethereum.ethj.privatenetwork.PrivateEthereumFacadeProvider;
+import org.adridadou.ethereum.propeller.EthereumConfig;
+import org.adridadou.ethereum.propeller.EthereumFacade;
+import org.adridadou.ethereum.propeller.exception.EthereumApiException;
+import org.adridadou.ethereum.propeller.keystore.AccountProvider;
+import org.adridadou.ethereum.propeller.solidity.SolidityContractDetails;
+import org.adridadou.ethereum.propeller.values.*;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -17,36 +22,150 @@ import java.util.List;
 import java.util.Set;
 import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.ExecutionException;
+import java.util.concurrent.Future;
 
-import static org.adridadou.ethereum.values.EthValue.ether;
+import static org.adridadou.ethereum.ethj.EthereumJConfigs.ropsten;
+import static org.adridadou.ethereum.ethj.privatenetwork.PrivateNetworkConfig.config;
+import static org.adridadou.ethereum.propeller.values.EthValue.ether;
+import static org.junit.Assert.*;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
 public class DemoApplicationTests {
-
-    private SoliditySource contractSource = SoliditySource.from(new File(this.getClass().getResource("/contracts/contract.sol").toURI()));
+    private final PrivateEthereumFacadeProvider privateNetwork = new PrivateEthereumFacadeProvider();
+    /**
+     * used by multiThreadTest()
+     */
+    private boolean somethingDied;
+    private EthAccount mainAccount = AccountProvider.fromSeed("cow");
+    private EthAddress address;
 
     public DemoApplicationTests() throws URISyntaxException {
     }
 
     @Test
-    public void contextLoads() throws URISyntaxException, ExecutionException, InterruptedException {
-        EthAccount mainAccount = AccountProvider.fromSeed("cow");
-        EthereumFacade ethereum = EthereumFacadeProvider.forTest(TestConfig.builder()
+    public void main_example_how_the_lib_works() throws Exception {
+        final EthereumFacade ethereum = fromTest();
+        MyContract2 myContract = publishAndMapContract(ethereum);
+
+        testMethodCalls(myContract, address, ethereum);
+
+        assertEquals(mainAccount.getAddress(), myContract.getOwner());
+    }
+
+    private EthereumFacade fromRopsten() {
+        EthjEthereumFacadeProvider.Builder ethereumProvider = EthjEthereumFacadeProvider.forNetwork(ropsten());
+        ethereumProvider.extendConfig().fastSync(true);
+        return ethereumProvider.create(EthereumConfig.builder().build());
+    }
+
+    private EthereumFacade fromPrivateNetwork() {
+        return privateNetwork.create(config()
+                .reset(true)
+                .initialBalance(mainAccount, ether(10)), EthereumConfig.builder().build());
+    }
+
+    private EthereumFacade fromTest() {
+        return EthjEthereumFacadeProvider.forTest(TestConfig.builder()
                 .balance(mainAccount, ether(10000000))
                 .build());
-
-//        SoliditySource contract = SoliditySource.from(new File(this.getClass().getResource("/contract.sol").toURI()));
-//        CompletableFuture<Map<String, CompiledContract>> compiledContract = ethereum.compile(contract);
-
-        ethereum.compile(SoliditySource.from(new File("src/test/resources/contract.sol"))).get();
-        CompiledContract compiledContract = ethereum.compile(contractSource).get().get("myContract2");
-        CompletableFuture<EthAddress> futureAddress = ethereum.publishContract(compiledContract, mainAccount);
-
-        System.out.println( futureAddress.get());
-        System.out.println(futureAddress.isDone());
-
     }
+
+    private MyContract2 publishAndMapContract(EthereumFacade ethereum) throws Exception {
+        SolidityContractDetails compiledContract =
+                ethereum.compile(SoliditySourceFile.from(new File("src/test/resources/contracts/contract.sol"))).findContract("myContract2").get();
+
+        CompletableFuture<EthAddress> futureAddress = ethereum.publishContract(compiledContract, mainAccount);
+        this.address = futureAddress.get();
+        return ethereum.createContractProxy(compiledContract, futureAddress.get(), mainAccount, MyContract2.class);
+    }
+
+    private void testMethodCalls(MyContract2 myContract, EthAddress address, EthereumFacade ethereum) throws Exception {
+        assertEquals("", myContract.getI1());
+        Future<Integer> future = myContract.myMethod("this is a test");
+        assertEquals(12, future.get().intValue());
+        assertEquals("this is a test", myContract.getI1());
+        assertTrue(myContract.getT());
+
+        Integer[] expected = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9};
+        assertArrayEquals(expected, myContract.getArray().toArray(new Integer[10]));
+
+        assertArrayEquals(expected, myContract.getSet().toArray(new Integer[10]));
+
+        assertEquals(new MyReturnType(true, "hello", 34), myContract.getM());
+
+        assertEquals("", myContract.getI2());
+        myContract.myMethod2("async call").get();
+
+        myContract.myMethod3("async call").with(ether(150)).get();
+
+        assertEquals(ether(150), ethereum.getBalance(address));
+
+        assertEquals(mainAccount.getAddress(), myContract.getOwner());
+
+        assertEquals("async call", myContract.getI2());
+
+        assertEquals(EnumTest.VAL2, myContract.getEnumValue());
+
+        assertEquals(new Date(150_000), myContract.getInitTime(new Date(150_000)));
+        assertEquals(mainAccount.getAddress(), myContract.getAccountAddress(mainAccount));
+        try {
+            myContract.throwMe().get();
+            fail("the call should fail!");
+        } catch (final ExecutionException ex) {
+            assertEquals(EthereumApiException.class, ex.getCause().getClass());
+        }
+    }
+
+
+
+    @Test
+    @Ignore
+    public void speedAndReliabilityTest() throws Exception {
+        final EthereumFacade ethereum = fromTest();
+
+//        myContract.myMethod("1");
+        for (int i = 0; i < 500; i++) {
+            MyContract2 myContract = publishAndMapContract(ethereum);
+            //System.out.println("call no:" + i);
+            testMethodCalls(myContract, address, ethereum);
+            assertEquals(mainAccount.getAddress(), myContract.getOwner());
+        }
+    }
+
+    @Test
+    @Ignore
+    public void multiThreadTest() throws Exception {
+        somethingDied = false;
+        final EthereumFacade ethereum = fromTest();
+        final int threadCount = 5;
+        Thread[] threads = new Thread[threadCount];
+        for (int i = 0; i < threads.length; i++) {
+            threads[i] = new Thread(() -> {
+                try {
+                    for (int i1 = 0; i1 < 10; i1++) {
+                        MyContract2 myContract = publishAndMapContract(ethereum);
+                        testMethodCalls(myContract, address, ethereum);
+                        assertEquals(mainAccount.getAddress(), myContract.getOwner());
+                    }
+                } catch (Exception e) {
+                    e.printStackTrace();
+                    somethingDied = true;
+                    fail("Something died");
+                }
+            });
+            threads[i].start();
+        } // for
+        for (Thread thread : threads) {
+            thread.join();
+        } // for
+        assertFalse("Something died, see stack trace", somethingDied);
+    }
+
+    private enum EnumTest {
+        VAL1, VAL2, VAL3
+    }
+
     private interface MyContract2 {
         CompletableFuture<Integer> myMethod(String value);
 
@@ -75,9 +194,6 @@ public class DemoApplicationTests {
         Date getInitTime(final Date date);
 
         EthAddress getAccountAddress(final EthAccount account);
-    }
-    private enum EnumTest {
-        VAL1, VAL2, VAL3
     }
 
     public static class MyReturnType {
