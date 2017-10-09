@@ -1,17 +1,23 @@
-13:16:20.925 INFO [c.e.d.PersonContractTests]  Starting PersonContractTests on WLA-ICT-45 with PID 1528 (started by vandebroeck.k in C:\Projects\demo)
-13:16:20.928 DEBUG [c.e.d.PersonContractTests]  Running with Spring Boot v1.5.7.RELEASE, Spring v4.3.11.RELEASE
-13:16:20.928 INFO [c.e.d.PersonContractTests]  No active profile set, falling back to default profiles: default
-13:16:21.574 DEBUG [o.j.logging]  Logging Provider: org.jboss.logging.Slf4jLoggerProvider found via system property
-13:16:23.767 INFO [c.e.d.PersonContractTests]  Started PersonContractTests in 3.177 seconds (JVM running for 5.211)
-13:16:24.095 INFO [general]  Config ( yes ): default properties from resource 'ethereumj.conf'
-13:16:24.095 INFO [general]  Config ( no  ): user properties from -Dethereumj.conf.res resource 'null'
-13:16:24.096 INFO [general]  Config ( no  ): user properties from resource 'user.conf'
-13:16:24.096 INFO [general]  Config ( no  ): user properties from file 'C:\Projects\demo\config\ethereumj.conf'
-13:16:24.097 INFO [general]  Config ( no  ): test properties from resource 'test-ethereumj.conf'
-13:16:24.097 INFO [general]  Config ( no  ): test properties from resource 'test-user.conf'
-13:16:24.097 INFO [general]  Config ( no  ): user properties from -Dethereumj.conf.file file 'null'
-13:16:24.097 INFO [general]  Config ( no  ): config passed via constructor
-13:16:24.099 DEBUG [general]  Config trace:     # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 166-413
+09:22:09.478 INFO [c.e.d.DemoApplication]  Starting DemoApplication on WLA-ICT-45 with PID 7188 (C:\Projects\demo\target\classes started by vandebroeck.k in C:\Projects\demo)
+09:22:09.480 DEBUG [c.e.d.DemoApplication]  Running with Spring Boot v1.5.7.RELEASE, Spring v4.3.11.RELEASE
+09:22:09.481 INFO [c.e.d.DemoApplication]  No active profile set, falling back to default profiles: default
+09:22:09.870 DEBUG [o.j.logging]  Logging Provider: org.jboss.logging.Slf4jLoggerProvider found via system property
+09:22:11.877 INFO [o.a.c.c.StandardService]  Starting service [Tomcat]
+09:22:11.879 INFO [o.a.c.c.StandardEngine]  Starting Servlet Engine: Apache Tomcat/8.5.20
+09:22:12.027 INFO [o.a.c.c.C.[.[.[/]]  Initializing Spring embedded WebApplicationContext
+09:22:12.805 INFO [o.a.c.h.Http11NioProtocol]  Initializing ProtocolHandler ["http-nio-8080"]
+09:22:12.815 INFO [o.a.c.h.Http11NioProtocol]  Starting ProtocolHandler ["http-nio-8080"]
+09:22:12.827 INFO [o.a.t.u.n.NioSelectorPool]  Using a shared selector for servlet write/read
+09:22:12.850 INFO [c.e.d.DemoApplication]  Started DemoApplication in 3.659 seconds (JVM running for 4.451)
+09:22:13.261 INFO [general]  Config ( yes ): default properties from resource 'ethereumj.conf'
+09:22:13.261 INFO [general]  Config ( no  ): user properties from -Dethereumj.conf.res resource 'null'
+09:22:13.261 INFO [general]  Config ( no  ): user properties from resource 'user.conf'
+09:22:13.262 INFO [general]  Config ( no  ): user properties from file 'C:\Projects\demo\config\ethereumj.conf'
+09:22:13.262 INFO [general]  Config ( no  ): test properties from resource 'test-ethereumj.conf'
+09:22:13.262 INFO [general]  Config ( no  ): test properties from resource 'test-user.conf'
+09:22:13.262 INFO [general]  Config ( no  ): user properties from -Dethereumj.conf.file file 'null'
+09:22:13.262 INFO [general]  Config ( no  ): config passed via constructor
+09:22:13.264 DEBUG [general]  Config trace:     # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 166-413
 blockchain {
     # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 166
     config {
@@ -320,28 +326,33 @@ vm {
     }
 }
 
-13:16:24.114 WARN [general]  File not found `build-info.properties`. Run `gradle build` to generate it
-13:16:24.538 DEBUG [o.z.e.ProcessExecutor]  Executing [solc, --optimize, --combined-json, bin,abi,ast,interface,metadata, C:\Projects\demo\src\test\resources\contracts\PersonContract.sol].
-13:16:24.547 DEBUG [o.z.e.ProcessExecutor]  Started java.lang.ProcessImpl@1402ba1
-13:16:24.627 DEBUG [o.z.e.WaitForProcess]  java.lang.ProcessImpl@1402ba1 stopped with exit code 0
-13:16:24.888 INFO [mine]  Loading light dataset from C:\Projects\demo\database\mine-dag-light.dat
-13:16:25.060 INFO [mine]  Dataset loaded.
-13:16:25.144 DEBUG [pending]  New best block from another fork: #1 (134674 <~ bdb784) Txs:1, Unc: 0, old best: #1 (134674 <~ bdb784) Txs:1, Unc: 0, ancestor: #1 (134674 <~ bdb784) Txs:1, Unc: 0
-13:16:25.670 DEBUG [pending]  PendingStateImpl.processBest: #2 (ecce3a <~ 134674) Txs:1, Unc: 0
-13:18:32.510 INFO [c.e.d.PersonContractTests]  Starting PersonContractTests on WLA-ICT-45 with PID 10820 (started by vandebroeck.k in C:\Projects\demo)
-13:18:32.513 DEBUG [c.e.d.PersonContractTests]  Running with Spring Boot v1.5.7.RELEASE, Spring v4.3.11.RELEASE
-13:18:32.513 INFO [c.e.d.PersonContractTests]  No active profile set, falling back to default profiles: default
-13:18:33.004 DEBUG [o.j.logging]  Logging Provider: org.jboss.logging.Slf4jLoggerProvider found via system property
-13:18:34.976 INFO [c.e.d.PersonContractTests]  Started PersonContractTests in 2.77 seconds (JVM running for 4.407)
-13:18:35.257 INFO [general]  Config ( yes ): default properties from resource 'ethereumj.conf'
-13:18:35.257 INFO [general]  Config ( no  ): user properties from -Dethereumj.conf.res resource 'null'
-13:18:35.257 INFO [general]  Config ( no  ): user properties from resource 'user.conf'
-13:18:35.258 INFO [general]  Config ( no  ): user properties from file 'C:\Projects\demo\config\ethereumj.conf'
-13:18:35.258 INFO [general]  Config ( no  ): test properties from resource 'test-ethereumj.conf'
-13:18:35.259 INFO [general]  Config ( no  ): test properties from resource 'test-user.conf'
-13:18:35.259 INFO [general]  Config ( no  ): user properties from -Dethereumj.conf.file file 'null'
-13:18:35.259 INFO [general]  Config ( no  ): config passed via constructor
-13:18:35.263 DEBUG [general]  Config trace:     # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 166-413
+09:22:13.278 WARN [general]  File not found `build-info.properties`. Run `gradle build` to generate it
+09:22:13.620 DEBUG [o.z.e.ProcessExecutor]  Executing [solc, --optimize, --combined-json, bin,abi,ast,interface,metadata, C:\Projects\demo\src\test\resources\contracts\PersonContract.sol].
+09:22:13.625 DEBUG [o.z.e.ProcessExecutor]  Started java.lang.ProcessImpl@1496961
+09:22:13.689 DEBUG [o.z.e.WaitForProcess]  java.lang.ProcessImpl@1496961 stopped with exit code 0
+09:22:13.831 INFO [mine]  Loading light dataset from C:\Projects\demo\database\mine-dag-light.dat
+09:22:13.973 INFO [mine]  Dataset loaded.
+09:22:14.115 DEBUG [pending]  New best block from another fork: #1 (fca69b <~ f84db2) Txs:1, Unc: 0, old best: #1 (fca69b <~ f84db2) Txs:1, Unc: 0, ancestor: #1 (fca69b <~ f84db2) Txs:1, Unc: 0
+09:23:49.010 INFO [c.e.d.DemoApplication]  Starting DemoApplication on WLA-ICT-45 with PID 14072 (C:\Projects\demo\target\classes started by vandebroeck.k in C:\Projects\demo)
+09:23:49.013 DEBUG [c.e.d.DemoApplication]  Running with Spring Boot v1.5.7.RELEASE, Spring v4.3.11.RELEASE
+09:23:49.013 INFO [c.e.d.DemoApplication]  No active profile set, falling back to default profiles: default
+09:23:49.331 DEBUG [o.j.logging]  Logging Provider: org.jboss.logging.Slf4jLoggerProvider found via system property
+09:23:50.804 INFO [o.a.c.c.StandardService]  Starting service [Tomcat]
+09:23:50.806 INFO [o.a.c.c.StandardEngine]  Starting Servlet Engine: Apache Tomcat/8.5.20
+09:23:50.985 INFO [o.a.c.c.C.[.[.[/]]  Initializing Spring embedded WebApplicationContext
+09:23:51.911 INFO [o.a.c.h.Http11NioProtocol]  Initializing ProtocolHandler ["http-nio-8080"]
+09:23:51.918 INFO [o.a.c.h.Http11NioProtocol]  Starting ProtocolHandler ["http-nio-8080"]
+09:23:51.927 INFO [o.a.t.u.n.NioSelectorPool]  Using a shared selector for servlet write/read
+09:23:51.946 INFO [c.e.d.DemoApplication]  Started DemoApplication in 3.232 seconds (JVM running for 3.982)
+09:23:52.375 INFO [general]  Config ( yes ): default properties from resource 'ethereumj.conf'
+09:23:52.375 INFO [general]  Config ( no  ): user properties from -Dethereumj.conf.res resource 'null'
+09:23:52.375 INFO [general]  Config ( no  ): user properties from resource 'user.conf'
+09:23:52.376 INFO [general]  Config ( no  ): user properties from file 'C:\Projects\demo\config\ethereumj.conf'
+09:23:52.376 INFO [general]  Config ( no  ): test properties from resource 'test-ethereumj.conf'
+09:23:52.376 INFO [general]  Config ( no  ): test properties from resource 'test-user.conf'
+09:23:52.376 INFO [general]  Config ( no  ): user properties from -Dethereumj.conf.file file 'null'
+09:23:52.376 INFO [general]  Config ( no  ): config passed via constructor
+09:23:52.378 DEBUG [general]  Config trace:     # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 166-413
 blockchain {
     # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 166
     config {
@@ -650,28 +661,34 @@ vm {
     }
 }
 
-13:18:35.283 WARN [general]  File not found `build-info.properties`. Run `gradle build` to generate it
-13:18:35.638 DEBUG [o.z.e.ProcessExecutor]  Executing [solc, --optimize, --combined-json, bin,abi,ast,interface,metadata, C:\Projects\demo\src\test\resources\contracts\PersonContract.sol].
-13:18:35.643 DEBUG [o.z.e.ProcessExecutor]  Started java.lang.ProcessImpl@2efc59
-13:18:35.698 DEBUG [o.z.e.WaitForProcess]  java.lang.ProcessImpl@2efc59 stopped with exit code 0
-13:18:35.882 INFO [mine]  Loading light dataset from C:\Projects\demo\database\mine-dag-light.dat
-13:18:36.009 INFO [mine]  Dataset loaded.
-13:18:36.065 DEBUG [pending]  New best block from another fork: #1 (503303 <~ bdb784) Txs:1, Unc: 0, old best: #1 (503303 <~ bdb784) Txs:1, Unc: 0, ancestor: #1 (503303 <~ bdb784) Txs:1, Unc: 0
-13:18:36.224 DEBUG [pending]  PendingStateImpl.processBest: #2 (9f991f <~ 503303) Txs:1, Unc: 0
-13:18:51.881 INFO [c.e.d.PersonContractTests]  Starting PersonContractTests on WLA-ICT-45 with PID 8708 (started by vandebroeck.k in C:\Projects\demo)
-13:18:51.885 DEBUG [c.e.d.PersonContractTests]  Running with Spring Boot v1.5.7.RELEASE, Spring v4.3.11.RELEASE
-13:18:51.886 INFO [c.e.d.PersonContractTests]  No active profile set, falling back to default profiles: default
-13:18:52.440 DEBUG [o.j.logging]  Logging Provider: org.jboss.logging.Slf4jLoggerProvider found via system property
-13:18:54.265 INFO [c.e.d.PersonContractTests]  Started PersonContractTests in 2.877 seconds (JVM running for 4.452)
-13:18:54.570 INFO [general]  Config ( yes ): default properties from resource 'ethereumj.conf'
-13:18:54.570 INFO [general]  Config ( no  ): user properties from -Dethereumj.conf.res resource 'null'
-13:18:54.570 INFO [general]  Config ( no  ): user properties from resource 'user.conf'
-13:18:54.571 INFO [general]  Config ( no  ): user properties from file 'C:\Projects\demo\config\ethereumj.conf'
-13:18:54.571 INFO [general]  Config ( no  ): test properties from resource 'test-ethereumj.conf'
-13:18:54.572 INFO [general]  Config ( no  ): test properties from resource 'test-user.conf'
-13:18:54.572 INFO [general]  Config ( no  ): user properties from -Dethereumj.conf.file file 'null'
-13:18:54.572 INFO [general]  Config ( no  ): config passed via constructor
-13:18:54.574 DEBUG [general]  Config trace:     # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 166-413
+09:23:52.388 WARN [general]  File not found `build-info.properties`. Run `gradle build` to generate it
+09:23:52.715 DEBUG [o.z.e.ProcessExecutor]  Executing [solc, --optimize, --combined-json, bin,abi,ast,interface,metadata, C:\Projects\demo\src\test\resources\contracts\PersonContract.sol].
+09:23:52.721 DEBUG [o.z.e.ProcessExecutor]  Started java.lang.ProcessImpl@1496961
+09:23:52.773 DEBUG [o.z.e.WaitForProcess]  java.lang.ProcessImpl@1496961 stopped with exit code 0
+09:23:52.917 INFO [mine]  Loading light dataset from C:\Projects\demo\database\mine-dag-light.dat
+09:23:53.054 INFO [mine]  Dataset loaded.
+09:23:53.114 DEBUG [pending]  New best block from another fork: #1 (8891a1 <~ f84db2) Txs:1, Unc: 0, old best: #1 (8891a1 <~ f84db2) Txs:1, Unc: 0, ancestor: #1 (8891a1 <~ f84db2) Txs:1, Unc: 0
+09:23:53.247 DEBUG [pending]  PendingStateImpl.processBest: #2 (4d8798 <~ 8891a1) Txs:1, Unc: 0
+09:24:26.783 INFO [c.e.d.DemoApplication]  Starting DemoApplication on WLA-ICT-45 with PID 14420 (C:\Projects\demo\target\classes started by vandebroeck.k in C:\Projects\demo)
+09:24:26.785 DEBUG [c.e.d.DemoApplication]  Running with Spring Boot v1.5.7.RELEASE, Spring v4.3.11.RELEASE
+09:24:26.786 INFO [c.e.d.DemoApplication]  No active profile set, falling back to default profiles: default
+09:24:27.111 DEBUG [o.j.logging]  Logging Provider: org.jboss.logging.Slf4jLoggerProvider found via system property
+09:24:28.381 INFO [o.a.c.c.StandardService]  Starting service [Tomcat]
+09:24:28.382 INFO [o.a.c.c.StandardEngine]  Starting Servlet Engine: Apache Tomcat/8.5.20
+09:24:28.484 INFO [o.a.c.c.C.[.[.[/]]  Initializing Spring embedded WebApplicationContext
+09:24:29.326 INFO [o.a.c.h.Http11NioProtocol]  Initializing ProtocolHandler ["http-nio-8080"]
+09:24:29.334 INFO [o.a.c.h.Http11NioProtocol]  Starting ProtocolHandler ["http-nio-8080"]
+09:24:29.343 INFO [o.a.t.u.n.NioSelectorPool]  Using a shared selector for servlet write/read
+09:24:29.365 INFO [c.e.d.DemoApplication]  Started DemoApplication in 2.932 seconds (JVM running for 3.588)
+09:24:29.693 INFO [general]  Config ( yes ): default properties from resource 'ethereumj.conf'
+09:24:29.693 INFO [general]  Config ( no  ): user properties from -Dethereumj.conf.res resource 'null'
+09:24:29.694 INFO [general]  Config ( no  ): user properties from resource 'user.conf'
+09:24:29.695 INFO [general]  Config ( no  ): user properties from file 'C:\Projects\demo\config\ethereumj.conf'
+09:24:29.695 INFO [general]  Config ( no  ): test properties from resource 'test-ethereumj.conf'
+09:24:29.695 INFO [general]  Config ( no  ): test properties from resource 'test-user.conf'
+09:24:29.695 INFO [general]  Config ( no  ): user properties from -Dethereumj.conf.file file 'null'
+09:24:29.695 INFO [general]  Config ( no  ): config passed via constructor
+09:24:29.697 DEBUG [general]  Config trace:     # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 166-413
 blockchain {
     # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 166
     config {
@@ -980,28 +997,34 @@ vm {
     }
 }
 
-13:18:54.584 WARN [general]  File not found `build-info.properties`. Run `gradle build` to generate it
-13:18:54.987 DEBUG [o.z.e.ProcessExecutor]  Executing [solc, --optimize, --combined-json, bin,abi,ast,interface,metadata, C:\Projects\demo\src\test\resources\contracts\PersonContract.sol].
-13:18:54.993 DEBUG [o.z.e.ProcessExecutor]  Started java.lang.ProcessImpl@229fa7
-13:18:55.045 DEBUG [o.z.e.WaitForProcess]  java.lang.ProcessImpl@229fa7 stopped with exit code 0
-13:18:55.221 INFO [mine]  Loading light dataset from C:\Projects\demo\database\mine-dag-light.dat
-13:18:55.361 INFO [mine]  Dataset loaded.
-13:18:55.479 DEBUG [pending]  New best block from another fork: #1 (5cf347 <~ bdb784) Txs:1, Unc: 0, old best: #1 (5cf347 <~ bdb784) Txs:1, Unc: 0, ancestor: #1 (5cf347 <~ bdb784) Txs:1, Unc: 0
-13:18:55.867 DEBUG [pending]  PendingStateImpl.processBest: #2 (6c3103 <~ 5cf347) Txs:1, Unc: 0
-13:19:10.863 INFO [c.e.d.PersonContractTests]  Starting PersonContractTests on WLA-ICT-45 with PID 16080 (started by vandebroeck.k in C:\Projects\demo)
-13:19:10.866 DEBUG [c.e.d.PersonContractTests]  Running with Spring Boot v1.5.7.RELEASE, Spring v4.3.11.RELEASE
-13:19:10.866 INFO [c.e.d.PersonContractTests]  No active profile set, falling back to default profiles: default
-13:19:11.356 DEBUG [o.j.logging]  Logging Provider: org.jboss.logging.Slf4jLoggerProvider found via system property
-13:19:13.327 INFO [c.e.d.PersonContractTests]  Started PersonContractTests in 2.751 seconds (JVM running for 4.556)
-13:19:13.718 INFO [general]  Config ( yes ): default properties from resource 'ethereumj.conf'
-13:19:13.718 INFO [general]  Config ( no  ): user properties from -Dethereumj.conf.res resource 'null'
-13:19:13.719 INFO [general]  Config ( no  ): user properties from resource 'user.conf'
-13:19:13.720 INFO [general]  Config ( no  ): user properties from file 'C:\Projects\demo\config\ethereumj.conf'
-13:19:13.720 INFO [general]  Config ( no  ): test properties from resource 'test-ethereumj.conf'
-13:19:13.721 INFO [general]  Config ( no  ): test properties from resource 'test-user.conf'
-13:19:13.721 INFO [general]  Config ( no  ): user properties from -Dethereumj.conf.file file 'null'
-13:19:13.721 INFO [general]  Config ( no  ): config passed via constructor
-13:19:13.725 DEBUG [general]  Config trace:     # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 166-413
+09:24:29.707 WARN [general]  File not found `build-info.properties`. Run `gradle build` to generate it
+09:24:30.032 DEBUG [o.z.e.ProcessExecutor]  Executing [solc, --optimize, --combined-json, bin,abi,ast,interface,metadata, C:\Projects\demo\src\test\resources\contracts\PersonContract.sol].
+09:24:30.038 DEBUG [o.z.e.ProcessExecutor]  Started java.lang.ProcessImpl@ee53dc
+09:24:30.089 DEBUG [o.z.e.WaitForProcess]  java.lang.ProcessImpl@ee53dc stopped with exit code 0
+09:24:30.229 INFO [mine]  Loading light dataset from C:\Projects\demo\database\mine-dag-light.dat
+09:24:30.371 INFO [mine]  Dataset loaded.
+09:24:30.731 DEBUG [pending]  New best block from another fork: #1 (26654e <~ f84db2) Txs:1, Unc: 0, old best: #1 (26654e <~ f84db2) Txs:1, Unc: 0, ancestor: #1 (26654e <~ f84db2) Txs:1, Unc: 0
+09:24:30.915 DEBUG [pending]  PendingStateImpl.processBest: #2 (847657 <~ 26654e) Txs:1, Unc: 0
+09:25:18.688 INFO [c.e.d.DemoApplication]  Starting DemoApplication on WLA-ICT-45 with PID 1364 (C:\Projects\demo\target\classes started by vandebroeck.k in C:\Projects\demo)
+09:25:18.691 DEBUG [c.e.d.DemoApplication]  Running with Spring Boot v1.5.7.RELEASE, Spring v4.3.11.RELEASE
+09:25:18.691 INFO [c.e.d.DemoApplication]  No active profile set, falling back to default profiles: default
+09:25:18.984 DEBUG [o.j.logging]  Logging Provider: org.jboss.logging.Slf4jLoggerProvider found via system property
+09:25:20.416 INFO [o.a.c.c.StandardService]  Starting service [Tomcat]
+09:25:20.417 INFO [o.a.c.c.StandardEngine]  Starting Servlet Engine: Apache Tomcat/8.5.20
+09:25:20.519 INFO [o.a.c.c.C.[.[.[/]]  Initializing Spring embedded WebApplicationContext
+09:25:21.269 INFO [o.a.c.h.Http11NioProtocol]  Initializing ProtocolHandler ["http-nio-8080"]
+09:25:21.276 INFO [o.a.c.h.Http11NioProtocol]  Starting ProtocolHandler ["http-nio-8080"]
+09:25:21.284 INFO [o.a.t.u.n.NioSelectorPool]  Using a shared selector for servlet write/read
+09:25:21.303 INFO [c.e.d.DemoApplication]  Started DemoApplication in 2.912 seconds (JVM running for 3.641)
+09:25:21.673 INFO [general]  Config ( yes ): default properties from resource 'ethereumj.conf'
+09:25:21.673 INFO [general]  Config ( no  ): user properties from -Dethereumj.conf.res resource 'null'
+09:25:21.674 INFO [general]  Config ( no  ): user properties from resource 'user.conf'
+09:25:21.674 INFO [general]  Config ( no  ): user properties from file 'C:\Projects\demo\config\ethereumj.conf'
+09:25:21.675 INFO [general]  Config ( no  ): test properties from resource 'test-ethereumj.conf'
+09:25:21.675 INFO [general]  Config ( no  ): test properties from resource 'test-user.conf'
+09:25:21.675 INFO [general]  Config ( no  ): user properties from -Dethereumj.conf.file file 'null'
+09:25:21.675 INFO [general]  Config ( no  ): config passed via constructor
+09:25:21.677 DEBUG [general]  Config trace:     # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 166-413
 blockchain {
     # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 166
     config {
@@ -1310,11 +1333,2019 @@ vm {
     }
 }
 
-13:19:13.738 WARN [general]  File not found `build-info.properties`. Run `gradle build` to generate it
-13:19:14.136 DEBUG [o.z.e.ProcessExecutor]  Executing [solc, --optimize, --combined-json, bin,abi,ast,interface,metadata, C:\Projects\demo\src\test\resources\contracts\PersonContract.sol].
-13:19:14.141 DEBUG [o.z.e.ProcessExecutor]  Started java.lang.ProcessImpl@2efc59
-13:19:14.208 DEBUG [o.z.e.WaitForProcess]  java.lang.ProcessImpl@2efc59 stopped with exit code 0
-13:19:14.429 INFO [mine]  Loading light dataset from C:\Projects\demo\database\mine-dag-light.dat
-13:19:14.588 INFO [mine]  Dataset loaded.
-13:19:14.815 DEBUG [pending]  New best block from another fork: #1 (3266b0 <~ bdb784) Txs:1, Unc: 0, old best: #1 (3266b0 <~ bdb784) Txs:1, Unc: 0, ancestor: #1 (3266b0 <~ bdb784) Txs:1, Unc: 0
-13:19:15.264 DEBUG [pending]  PendingStateImpl.processBest: #2 (785287 <~ 3266b0) Txs:1, Unc: 0
+09:25:21.687 WARN [general]  File not found `build-info.properties`. Run `gradle build` to generate it
+09:25:22.011 DEBUG [o.z.e.ProcessExecutor]  Executing [solc, --optimize, --combined-json, bin,abi,ast,interface,metadata, C:\Projects\demo\src\test\resources\contracts\PersonContract.sol].
+09:25:22.017 DEBUG [o.z.e.ProcessExecutor]  Started java.lang.ProcessImpl@10aeb20
+09:25:22.077 DEBUG [o.z.e.WaitForProcess]  java.lang.ProcessImpl@10aeb20 stopped with exit code 0
+09:25:22.250 INFO [mine]  Loading light dataset from C:\Projects\demo\database\mine-dag-light.dat
+09:25:22.401 INFO [mine]  Dataset loaded.
+09:25:22.700 DEBUG [pending]  New best block from another fork: #1 (e4dddb <~ f84db2) Txs:1, Unc: 0, old best: #1 (e4dddb <~ f84db2) Txs:1, Unc: 0, ancestor: #1 (e4dddb <~ f84db2) Txs:1, Unc: 0
+09:25:23.085 DEBUG [pending]  PendingStateImpl.processBest: #2 (a5d891 <~ e4dddb) Txs:1, Unc: 0
+09:26:27.235 INFO [c.e.d.DemoApplication]  Starting DemoApplication on WLA-ICT-45 with PID 16436 (C:\Projects\demo\target\classes started by vandebroeck.k in C:\Projects\demo)
+09:26:27.237 DEBUG [c.e.d.DemoApplication]  Running with Spring Boot v1.5.7.RELEASE, Spring v4.3.11.RELEASE
+09:26:27.237 INFO [c.e.d.DemoApplication]  No active profile set, falling back to default profiles: default
+09:26:27.561 DEBUG [o.j.logging]  Logging Provider: org.jboss.logging.Slf4jLoggerProvider found via system property
+09:26:28.907 INFO [o.a.c.c.StandardService]  Starting service [Tomcat]
+09:26:28.909 INFO [o.a.c.c.StandardEngine]  Starting Servlet Engine: Apache Tomcat/8.5.20
+09:26:29.021 INFO [o.a.c.c.C.[.[.[/]]  Initializing Spring embedded WebApplicationContext
+09:26:29.888 INFO [o.a.c.h.Http11NioProtocol]  Initializing ProtocolHandler ["http-nio-8080"]
+09:26:29.900 INFO [o.a.c.h.Http11NioProtocol]  Starting ProtocolHandler ["http-nio-8080"]
+09:26:29.908 INFO [o.a.t.u.n.NioSelectorPool]  Using a shared selector for servlet write/read
+09:26:29.928 INFO [c.e.d.DemoApplication]  Started DemoApplication in 3.081 seconds (JVM running for 3.724)
+09:26:30.344 INFO [general]  Config ( yes ): default properties from resource 'ethereumj.conf'
+09:26:30.344 INFO [general]  Config ( no  ): user properties from -Dethereumj.conf.res resource 'null'
+09:26:30.344 INFO [general]  Config ( no  ): user properties from resource 'user.conf'
+09:26:30.345 INFO [general]  Config ( no  ): user properties from file 'C:\Projects\demo\config\ethereumj.conf'
+09:26:30.345 INFO [general]  Config ( no  ): test properties from resource 'test-ethereumj.conf'
+09:26:30.346 INFO [general]  Config ( no  ): test properties from resource 'test-user.conf'
+09:26:30.346 INFO [general]  Config ( no  ): user properties from -Dethereumj.conf.file file 'null'
+09:26:30.346 INFO [general]  Config ( no  ): config passed via constructor
+09:26:30.348 DEBUG [general]  Config trace:     # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 166-413
+blockchain {
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 166
+    config {
+        # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 166
+        name=main
+    }
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 413
+    only=false
+}
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 419
+blocks {
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 419
+    loader=""
+}
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 213
+cache {
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 234
+    blockQueueSize=32
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 215
+    flush {
+        # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 224
+        blocks=0
+        # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 227
+        shortSyncFlush=true
+        # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 219
+        writeCacheSize=64
+    }
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 237
+    headerQueueSize=8
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 243
+    maxStateBloomSize=128
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 231
+    stateCacheSize=256
+}
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 422
+crypto {
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 426-427
+    hash {
+        # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 426
+        alg256=ETH-KECCAK-256
+        # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 427
+        alg512=ETH-KECCAK-512
+    }
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 424
+    providerName=SC
+}
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 174
+database {
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 177
+    dir=database
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 196
+    incompatibleDatabaseBehavior=EXIT
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 202
+    prune {
+        # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 203
+        enabled=true
+        # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 208
+        maxDepth=192
+    }
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 183
+    reset=false
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 189
+    resetBlock=0
+}
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 347
+dump {
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 360
+    block=-1
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 364
+    clean {
+        # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 364
+        on {
+            # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 364
+            restart=true
+        }
+    }
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 354
+    dir=dmp
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 353
+    full=false
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 361
+    style=pretty
+}
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 152
+genesis="frontier.json"
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 395
+hello {
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 395
+    phrase=Dev
+}
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 410
+keyvalue {
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 410
+    datasource=leveldb
+}
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 285
+mine {
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 304
+    coinbase="0000000000000000000000000000000000000000"
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 295
+    cpuMineThreads=4
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 308
+    extraData="EthereumJ powered"
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 301
+    fullDataSet=true
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 317
+    minBlockTimeoutMsec=0
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 314
+    minGasPrice=15000000000
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 291
+    start=false
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 321
+    startNonce=null
+}
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 1-79
+peer {
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 94
+    active=[]
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 123
+    capabilities=[
+        # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 123
+        eth
+    ]
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 132
+    channel {
+        # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 132
+        read {
+            # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 132
+            timeout=90
+        }
+    }
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 127
+    connection {
+        # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 127
+        timeout=2
+    }
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 1
+    discovery {
+        # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 54
+        bind {
+            # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 54
+            ip=""
+        }
+        # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 8
+        enabled=true
+        # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 46
+        external {
+            # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 46
+            ip=null
+        }
+        # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 13
+        ip {
+            # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 13
+            list=[
+                # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 15
+                "frontier-2.ether.camp:30303",
+                # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 16
+                "frontier-3.ether.camp:30303",
+                # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 17
+                "frontier-4.ether.camp:30303",
+                # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 20
+                "5.1.83.226:30303",
+                # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 23
+                "54.94.239.50:30303",
+                # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 24
+                "52.16.188.185:30303",
+                # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 25
+                "52.74.57.123:30303",
+                # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 28
+                "163.172.157.114:30303",
+                # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 29
+                "136.243.154.244:30303",
+                # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 30
+                "88.212.206.70:30303",
+                # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 31
+                "37.128.191.230:30303",
+                # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 32
+                "46.20.235.22:30303",
+                # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 33
+                "216.158.85.185:30303",
+                # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 34
+                "212.47.247.103:30303",
+                # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 35
+                "138.201.144.135:30303",
+                # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 36
+                "45.55.33.62:30303",
+                # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 37
+                "188.166.255.12:30303",
+                # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 38
+                "159.203.210.80:30303",
+                # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 39
+                "51.15.42.252:30303",
+                # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 40
+                "163.172.171.38:30303"
+            ]
+        }
+        # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 62
+        persist=true
+        # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 58
+        public {
+            # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 58
+            home {
+                # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 58
+                node=true
+            }
+        }
+        # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 71
+        touchMaxNodes=100
+        # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 67
+        touchPeriod=600
+        # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 76
+        workers=8
+    }
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 82
+    listen {
+        # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 82
+        port=30303
+    }
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 119
+    maxActivePeers=30
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 85
+    networkId=1
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 134
+    p2p {
+        # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 144
+        eip8=true
+        # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 140
+        framing {
+            # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 140
+            maxSize=32768
+        }
+    }
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 105
+    trusted=[]
+}
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 391
+play {
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 391
+    vm=true
+}
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 412
+record {
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 412
+    blocks=false
+}
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 407
+root {
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 407
+    hash {
+        # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 407
+        start=null
+    }
+}
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 325
+solc {
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 328
+    path=null
+}
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 247
+sync {
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 251
+    enabled=true
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 281
+    exitOnBlockConflict=false
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 254
+    fast {
+        # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 258
+        enabled=false
+    }
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 272
+    peer {
+        # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 272
+        count=30
+    }
+}
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 384
+trace {
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 384
+    startblock=-1
+}
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 340-344
+transaction {
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 340
+    approve {
+        # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 340
+        timeout=15
+    }
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 344
+    outdated {
+        # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 344
+        threshold=10
+    }
+}
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 374
+vm {
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 374
+    structured {
+        # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 377
+        compressed=true
+        # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 376
+        dir=vmtrace
+        # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 378
+        initStorageLimit=10000
+        # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 375
+        trace=false
+    }
+}
+
+09:26:30.360 WARN [general]  File not found `build-info.properties`. Run `gradle build` to generate it
+09:26:30.652 DEBUG [o.z.e.ProcessExecutor]  Executing [solc, --optimize, --combined-json, bin,abi,ast,interface,metadata, C:\Projects\demo\src\test\resources\contracts\PersonContract.sol].
+09:26:30.671 DEBUG [o.z.e.ProcessExecutor]  Started java.lang.ProcessImpl@164c546
+09:26:30.725 DEBUG [o.z.e.WaitForProcess]  java.lang.ProcessImpl@164c546 stopped with exit code 0
+09:26:30.872 INFO [mine]  Loading light dataset from C:\Projects\demo\database\mine-dag-light.dat
+09:26:31.018 INFO [mine]  Dataset loaded.
+09:26:31.199 DEBUG [pending]  New best block from another fork: #1 (24bbbc <~ f84db2) Txs:1, Unc: 0, old best: #1 (24bbbc <~ f84db2) Txs:1, Unc: 0, ancestor: #1 (24bbbc <~ f84db2) Txs:1, Unc: 0
+09:27:31.479 INFO [c.e.d.DemoApplication]  Starting DemoApplication on WLA-ICT-45 with PID 10620 (C:\Projects\demo\target\classes started by vandebroeck.k in C:\Projects\demo)
+09:27:31.483 DEBUG [c.e.d.DemoApplication]  Running with Spring Boot v1.5.7.RELEASE, Spring v4.3.11.RELEASE
+09:27:31.483 INFO [c.e.d.DemoApplication]  No active profile set, falling back to default profiles: default
+09:27:32.256 DEBUG [o.j.logging]  Logging Provider: org.jboss.logging.Slf4jLoggerProvider found via system property
+09:27:33.610 INFO [o.a.c.c.StandardService]  Starting service [Tomcat]
+09:27:33.612 INFO [o.a.c.c.StandardEngine]  Starting Servlet Engine: Apache Tomcat/8.5.20
+09:27:33.714 INFO [o.a.c.c.C.[.[.[/]]  Initializing Spring embedded WebApplicationContext
+09:27:34.735 INFO [o.a.c.h.Http11NioProtocol]  Initializing ProtocolHandler ["http-nio-8080"]
+09:27:34.754 INFO [o.a.c.h.Http11NioProtocol]  Starting ProtocolHandler ["http-nio-8080"]
+09:27:34.767 INFO [o.a.t.u.n.NioSelectorPool]  Using a shared selector for servlet write/read
+09:27:34.815 INFO [c.e.d.DemoApplication]  Started DemoApplication in 3.628 seconds (JVM running for 4.26)
+09:27:35.276 INFO [general]  Config ( yes ): default properties from resource 'ethereumj.conf'
+09:27:35.277 INFO [general]  Config ( no  ): user properties from -Dethereumj.conf.res resource 'null'
+09:27:35.277 INFO [general]  Config ( no  ): user properties from resource 'user.conf'
+09:27:35.278 INFO [general]  Config ( no  ): user properties from file 'C:\Projects\demo\config\ethereumj.conf'
+09:27:35.278 INFO [general]  Config ( no  ): test properties from resource 'test-ethereumj.conf'
+09:27:35.279 INFO [general]  Config ( no  ): test properties from resource 'test-user.conf'
+09:27:35.279 INFO [general]  Config ( no  ): user properties from -Dethereumj.conf.file file 'null'
+09:27:35.279 INFO [general]  Config ( no  ): config passed via constructor
+09:27:35.281 DEBUG [general]  Config trace:     # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 166-413
+blockchain {
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 166
+    config {
+        # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 166
+        name=main
+    }
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 413
+    only=false
+}
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 419
+blocks {
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 419
+    loader=""
+}
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 213
+cache {
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 234
+    blockQueueSize=32
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 215
+    flush {
+        # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 224
+        blocks=0
+        # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 227
+        shortSyncFlush=true
+        # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 219
+        writeCacheSize=64
+    }
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 237
+    headerQueueSize=8
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 243
+    maxStateBloomSize=128
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 231
+    stateCacheSize=256
+}
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 422
+crypto {
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 426-427
+    hash {
+        # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 426
+        alg256=ETH-KECCAK-256
+        # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 427
+        alg512=ETH-KECCAK-512
+    }
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 424
+    providerName=SC
+}
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 174
+database {
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 177
+    dir=database
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 196
+    incompatibleDatabaseBehavior=EXIT
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 202
+    prune {
+        # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 203
+        enabled=true
+        # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 208
+        maxDepth=192
+    }
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 183
+    reset=false
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 189
+    resetBlock=0
+}
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 347
+dump {
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 360
+    block=-1
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 364
+    clean {
+        # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 364
+        on {
+            # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 364
+            restart=true
+        }
+    }
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 354
+    dir=dmp
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 353
+    full=false
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 361
+    style=pretty
+}
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 152
+genesis="frontier.json"
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 395
+hello {
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 395
+    phrase=Dev
+}
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 410
+keyvalue {
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 410
+    datasource=leveldb
+}
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 285
+mine {
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 304
+    coinbase="0000000000000000000000000000000000000000"
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 295
+    cpuMineThreads=4
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 308
+    extraData="EthereumJ powered"
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 301
+    fullDataSet=true
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 317
+    minBlockTimeoutMsec=0
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 314
+    minGasPrice=15000000000
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 291
+    start=false
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 321
+    startNonce=null
+}
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 1-79
+peer {
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 94
+    active=[]
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 123
+    capabilities=[
+        # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 123
+        eth
+    ]
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 132
+    channel {
+        # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 132
+        read {
+            # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 132
+            timeout=90
+        }
+    }
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 127
+    connection {
+        # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 127
+        timeout=2
+    }
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 1
+    discovery {
+        # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 54
+        bind {
+            # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 54
+            ip=""
+        }
+        # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 8
+        enabled=true
+        # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 46
+        external {
+            # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 46
+            ip=null
+        }
+        # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 13
+        ip {
+            # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 13
+            list=[
+                # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 15
+                "frontier-2.ether.camp:30303",
+                # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 16
+                "frontier-3.ether.camp:30303",
+                # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 17
+                "frontier-4.ether.camp:30303",
+                # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 20
+                "5.1.83.226:30303",
+                # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 23
+                "54.94.239.50:30303",
+                # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 24
+                "52.16.188.185:30303",
+                # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 25
+                "52.74.57.123:30303",
+                # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 28
+                "163.172.157.114:30303",
+                # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 29
+                "136.243.154.244:30303",
+                # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 30
+                "88.212.206.70:30303",
+                # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 31
+                "37.128.191.230:30303",
+                # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 32
+                "46.20.235.22:30303",
+                # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 33
+                "216.158.85.185:30303",
+                # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 34
+                "212.47.247.103:30303",
+                # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 35
+                "138.201.144.135:30303",
+                # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 36
+                "45.55.33.62:30303",
+                # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 37
+                "188.166.255.12:30303",
+                # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 38
+                "159.203.210.80:30303",
+                # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 39
+                "51.15.42.252:30303",
+                # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 40
+                "163.172.171.38:30303"
+            ]
+        }
+        # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 62
+        persist=true
+        # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 58
+        public {
+            # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 58
+            home {
+                # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 58
+                node=true
+            }
+        }
+        # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 71
+        touchMaxNodes=100
+        # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 67
+        touchPeriod=600
+        # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 76
+        workers=8
+    }
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 82
+    listen {
+        # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 82
+        port=30303
+    }
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 119
+    maxActivePeers=30
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 85
+    networkId=1
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 134
+    p2p {
+        # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 144
+        eip8=true
+        # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 140
+        framing {
+            # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 140
+            maxSize=32768
+        }
+    }
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 105
+    trusted=[]
+}
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 391
+play {
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 391
+    vm=true
+}
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 412
+record {
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 412
+    blocks=false
+}
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 407
+root {
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 407
+    hash {
+        # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 407
+        start=null
+    }
+}
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 325
+solc {
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 328
+    path=null
+}
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 247
+sync {
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 251
+    enabled=true
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 281
+    exitOnBlockConflict=false
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 254
+    fast {
+        # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 258
+        enabled=false
+    }
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 272
+    peer {
+        # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 272
+        count=30
+    }
+}
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 384
+trace {
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 384
+    startblock=-1
+}
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 340-344
+transaction {
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 340
+    approve {
+        # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 340
+        timeout=15
+    }
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 344
+    outdated {
+        # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 344
+        threshold=10
+    }
+}
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 374
+vm {
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 374
+    structured {
+        # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 377
+        compressed=true
+        # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 376
+        dir=vmtrace
+        # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 378
+        initStorageLimit=10000
+        # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 375
+        trace=false
+    }
+}
+
+09:27:35.290 WARN [general]  File not found `build-info.properties`. Run `gradle build` to generate it
+09:27:35.632 DEBUG [o.z.e.ProcessExecutor]  Executing [solc, --optimize, --combined-json, bin,abi,ast,interface,metadata, C:\Projects\demo\src\test\resources\contracts\PersonContract.sol].
+09:27:35.638 DEBUG [o.z.e.ProcessExecutor]  Started java.lang.ProcessImpl@164c546
+09:27:35.702 DEBUG [o.z.e.WaitForProcess]  java.lang.ProcessImpl@164c546 stopped with exit code 0
+09:27:35.877 INFO [mine]  Loading light dataset from C:\Projects\demo\database\mine-dag-light.dat
+09:27:36.023 INFO [mine]  Dataset loaded.
+09:27:36.194 DEBUG [pending]  New best block from another fork: #1 (e09395 <~ f84db2) Txs:1, Unc: 0, old best: #1 (e09395 <~ f84db2) Txs:1, Unc: 0, ancestor: #1 (e09395 <~ f84db2) Txs:1, Unc: 0
+09:28:03.413 INFO [c.e.d.DemoApplication]  Starting DemoApplication on WLA-ICT-45 with PID 15972 (C:\Projects\demo\target\classes started by vandebroeck.k in C:\Projects\demo)
+09:28:03.417 DEBUG [c.e.d.DemoApplication]  Running with Spring Boot v1.5.7.RELEASE, Spring v4.3.11.RELEASE
+09:28:03.417 INFO [c.e.d.DemoApplication]  No active profile set, falling back to default profiles: default
+09:28:03.736 DEBUG [o.j.logging]  Logging Provider: org.jboss.logging.Slf4jLoggerProvider found via system property
+09:28:05.064 INFO [o.a.c.c.StandardService]  Starting service [Tomcat]
+09:28:05.065 INFO [o.a.c.c.StandardEngine]  Starting Servlet Engine: Apache Tomcat/8.5.20
+09:28:05.186 INFO [o.a.c.c.C.[.[.[/]]  Initializing Spring embedded WebApplicationContext
+09:28:05.998 INFO [o.a.c.h.Http11NioProtocol]  Initializing ProtocolHandler ["http-nio-8080"]
+09:28:06.005 INFO [o.a.c.h.Http11NioProtocol]  Starting ProtocolHandler ["http-nio-8080"]
+09:28:06.015 INFO [o.a.t.u.n.NioSelectorPool]  Using a shared selector for servlet write/read
+09:28:06.038 INFO [c.e.d.DemoApplication]  Started DemoApplication in 2.934 seconds (JVM running for 3.67)
+09:28:06.409 INFO [general]  Config ( yes ): default properties from resource 'ethereumj.conf'
+09:28:06.409 INFO [general]  Config ( no  ): user properties from -Dethereumj.conf.res resource 'null'
+09:28:06.409 INFO [general]  Config ( no  ): user properties from resource 'user.conf'
+09:28:06.410 INFO [general]  Config ( no  ): user properties from file 'C:\Projects\demo\config\ethereumj.conf'
+09:28:06.411 INFO [general]  Config ( no  ): test properties from resource 'test-ethereumj.conf'
+09:28:06.411 INFO [general]  Config ( no  ): test properties from resource 'test-user.conf'
+09:28:06.411 INFO [general]  Config ( no  ): user properties from -Dethereumj.conf.file file 'null'
+09:28:06.411 INFO [general]  Config ( no  ): config passed via constructor
+09:28:06.413 DEBUG [general]  Config trace:     # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 166-413
+blockchain {
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 166
+    config {
+        # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 166
+        name=main
+    }
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 413
+    only=false
+}
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 419
+blocks {
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 419
+    loader=""
+}
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 213
+cache {
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 234
+    blockQueueSize=32
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 215
+    flush {
+        # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 224
+        blocks=0
+        # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 227
+        shortSyncFlush=true
+        # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 219
+        writeCacheSize=64
+    }
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 237
+    headerQueueSize=8
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 243
+    maxStateBloomSize=128
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 231
+    stateCacheSize=256
+}
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 422
+crypto {
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 426-427
+    hash {
+        # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 426
+        alg256=ETH-KECCAK-256
+        # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 427
+        alg512=ETH-KECCAK-512
+    }
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 424
+    providerName=SC
+}
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 174
+database {
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 177
+    dir=database
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 196
+    incompatibleDatabaseBehavior=EXIT
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 202
+    prune {
+        # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 203
+        enabled=true
+        # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 208
+        maxDepth=192
+    }
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 183
+    reset=false
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 189
+    resetBlock=0
+}
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 347
+dump {
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 360
+    block=-1
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 364
+    clean {
+        # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 364
+        on {
+            # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 364
+            restart=true
+        }
+    }
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 354
+    dir=dmp
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 353
+    full=false
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 361
+    style=pretty
+}
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 152
+genesis="frontier.json"
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 395
+hello {
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 395
+    phrase=Dev
+}
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 410
+keyvalue {
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 410
+    datasource=leveldb
+}
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 285
+mine {
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 304
+    coinbase="0000000000000000000000000000000000000000"
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 295
+    cpuMineThreads=4
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 308
+    extraData="EthereumJ powered"
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 301
+    fullDataSet=true
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 317
+    minBlockTimeoutMsec=0
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 314
+    minGasPrice=15000000000
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 291
+    start=false
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 321
+    startNonce=null
+}
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 1-79
+peer {
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 94
+    active=[]
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 123
+    capabilities=[
+        # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 123
+        eth
+    ]
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 132
+    channel {
+        # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 132
+        read {
+            # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 132
+            timeout=90
+        }
+    }
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 127
+    connection {
+        # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 127
+        timeout=2
+    }
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 1
+    discovery {
+        # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 54
+        bind {
+            # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 54
+            ip=""
+        }
+        # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 8
+        enabled=true
+        # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 46
+        external {
+            # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 46
+            ip=null
+        }
+        # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 13
+        ip {
+            # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 13
+            list=[
+                # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 15
+                "frontier-2.ether.camp:30303",
+                # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 16
+                "frontier-3.ether.camp:30303",
+                # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 17
+                "frontier-4.ether.camp:30303",
+                # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 20
+                "5.1.83.226:30303",
+                # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 23
+                "54.94.239.50:30303",
+                # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 24
+                "52.16.188.185:30303",
+                # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 25
+                "52.74.57.123:30303",
+                # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 28
+                "163.172.157.114:30303",
+                # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 29
+                "136.243.154.244:30303",
+                # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 30
+                "88.212.206.70:30303",
+                # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 31
+                "37.128.191.230:30303",
+                # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 32
+                "46.20.235.22:30303",
+                # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 33
+                "216.158.85.185:30303",
+                # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 34
+                "212.47.247.103:30303",
+                # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 35
+                "138.201.144.135:30303",
+                # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 36
+                "45.55.33.62:30303",
+                # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 37
+                "188.166.255.12:30303",
+                # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 38
+                "159.203.210.80:30303",
+                # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 39
+                "51.15.42.252:30303",
+                # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 40
+                "163.172.171.38:30303"
+            ]
+        }
+        # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 62
+        persist=true
+        # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 58
+        public {
+            # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 58
+            home {
+                # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 58
+                node=true
+            }
+        }
+        # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 71
+        touchMaxNodes=100
+        # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 67
+        touchPeriod=600
+        # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 76
+        workers=8
+    }
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 82
+    listen {
+        # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 82
+        port=30303
+    }
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 119
+    maxActivePeers=30
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 85
+    networkId=1
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 134
+    p2p {
+        # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 144
+        eip8=true
+        # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 140
+        framing {
+            # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 140
+            maxSize=32768
+        }
+    }
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 105
+    trusted=[]
+}
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 391
+play {
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 391
+    vm=true
+}
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 412
+record {
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 412
+    blocks=false
+}
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 407
+root {
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 407
+    hash {
+        # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 407
+        start=null
+    }
+}
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 325
+solc {
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 328
+    path=null
+}
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 247
+sync {
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 251
+    enabled=true
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 281
+    exitOnBlockConflict=false
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 254
+    fast {
+        # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 258
+        enabled=false
+    }
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 272
+    peer {
+        # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 272
+        count=30
+    }
+}
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 384
+trace {
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 384
+    startblock=-1
+}
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 340-344
+transaction {
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 340
+    approve {
+        # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 340
+        timeout=15
+    }
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 344
+    outdated {
+        # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 344
+        threshold=10
+    }
+}
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 374
+vm {
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 374
+    structured {
+        # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 377
+        compressed=true
+        # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 376
+        dir=vmtrace
+        # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 378
+        initStorageLimit=10000
+        # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 375
+        trace=false
+    }
+}
+
+09:28:06.427 WARN [general]  File not found `build-info.properties`. Run `gradle build` to generate it
+09:28:06.759 DEBUG [o.z.e.ProcessExecutor]  Executing [solc, --optimize, --combined-json, bin,abi,ast,interface,metadata, C:\Projects\demo\src\test\resources\contracts\PersonContract.sol].
+09:28:06.764 DEBUG [o.z.e.ProcessExecutor]  Started java.lang.ProcessImpl@1f29e26
+09:28:06.818 DEBUG [o.z.e.WaitForProcess]  java.lang.ProcessImpl@1f29e26 stopped with exit code 0
+09:28:06.975 INFO [mine]  Loading light dataset from C:\Projects\demo\database\mine-dag-light.dat
+09:28:07.114 INFO [mine]  Dataset loaded.
+09:28:07.210 DEBUG [pending]  New best block from another fork: #1 (086d5f <~ f84db2) Txs:1, Unc: 0, old best: #1 (086d5f <~ f84db2) Txs:1, Unc: 0, ancestor: #1 (086d5f <~ f84db2) Txs:1, Unc: 0
+09:30:35.814 INFO [c.e.d.DemoApplication]  Starting DemoApplication on WLA-ICT-45 with PID 6348 (C:\Projects\demo\target\classes started by vandebroeck.k in C:\Projects\demo)
+09:30:35.816 DEBUG [c.e.d.DemoApplication]  Running with Spring Boot v1.5.7.RELEASE, Spring v4.3.11.RELEASE
+09:30:35.816 INFO [c.e.d.DemoApplication]  No active profile set, falling back to default profiles: default
+09:30:36.111 DEBUG [o.j.logging]  Logging Provider: org.jboss.logging.Slf4jLoggerProvider found via system property
+09:30:37.535 INFO [o.a.c.c.StandardService]  Starting service [Tomcat]
+09:30:37.536 INFO [o.a.c.c.StandardEngine]  Starting Servlet Engine: Apache Tomcat/8.5.20
+09:30:37.758 INFO [o.a.c.c.C.[.[.[/]]  Initializing Spring embedded WebApplicationContext
+09:30:38.675 INFO [o.a.c.h.Http11NioProtocol]  Initializing ProtocolHandler ["http-nio-8080"]
+09:30:38.685 INFO [o.a.c.h.Http11NioProtocol]  Starting ProtocolHandler ["http-nio-8080"]
+09:30:38.698 INFO [o.a.t.u.n.NioSelectorPool]  Using a shared selector for servlet write/read
+09:30:38.731 INFO [c.e.d.DemoApplication]  Started DemoApplication in 3.246 seconds (JVM running for 3.966)
+09:30:39.147 INFO [general]  Config ( yes ): default properties from resource 'ethereumj.conf'
+09:30:39.147 INFO [general]  Config ( no  ): user properties from -Dethereumj.conf.res resource 'null'
+09:30:39.147 INFO [general]  Config ( no  ): user properties from resource 'user.conf'
+09:30:39.148 INFO [general]  Config ( no  ): user properties from file 'C:\Projects\demo\config\ethereumj.conf'
+09:30:39.149 INFO [general]  Config ( no  ): test properties from resource 'test-ethereumj.conf'
+09:30:39.149 INFO [general]  Config ( no  ): test properties from resource 'test-user.conf'
+09:30:39.149 INFO [general]  Config ( no  ): user properties from -Dethereumj.conf.file file 'null'
+09:30:39.149 INFO [general]  Config ( no  ): config passed via constructor
+09:30:39.151 DEBUG [general]  Config trace:     # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 166-413
+blockchain {
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 166
+    config {
+        # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 166
+        name=main
+    }
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 413
+    only=false
+}
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 419
+blocks {
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 419
+    loader=""
+}
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 213
+cache {
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 234
+    blockQueueSize=32
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 215
+    flush {
+        # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 224
+        blocks=0
+        # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 227
+        shortSyncFlush=true
+        # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 219
+        writeCacheSize=64
+    }
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 237
+    headerQueueSize=8
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 243
+    maxStateBloomSize=128
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 231
+    stateCacheSize=256
+}
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 422
+crypto {
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 426-427
+    hash {
+        # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 426
+        alg256=ETH-KECCAK-256
+        # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 427
+        alg512=ETH-KECCAK-512
+    }
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 424
+    providerName=SC
+}
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 174
+database {
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 177
+    dir=database
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 196
+    incompatibleDatabaseBehavior=EXIT
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 202
+    prune {
+        # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 203
+        enabled=true
+        # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 208
+        maxDepth=192
+    }
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 183
+    reset=false
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 189
+    resetBlock=0
+}
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 347
+dump {
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 360
+    block=-1
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 364
+    clean {
+        # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 364
+        on {
+            # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 364
+            restart=true
+        }
+    }
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 354
+    dir=dmp
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 353
+    full=false
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 361
+    style=pretty
+}
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 152
+genesis="frontier.json"
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 395
+hello {
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 395
+    phrase=Dev
+}
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 410
+keyvalue {
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 410
+    datasource=leveldb
+}
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 285
+mine {
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 304
+    coinbase="0000000000000000000000000000000000000000"
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 295
+    cpuMineThreads=4
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 308
+    extraData="EthereumJ powered"
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 301
+    fullDataSet=true
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 317
+    minBlockTimeoutMsec=0
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 314
+    minGasPrice=15000000000
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 291
+    start=false
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 321
+    startNonce=null
+}
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 1-79
+peer {
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 94
+    active=[]
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 123
+    capabilities=[
+        # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 123
+        eth
+    ]
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 132
+    channel {
+        # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 132
+        read {
+            # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 132
+            timeout=90
+        }
+    }
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 127
+    connection {
+        # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 127
+        timeout=2
+    }
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 1
+    discovery {
+        # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 54
+        bind {
+            # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 54
+            ip=""
+        }
+        # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 8
+        enabled=true
+        # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 46
+        external {
+            # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 46
+            ip=null
+        }
+        # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 13
+        ip {
+            # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 13
+            list=[
+                # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 15
+                "frontier-2.ether.camp:30303",
+                # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 16
+                "frontier-3.ether.camp:30303",
+                # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 17
+                "frontier-4.ether.camp:30303",
+                # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 20
+                "5.1.83.226:30303",
+                # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 23
+                "54.94.239.50:30303",
+                # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 24
+                "52.16.188.185:30303",
+                # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 25
+                "52.74.57.123:30303",
+                # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 28
+                "163.172.157.114:30303",
+                # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 29
+                "136.243.154.244:30303",
+                # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 30
+                "88.212.206.70:30303",
+                # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 31
+                "37.128.191.230:30303",
+                # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 32
+                "46.20.235.22:30303",
+                # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 33
+                "216.158.85.185:30303",
+                # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 34
+                "212.47.247.103:30303",
+                # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 35
+                "138.201.144.135:30303",
+                # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 36
+                "45.55.33.62:30303",
+                # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 37
+                "188.166.255.12:30303",
+                # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 38
+                "159.203.210.80:30303",
+                # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 39
+                "51.15.42.252:30303",
+                # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 40
+                "163.172.171.38:30303"
+            ]
+        }
+        # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 62
+        persist=true
+        # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 58
+        public {
+            # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 58
+            home {
+                # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 58
+                node=true
+            }
+        }
+        # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 71
+        touchMaxNodes=100
+        # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 67
+        touchPeriod=600
+        # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 76
+        workers=8
+    }
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 82
+    listen {
+        # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 82
+        port=30303
+    }
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 119
+    maxActivePeers=30
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 85
+    networkId=1
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 134
+    p2p {
+        # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 144
+        eip8=true
+        # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 140
+        framing {
+            # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 140
+            maxSize=32768
+        }
+    }
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 105
+    trusted=[]
+}
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 391
+play {
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 391
+    vm=true
+}
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 412
+record {
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 412
+    blocks=false
+}
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 407
+root {
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 407
+    hash {
+        # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 407
+        start=null
+    }
+}
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 325
+solc {
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 328
+    path=null
+}
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 247
+sync {
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 251
+    enabled=true
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 281
+    exitOnBlockConflict=false
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 254
+    fast {
+        # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 258
+        enabled=false
+    }
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 272
+    peer {
+        # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 272
+        count=30
+    }
+}
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 384
+trace {
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 384
+    startblock=-1
+}
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 340-344
+transaction {
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 340
+    approve {
+        # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 340
+        timeout=15
+    }
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 344
+    outdated {
+        # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 344
+        threshold=10
+    }
+}
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 374
+vm {
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 374
+    structured {
+        # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 377
+        compressed=true
+        # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 376
+        dir=vmtrace
+        # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 378
+        initStorageLimit=10000
+        # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 375
+        trace=false
+    }
+}
+
+09:30:39.171 WARN [general]  File not found `build-info.properties`. Run `gradle build` to generate it
+09:30:39.464 DEBUG [o.z.e.ProcessExecutor]  Executing [solc, --optimize, --combined-json, bin,abi,ast,interface,metadata, C:\Projects\demo\src\test\resources\contracts\PersonContract.sol].
+09:30:39.469 DEBUG [o.z.e.ProcessExecutor]  Started java.lang.ProcessImpl@1f29e26
+09:30:39.552 DEBUG [o.z.e.WaitForProcess]  java.lang.ProcessImpl@1f29e26 stopped with exit code 0
+09:30:39.737 INFO [mine]  Loading light dataset from C:\Projects\demo\database\mine-dag-light.dat
+09:30:39.949 INFO [mine]  Dataset loaded.
+09:30:40.093 DEBUG [pending]  New best block from another fork: #1 (5f4a19 <~ f84db2) Txs:1, Unc: 0, old best: #1 (5f4a19 <~ f84db2) Txs:1, Unc: 0, ancestor: #1 (5f4a19 <~ f84db2) Txs:1, Unc: 0
+09:31:41.223 INFO [c.e.d.DemoApplication]  Starting DemoApplication on WLA-ICT-45 with PID 5112 (C:\Projects\demo\target\classes started by vandebroeck.k in C:\Projects\demo)
+09:31:41.225 DEBUG [c.e.d.DemoApplication]  Running with Spring Boot v1.5.7.RELEASE, Spring v4.3.11.RELEASE
+09:31:41.225 INFO [c.e.d.DemoApplication]  No active profile set, falling back to default profiles: default
+09:31:41.553 DEBUG [o.j.logging]  Logging Provider: org.jboss.logging.Slf4jLoggerProvider found via system property
+09:31:42.896 INFO [o.a.c.c.StandardService]  Starting service [Tomcat]
+09:31:42.898 INFO [o.a.c.c.StandardEngine]  Starting Servlet Engine: Apache Tomcat/8.5.20
+09:31:43.004 INFO [o.a.c.c.C.[.[.[/]]  Initializing Spring embedded WebApplicationContext
+09:31:43.864 INFO [o.a.c.h.Http11NioProtocol]  Initializing ProtocolHandler ["http-nio-8080"]
+09:31:43.873 INFO [o.a.c.h.Http11NioProtocol]  Starting ProtocolHandler ["http-nio-8080"]
+09:31:43.886 INFO [o.a.t.u.n.NioSelectorPool]  Using a shared selector for servlet write/read
+09:31:43.905 INFO [c.e.d.DemoApplication]  Started DemoApplication in 2.982 seconds (JVM running for 3.692)
+09:31:44.293 INFO [general]  Config ( yes ): default properties from resource 'ethereumj.conf'
+09:31:44.294 INFO [general]  Config ( no  ): user properties from -Dethereumj.conf.res resource 'null'
+09:31:44.294 INFO [general]  Config ( no  ): user properties from resource 'user.conf'
+09:31:44.295 INFO [general]  Config ( no  ): user properties from file 'C:\Projects\demo\config\ethereumj.conf'
+09:31:44.295 INFO [general]  Config ( no  ): test properties from resource 'test-ethereumj.conf'
+09:31:44.295 INFO [general]  Config ( no  ): test properties from resource 'test-user.conf'
+09:31:44.295 INFO [general]  Config ( no  ): user properties from -Dethereumj.conf.file file 'null'
+09:31:44.295 INFO [general]  Config ( no  ): config passed via constructor
+09:31:44.297 DEBUG [general]  Config trace:     # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 166-413
+blockchain {
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 166
+    config {
+        # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 166
+        name=main
+    }
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 413
+    only=false
+}
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 419
+blocks {
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 419
+    loader=""
+}
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 213
+cache {
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 234
+    blockQueueSize=32
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 215
+    flush {
+        # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 224
+        blocks=0
+        # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 227
+        shortSyncFlush=true
+        # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 219
+        writeCacheSize=64
+    }
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 237
+    headerQueueSize=8
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 243
+    maxStateBloomSize=128
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 231
+    stateCacheSize=256
+}
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 422
+crypto {
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 426-427
+    hash {
+        # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 426
+        alg256=ETH-KECCAK-256
+        # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 427
+        alg512=ETH-KECCAK-512
+    }
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 424
+    providerName=SC
+}
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 174
+database {
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 177
+    dir=database
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 196
+    incompatibleDatabaseBehavior=EXIT
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 202
+    prune {
+        # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 203
+        enabled=true
+        # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 208
+        maxDepth=192
+    }
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 183
+    reset=false
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 189
+    resetBlock=0
+}
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 347
+dump {
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 360
+    block=-1
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 364
+    clean {
+        # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 364
+        on {
+            # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 364
+            restart=true
+        }
+    }
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 354
+    dir=dmp
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 353
+    full=false
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 361
+    style=pretty
+}
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 152
+genesis="frontier.json"
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 395
+hello {
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 395
+    phrase=Dev
+}
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 410
+keyvalue {
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 410
+    datasource=leveldb
+}
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 285
+mine {
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 304
+    coinbase="0000000000000000000000000000000000000000"
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 295
+    cpuMineThreads=4
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 308
+    extraData="EthereumJ powered"
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 301
+    fullDataSet=true
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 317
+    minBlockTimeoutMsec=0
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 314
+    minGasPrice=15000000000
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 291
+    start=false
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 321
+    startNonce=null
+}
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 1-79
+peer {
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 94
+    active=[]
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 123
+    capabilities=[
+        # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 123
+        eth
+    ]
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 132
+    channel {
+        # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 132
+        read {
+            # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 132
+            timeout=90
+        }
+    }
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 127
+    connection {
+        # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 127
+        timeout=2
+    }
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 1
+    discovery {
+        # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 54
+        bind {
+            # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 54
+            ip=""
+        }
+        # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 8
+        enabled=true
+        # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 46
+        external {
+            # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 46
+            ip=null
+        }
+        # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 13
+        ip {
+            # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 13
+            list=[
+                # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 15
+                "frontier-2.ether.camp:30303",
+                # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 16
+                "frontier-3.ether.camp:30303",
+                # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 17
+                "frontier-4.ether.camp:30303",
+                # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 20
+                "5.1.83.226:30303",
+                # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 23
+                "54.94.239.50:30303",
+                # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 24
+                "52.16.188.185:30303",
+                # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 25
+                "52.74.57.123:30303",
+                # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 28
+                "163.172.157.114:30303",
+                # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 29
+                "136.243.154.244:30303",
+                # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 30
+                "88.212.206.70:30303",
+                # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 31
+                "37.128.191.230:30303",
+                # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 32
+                "46.20.235.22:30303",
+                # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 33
+                "216.158.85.185:30303",
+                # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 34
+                "212.47.247.103:30303",
+                # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 35
+                "138.201.144.135:30303",
+                # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 36
+                "45.55.33.62:30303",
+                # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 37
+                "188.166.255.12:30303",
+                # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 38
+                "159.203.210.80:30303",
+                # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 39
+                "51.15.42.252:30303",
+                # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 40
+                "163.172.171.38:30303"
+            ]
+        }
+        # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 62
+        persist=true
+        # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 58
+        public {
+            # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 58
+            home {
+                # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 58
+                node=true
+            }
+        }
+        # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 71
+        touchMaxNodes=100
+        # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 67
+        touchPeriod=600
+        # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 76
+        workers=8
+    }
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 82
+    listen {
+        # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 82
+        port=30303
+    }
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 119
+    maxActivePeers=30
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 85
+    networkId=1
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 134
+    p2p {
+        # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 144
+        eip8=true
+        # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 140
+        framing {
+            # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 140
+            maxSize=32768
+        }
+    }
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 105
+    trusted=[]
+}
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 391
+play {
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 391
+    vm=true
+}
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 412
+record {
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 412
+    blocks=false
+}
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 407
+root {
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 407
+    hash {
+        # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 407
+        start=null
+    }
+}
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 325
+solc {
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 328
+    path=null
+}
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 247
+sync {
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 251
+    enabled=true
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 281
+    exitOnBlockConflict=false
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 254
+    fast {
+        # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 258
+        enabled=false
+    }
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 272
+    peer {
+        # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 272
+        count=30
+    }
+}
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 384
+trace {
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 384
+    startblock=-1
+}
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 340-344
+transaction {
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 340
+    approve {
+        # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 340
+        timeout=15
+    }
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 344
+    outdated {
+        # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 344
+        threshold=10
+    }
+}
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 374
+vm {
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 374
+    structured {
+        # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 377
+        compressed=true
+        # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 376
+        dir=vmtrace
+        # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 378
+        initStorageLimit=10000
+        # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 375
+        trace=false
+    }
+}
+
+09:31:44.310 WARN [general]  File not found `build-info.properties`. Run `gradle build` to generate it
+09:31:44.597 DEBUG [o.z.e.ProcessExecutor]  Executing [solc, --optimize, --combined-json, bin,abi,ast,interface,metadata, C:\Projects\demo\src\main\resources\contracts\PersonContract.sol].
+09:31:44.603 DEBUG [o.z.e.ProcessExecutor]  Started java.lang.ProcessImpl@8b87aa
+09:31:44.631 DEBUG [o.z.e.WaitForProcess]  java.lang.ProcessImpl@8b87aa stopped with exit code 1
+09:35:05.431 INFO [c.e.d.DemoApplication]  Starting DemoApplication on WLA-ICT-45 with PID 17208 (C:\Projects\demo\target\classes started by vandebroeck.k in C:\Projects\demo)
+09:35:05.433 DEBUG [c.e.d.DemoApplication]  Running with Spring Boot v1.5.7.RELEASE, Spring v4.3.11.RELEASE
+09:35:05.433 INFO [c.e.d.DemoApplication]  No active profile set, falling back to default profiles: default
+09:35:05.727 DEBUG [o.j.logging]  Logging Provider: org.jboss.logging.Slf4jLoggerProvider found via system property
+09:35:07.234 INFO [o.a.c.c.StandardService]  Starting service [Tomcat]
+09:35:07.236 INFO [o.a.c.c.StandardEngine]  Starting Servlet Engine: Apache Tomcat/8.5.20
+09:35:07.370 INFO [o.a.c.c.C.[.[.[/]]  Initializing Spring embedded WebApplicationContext
+09:35:08.136 INFO [o.a.c.h.Http11NioProtocol]  Initializing ProtocolHandler ["http-nio-8080"]
+09:35:08.143 INFO [o.a.c.h.Http11NioProtocol]  Starting ProtocolHandler ["http-nio-8080"]
+09:35:08.152 INFO [o.a.t.u.n.NioSelectorPool]  Using a shared selector for servlet write/read
+09:35:08.171 INFO [c.e.d.DemoApplication]  Started DemoApplication in 3.043 seconds (JVM running for 3.812)
+09:35:08.502 INFO [general]  Config ( yes ): default properties from resource 'ethereumj.conf'
+09:35:08.502 INFO [general]  Config ( no  ): user properties from -Dethereumj.conf.res resource 'null'
+09:35:08.502 INFO [general]  Config ( no  ): user properties from resource 'user.conf'
+09:35:08.503 INFO [general]  Config ( no  ): user properties from file 'C:\Projects\demo\config\ethereumj.conf'
+09:35:08.503 INFO [general]  Config ( no  ): test properties from resource 'test-ethereumj.conf'
+09:35:08.503 INFO [general]  Config ( no  ): test properties from resource 'test-user.conf'
+09:35:08.503 INFO [general]  Config ( no  ): user properties from -Dethereumj.conf.file file 'null'
+09:35:08.504 INFO [general]  Config ( no  ): config passed via constructor
+09:35:08.506 DEBUG [general]  Config trace:     # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 166-413
+blockchain {
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 166
+    config {
+        # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 166
+        name=main
+    }
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 413
+    only=false
+}
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 419
+blocks {
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 419
+    loader=""
+}
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 213
+cache {
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 234
+    blockQueueSize=32
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 215
+    flush {
+        # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 224
+        blocks=0
+        # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 227
+        shortSyncFlush=true
+        # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 219
+        writeCacheSize=64
+    }
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 237
+    headerQueueSize=8
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 243
+    maxStateBloomSize=128
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 231
+    stateCacheSize=256
+}
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 422
+crypto {
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 426-427
+    hash {
+        # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 426
+        alg256=ETH-KECCAK-256
+        # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 427
+        alg512=ETH-KECCAK-512
+    }
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 424
+    providerName=SC
+}
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 174
+database {
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 177
+    dir=database
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 196
+    incompatibleDatabaseBehavior=EXIT
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 202
+    prune {
+        # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 203
+        enabled=true
+        # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 208
+        maxDepth=192
+    }
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 183
+    reset=false
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 189
+    resetBlock=0
+}
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 347
+dump {
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 360
+    block=-1
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 364
+    clean {
+        # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 364
+        on {
+            # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 364
+            restart=true
+        }
+    }
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 354
+    dir=dmp
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 353
+    full=false
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 361
+    style=pretty
+}
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 152
+genesis="frontier.json"
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 395
+hello {
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 395
+    phrase=Dev
+}
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 410
+keyvalue {
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 410
+    datasource=leveldb
+}
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 285
+mine {
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 304
+    coinbase="0000000000000000000000000000000000000000"
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 295
+    cpuMineThreads=4
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 308
+    extraData="EthereumJ powered"
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 301
+    fullDataSet=true
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 317
+    minBlockTimeoutMsec=0
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 314
+    minGasPrice=15000000000
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 291
+    start=false
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 321
+    startNonce=null
+}
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 1-79
+peer {
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 94
+    active=[]
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 123
+    capabilities=[
+        # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 123
+        eth
+    ]
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 132
+    channel {
+        # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 132
+        read {
+            # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 132
+            timeout=90
+        }
+    }
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 127
+    connection {
+        # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 127
+        timeout=2
+    }
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 1
+    discovery {
+        # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 54
+        bind {
+            # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 54
+            ip=""
+        }
+        # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 8
+        enabled=true
+        # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 46
+        external {
+            # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 46
+            ip=null
+        }
+        # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 13
+        ip {
+            # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 13
+            list=[
+                # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 15
+                "frontier-2.ether.camp:30303",
+                # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 16
+                "frontier-3.ether.camp:30303",
+                # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 17
+                "frontier-4.ether.camp:30303",
+                # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 20
+                "5.1.83.226:30303",
+                # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 23
+                "54.94.239.50:30303",
+                # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 24
+                "52.16.188.185:30303",
+                # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 25
+                "52.74.57.123:30303",
+                # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 28
+                "163.172.157.114:30303",
+                # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 29
+                "136.243.154.244:30303",
+                # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 30
+                "88.212.206.70:30303",
+                # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 31
+                "37.128.191.230:30303",
+                # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 32
+                "46.20.235.22:30303",
+                # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 33
+                "216.158.85.185:30303",
+                # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 34
+                "212.47.247.103:30303",
+                # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 35
+                "138.201.144.135:30303",
+                # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 36
+                "45.55.33.62:30303",
+                # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 37
+                "188.166.255.12:30303",
+                # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 38
+                "159.203.210.80:30303",
+                # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 39
+                "51.15.42.252:30303",
+                # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 40
+                "163.172.171.38:30303"
+            ]
+        }
+        # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 62
+        persist=true
+        # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 58
+        public {
+            # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 58
+            home {
+                # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 58
+                node=true
+            }
+        }
+        # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 71
+        touchMaxNodes=100
+        # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 67
+        touchPeriod=600
+        # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 76
+        workers=8
+    }
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 82
+    listen {
+        # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 82
+        port=30303
+    }
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 119
+    maxActivePeers=30
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 85
+    networkId=1
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 134
+    p2p {
+        # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 144
+        eip8=true
+        # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 140
+        framing {
+            # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 140
+            maxSize=32768
+        }
+    }
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 105
+    trusted=[]
+}
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 391
+play {
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 391
+    vm=true
+}
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 412
+record {
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 412
+    blocks=false
+}
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 407
+root {
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 407
+    hash {
+        # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 407
+        start=null
+    }
+}
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 325
+solc {
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 328
+    path=null
+}
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 247
+sync {
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 251
+    enabled=true
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 281
+    exitOnBlockConflict=false
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 254
+    fast {
+        # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 258
+        enabled=false
+    }
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 272
+    peer {
+        # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 272
+        count=30
+    }
+}
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 384
+trace {
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 384
+    startblock=-1
+}
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 340-344
+transaction {
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 340
+    approve {
+        # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 340
+        timeout=15
+    }
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 344
+    outdated {
+        # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 344
+        threshold=10
+    }
+}
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 374
+vm {
+    # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 374
+    structured {
+        # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 377
+        compressed=true
+        # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 376
+        dir=vmtrace
+        # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 378
+        initStorageLimit=10000
+        # ethereumj.conf @ jar:file:/C:/Users/vandebroeck.k/.m2/repository/org/adridadou/ethereumj/1.5.1/ethereumj-1.5.1.jar!/ethereumj.conf: 375
+        trace=false
+    }
+}
+
+09:35:08.515 WARN [general]  File not found `build-info.properties`. Run `gradle build` to generate it
+09:35:08.836 DEBUG [o.z.e.ProcessExecutor]  Executing [solc, --optimize, --combined-json, bin,abi,ast,interface,metadata, C:\Projects\demo\src\main\resources\contracts\PersonContract.sol].
+09:35:08.841 DEBUG [o.z.e.ProcessExecutor]  Started java.lang.ProcessImpl@1f29e26
+09:35:08.897 DEBUG [o.z.e.WaitForProcess]  java.lang.ProcessImpl@1f29e26 stopped with exit code 0
+09:35:09.045 INFO [mine]  Loading light dataset from C:\Projects\demo\database\mine-dag-light.dat
+09:35:09.186 INFO [mine]  Dataset loaded.
+09:35:09.286 DEBUG [pending]  New best block from another fork: #1 (b13f26 <~ f84db2) Txs:1, Unc: 0, old best: #1 (b13f26 <~ f84db2) Txs:1, Unc: 0, ancestor: #1 (b13f26 <~ f84db2) Txs:1, Unc: 0
+09:35:09.850 DEBUG [pending]  PendingStateImpl.processBest: #2 (601189 <~ b13f26) Txs:1, Unc: 0

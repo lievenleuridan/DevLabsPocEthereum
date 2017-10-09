@@ -25,7 +25,7 @@ import static org.adridadou.ethereum.propeller.values.EthValue.ether;
 @SpringBootTest
 public class PersonContractTests {
 
-    private EthAccount mainAccount = AccountProvider.fromSeed("cow");
+    private EthAccount mainAccount = AccountProvider.fromSeed("This is a seed phrase");
 
     @Test
     public void testContractDeployment() throws Exception {
@@ -39,7 +39,6 @@ public class PersonContractTests {
                 loopingFlag = true;
             }
         }
-//        assertEquals(mainAccount.getAddress(), myContract.getOwner());
     }
 
     private PersonContractTests.PersonContract publishAndMapContract(EthereumFacade ethereum) throws Exception {
