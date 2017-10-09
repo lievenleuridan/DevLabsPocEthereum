@@ -31,14 +31,8 @@ public class PersonContractTests {
     public void testContractDeployment() throws Exception {
         final EthereumFacade ethereum = fromTest();
         PersonContractTests.PersonContract myContract = publishAndMapContract(ethereum);
-        myContract.registerPerson("kwinten", "vandebroeck", 1);
-        boolean loopingFlag = false;
-        while (!loopingFlag) {
-            if (myContract.findPerson(1).firstName.length() > 3 && myContract.findPerson(1).lastName.length() > 3) {
-                System.out.println(myContract.findPerson(1));
-                loopingFlag = true;
-            }
-        }
+        myContract.registerPerson("kwinten", "vandebroeck", 1).get();
+        System.out.println(myContract.findPerson(1));
     }
 
     private PersonContractTests.PersonContract publishAndMapContract(EthereumFacade ethereum) throws Exception {
