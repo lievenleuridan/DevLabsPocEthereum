@@ -19,15 +19,9 @@ public class DemoApplication {
 
         final EthereumFacade ethereum = fromTest();
         PersonContract myContract = contractPublisherService.publishAndMapContract(ethereum);
-        myContract.registerPerson("kwinten", "vandebroeck", 1);
-        boolean loopingFlag = false;
-        while (!loopingFlag) {
-            if (myContract.findPerson(1).getFirstName().length() > 3 && myContract.findPerson(1).getLastName().length() > 3) {
-                System.out.println(myContract.findPerson(1));
-                loopingFlag = true;
-            }
-        }
+
+        myContract.registerPerson("kwinten", "vandebroeck", 1).get();
+        //.get() waits for the future to complete before moving on. This is a blocking io operation. Not really ideal
+        System.out.println(myContract.findPerson(1));
     }
-
-
 }
