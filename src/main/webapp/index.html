@@ -14,11 +14,14 @@
     <div ng-controller="MainCtrl">
         <form ng-submit="searchButtonClick()">
             <p>
-                Name : <input type="string" ng-model="person.name"/>
+                First Name : <input type="string" ng-model="person.firstName"/>
+            </p>
+            <p>
+                Last Name : <input type="string" ng-model="person.lastName"/>
             </p>
         </form>
         <button class="btn btn-success" ng-click="searchButtonClick()">Search</button>
-        <p>The hash of your name is : {{person.lastName}}</p>
+        <p>The hash of your last name is : {{person.lastName}}</p>
     </div>
 </div>
 
