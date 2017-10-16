@@ -1,5 +1,8 @@
 Devlabs
  
+A weblayer for all of the ideas below is optional. The point is to get familiar with blockchain and Ethereum, not Angular.
+A weblayer can however improve visibility and usability of the backend.
+ 
 Team 1: Voting system
 
 	- users can register for the vote
@@ -13,11 +16,13 @@ Team 2: Cryptocoin
 	- users can send/receive money
 	- users can consult their account deposit
 	- watch out for double spends, locks, no negative saldo,...
+	- optional, implement ERC20-token standard
 Team 3: Document ledger
 
 	- Pdf/txt gets changed to java string and hashed
 	- The hash gets safed to the chain
 	- 2 users can approve the safed hash along with metadata about who approved it
+	- users can verify wether a new hash is the same as the old one that was agreed upon
 Team 4: infrastructure
 
 	- Safe a contract to ropsten test network from java
