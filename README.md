@@ -29,6 +29,13 @@ Team 4: infrastructure
 	- Safe a contract to local private network from java
 	- Optionally safe a contract to the mainnet (costs a little bit of money)
 	
+(Optional): Crowdfunding
+	
+	- People can buy shares of an org
+	- The org has preset, hardcoded, verifiable goals
+	- Refund if goals aren't met
+	- Profit returned based on amount of shares that are bought
+	
 (Optional): Interplanetary file system
 
 	- Safe a document to an IPFS
@@ -42,3 +49,5 @@ Team 4: infrastructure
 		- Ex: 2 people agree to a buy of stocks at say 100$, A gets a return of 10% fixed no matter the profit/loss based on a third party contract, B gets the rest. 
         - Oracles can be used here to formalize the time for release, the price of the stock etc...
         - Can have multiple oracles where the highest and lowest number get ommited to diversify the risk or third party malfunction
+	
+Anyone is more than welcome to work on another idea!
