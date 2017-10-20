@@ -6,13 +6,14 @@ import com.example.demo.services.ContractPublisherService;
 import com.example.demo.util.HashBuilder;
 import org.adridadou.ethereum.propeller.EthereumFacade;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 
-import java.util.Arrays;
-import java.util.List;
+import java.io.File;
 
 import static com.example.demo.builders.EthereumBuilder.fromTest;
-import static java.util.stream.Collectors.toList;
 
 /**
  * Created by vandebroeck.k on 2/10/2017.
@@ -32,7 +33,7 @@ public class PersonController {
     public Person findPerson(@PathVariable String name, @PathVariable String lastName) throws Exception {
         final EthereumFacade ethereum = fromTest();
 
-        PersonContract myContract = contractPublisherService.publishAndMapContract(ethereum);
+        PersonContract myContract = contractPublisherService.publishAndMapContract(ethereum, new File("src/main/resources/contracts/PersonContract.sol"));
         myContract.registerPerson(name, lastName, 1).get();
         Person person = myContract.findPerson(1);
         return new Person().setFirstName(HashBuilder.createHash(person.getFirstName())).setLastName(HashBuilder.createHash(person.getLastName()));

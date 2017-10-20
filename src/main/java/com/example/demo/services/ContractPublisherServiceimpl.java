@@ -19,9 +19,9 @@ import static com.example.demo.builders.EthereumAccountBuilder.accountBuilder;
 public class ContractPublisherServiceimpl implements ContractPublisherService {
 
     @Override
-    public PersonContract publishAndMapContract(EthereumFacade ethereum) throws Exception {
+    public PersonContract publishAndMapContract(EthereumFacade ethereum, File file) throws Exception {
         SolidityContractDetails compiledContract =
-                ethereum.compile(SoliditySourceFile.from(new File("src/main/resources/contracts/PersonContract.sol"))).findContract("PersonContract").get();
+                ethereum.compile(SoliditySourceFile.from(file)).findContract("PersonContract").get();
 
         CompletableFuture<EthAddress> futureAddress = ethereum.publishContract(compiledContract, accountBuilder());
         return ethereum.createContractProxy(compiledContract, futureAddress.get(), accountBuilder(), PersonContract.class);
