@@ -37,7 +37,8 @@ public class PersonContractTests {
 
     private PersonContractTests.PersonContract publishAndMapContract(EthereumFacade ethereum) throws Exception {
         SolidityContractDetails compiledContract =
-                ethereum.compile(SoliditySourceFile.from(new File("src/test/resources/contracts/PersonContract.sol"))).findContract("PersonContract").get();
+                ethereum.compile(SoliditySourceFile.from(new File("src/test/resources/contracts/PersonContract.sol")))
+                        .findContract("PersonContract").get();
 
         CompletableFuture<EthAddress> futureAddress = ethereum.publishContract(compiledContract, mainAccount);
         return ethereum.createContractProxy(compiledContract, futureAddress.get(), mainAccount, PersonContractTests.PersonContract.class);
@@ -51,7 +52,6 @@ public class PersonContractTests {
 
     private interface PersonContract {
         Person findPerson(Integer value);
-
         CompletableFuture<Void> registerPerson(String firstName, String lastName, Integer personId);
     }
 
